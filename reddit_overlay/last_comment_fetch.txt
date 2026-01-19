@@ -1,0 +1,1302 @@
+=== REDDIT COMMENTS API RESPONSE ===
+Fetched at: 2026-01-19T02:53:25.428Z
+URL: https://www.reddit.com/svc/shreddit/comments/r/books/t3_1qg9awi?render-mode=partial&force_seo=1&seeker-session=true&referer=https%3A%2F%2Fwww.google.com%2F
+Post: https://www.reddit.com/r/books/comments/1qg9awi/weekly_faq_thread_january_18_2026_when_do_you/
+Subreddit: books, Post ID: 1qg9awi
+Response Length: 112553 characters
+Found 10 parsed comments
+Response Status: true
+=== PARSED COMMENTS PREVIEW ===
+Author: AB-girl-25, Time: Sunday, January 18, 2026 at 2:11:38 PM UTC, Content: I used to force myself to finish every book, even if it took months. 2025 was the year I decided to ...
+Author: Altruistic_Key378, Time: Sunday, January 18, 2026 at 4:45:33 PM UTC, Content: Exactly right!...
+Author: Curiousfeline467, Time: Sunday, January 18, 2026 at 2:08:35 PM UTC, Content: In general, I don’t like to give up on books for two reasons: Some of the books I love the most didn...
+=== FULL RAW HTML RESPONSE ===
+
+<hr class="border-neutral-border-weak my-sm">
+    <shreddit-comments-page-ad id="t3_1pj7agn" post-id="t3_1pj7agn" class="promotedlink relative block" ad-type="video" author-id="t2_171edmupu6" outbound-link-url="https://alb.reddit.com/cr?za=YZTm-dbOIVQxCz2CyK4NyB7WqJ4_I9PrKTRiZYHzrB23tK2I40ucOebzz1cp0lh7k5XjuHTit6f1K5bDjXHmPuCSx4RjCW1pb5VuCHQ7vmM3Spaz0KStmpfh9-vTqb6dk6aOqRh6_9MtvDm-aI0LhBMS2Gjcp5a1sKsvA73McuBDekCylOcZn0qcURVtd9IWcOKWDtS3Mra2FFxWlfKl9ufIaMRdSLVv53Rh2oppVsWl8lzSNqVtzg86Zl37Rm8TaJS97jFA32Bi8VxvQ0xsuoQBFOONjfAFFfOeEl4OpTgNSppNGthLhVbfnfK7pv0DEAXWjFDVjVVZqXldii6ufI6v1foBYFTNdzInt6Yb_mDfwjf-X8MT3IVKBkWIK3gaOD5OlazgqlvxX7vg6DxbAznb15hMWKlQtit8A7g0B7YbZDJ_pW8NxWKVOYyQDKiebid1xq_gMY-4E1nq-g8Ifs21QbaST0ip7Wr36lqvBPnjSqVYFcYHjmPtBUfBtQ2FPzkqoVznY_z5GCRgaqD1Vx40q6Tt6A6wGwK-0FF2NlteS_Q9ecRnp44JfnJuKeL8Uqp5lINDbGySKcEiBjxzeuIEf9BJLYAHT3rwVPX7UFVL630&amp;zp=K-re_xCMGJZmAccxabSnQWn6tH6h7rs8YQNIklU-eih6uCnnYXZVAOxRfaw2H3L_MjgeNshT2l7WnbzBETEwhIiM9Z8HhzTSoZijmPn5V8r00PabiViEkYFkSj02UyWcq7Eqn9MkKugSihdx4dep_BudGyd1EmlbtrVACZkSdXsDFGppMs97V9rF_XcboHZHFuqi7xfHqXLAUlQTnj_3eYrmMUsGylcFEJgUptUjS8hNit24SMMtTt0rizbjiAmQ1Uk85g" ad-events="[{&quot;type&quot;:&quot;IMPRESSION&quot;,&quot;url&quot;:&quot;https://alb.reddit.com/i.gif?za=YZTm-dbOIVQxCz2CyK4NyB7WqJ4_I9PrKTRiZYHzrB23tK2I40ucOebzz1cp0lh7k5XjuHTit6f1K5bDjXHmPuCSx4RjCW1pb5VuCHQ7vmM3Spaz0KStmpfh9-vTqb6dk6aOqRh6_9MtvDm-aI0LhBMS2Gjcp5a1sKsvA73McuBDekCylOcZn0qcURVtd9IWcOKWDtS3Mra2FFxWlfKl9ufIaMRdSLVv53Rh2oppVsWl8lzSNqVtzg86Zl37Rm8TaJS97jFA32Bi8VxvQ0xsuoQBFOONjfAFFfOeEl4OpTgNSppNGthLhVbfnfK7pv0DEAXWjFDVjVVZqXldii6ufI6v1foBYFTNdzInt6Yb_mDfwjf-X8MT3IVKBkWIK3gaOD5OlazgqlvxX7vg6DxbAznb15hMWKlQtit8A7g0B7YbZDJ_pW8NxWKVOYyQDKiebid1xq_gMY-4E1nq-g8Ifs21QbaST0ip7Wr36lqvBPnjSqVYFcYHjmPtBUfBtQ2FPzkqoVznY_z5GCRgaqD1Vx40q6Tt6A6wGwK-0FF2NlteS_Q9ecRnp44JfnJuKeL8Uqp5lINDbGySKcEiBjxzeuIEf9BJLYAHT3rwVPX7UFVL630&amp;zp=K6oT_Z0_VBs5YYaZu8_efej4tH3xn7hiXEb4lIOn0M-OmsoK2tGz6DaqXLb2nIFwWDiiufN5lXijBRN41OhUm_zrQyALIa0mY3x-fQ8XXb3XrCvYpLk2ufLlx2UgkA&quot;,&quot;encryptedTrackingId&quot;:null},{&quot;type&quot;:&quot;VIDEO_VIEWABLE_IMPRESSION&quot;,&quot;url&quot;:&quot;https://alb.reddit.com/i.gif?za=YZTm-dbOIVQxCz2CyK4NyB7WqJ4_I9PrKTRiZYHzrB23tK2I40ucOebzz1cp0lh7k5XjuHTit6f1K5bDjXHmPuCSx4RjCW1pb5VuCHQ7vmM3Spaz0KStmpfh9-vTqb6dk6aOqRh6_9MtvDm-aI0LhBMS2Gjcp5a1sKsvA73McuBDekCylOcZn0qcURVtd9IWcOKWDtS3Mra2FFxWlfKl9ufIaMRdSLVv53Rh2oppVsWl8lzSNqVtzg86Zl37Rm8TaJS97jFA32Bi8VxvQ0xsuoQBFOONjfAFFfOeEl4OpTgNSppNGthLhVbfnfK7pv0DEAXWjFDVjVVZqXldii6ufI6v1foBYFTNdzInt6Yb_mDfwjf-X8MT3IVKBkWIK3gaOD5OlazgqlvxX7vg6DxbAznb15hMWKlQtit8A7g0B7YbZDJ_pW8NxWKVOYyQDKiebid1xq_gMY-4E1nq-g8Ifs21QbaST0ip7Wr36lqvBPnjSqVYFcYHjmPtBUfBtQ2FPzkqoVznY_z5GCRgaqD1Vx40q6Tt6A6wGwK-0FF2NlteS_Q9ecRnp44JfnJuKeL8Uqp5lINDbGySKcEiBjxzeuIEf9BJLYAHT3rwVPX7UFVL630&amp;zp=MiCxr8myS1kktPLFdW2ur47FLb8ivd9ew0_NPh9o2PYuAq-_Y5qS87H1aUHh7yf3OIFC5VJcYI5mQ8qVmZgqeTglnYSXdVLUlFEd731lHW3E8fu8-LfdBT7yCQZwitzK5GF9y4kf9NDyTdTpiTafOS7W3AD7uhvCdKu_ivQa0PO_idJdjxJnwqovenR2PYFZ&quot;,&quot;encryptedTrackingId&quot;:null},{&quot;type&quot;:&quot;VIDEO_VIEWABLE_WATCHED_6_SECS&quot;,&quot;url&quot;:&quot;https://alb.reddit.com/i.gif?za=YZTm-dbOIVQxCz2CyK4NyB7WqJ4_I9PrKTRiZYHzrB23tK2I40ucOebzz1cp0lh7k5XjuHTit6f1K5bDjXHmPuCSx4RjCW1pb5VuCHQ7vmM3Spaz0KStmpfh9-vTqb6dk6aOqRh6_9MtvDm-aI0LhBMS2Gjcp5a1sKsvA73McuBDekCylOcZn0qcURVtd9IWcOKWDtS3Mra2FFxWlfKl9ufIaMRdSLVv53Rh2oppVsWl8lzSNqVtzg86Zl37Rm8TaJS97jFA32Bi8VxvQ0xsuoQBFOONjfAFFfOeEl4OpTgNSppNGthLhVbfnfK7pv0DEAXWjFDVjVVZqXldii6ufI6v1foBYFTNdzInt6Yb_mDfwjf-X8MT3IVKBkWIK3gaOD5OlazgqlvxX7vg6DxbAznb15hMWKlQtit8A7g0B7YbZDJ_pW8NxWKVOYyQDKiebid1xq_gMY-4E1nq-g8Ifs21QbaST0ip7Wr36lqvBPnjSqVYFcYHjmPtBUfBtQ2FPzkqoVznY_z5GCRgaqD1Vx40q6Tt6A6wGwK-0FF2NlteS_Q9ecRnp44JfnJuKeL8Uqp5lINDbGySKcEiBjxzeuIEf9BJLYAHT3rwVPX7UFVL630&amp;zp=1OOq438ecLipifJb2UOwW61ybnnFG7j8JKShG14_kZYZFcIPMVMduuFqxxedV7iGL7ooOhwYHbn8xvmTHtkwCC7yXffyOy_o5_mI6aDUyJz82Drl3awkpZkuZ_txAdyyYXOWwEfSHqbHnzyZL8Al2Oz5h3ofxqgJxZX6YCVmp8YYBU-G9Rjtrn9EXgfKd2J5&quot;,&quot;encryptedTrackingId&quot;:null},{&quot;type&quot;:&quot;VIDEO_VIEWABLE_WATCHED_15_SECS&quot;,&quot;url&quot;:&quot;https://alb.reddit.com/i.gif?za=YZTm-dbOIVQxCz2CyK4NyB7WqJ4_I9PrKTRiZYHzrB23tK2I40ucOebzz1cp0lh7k5XjuHTit6f1K5bDjXHmPuCSx4RjCW1pb5VuCHQ7vmM3Spaz0KStmpfh9-vTqb6dk6aOqRh6_9MtvDm-aI0LhBMS2Gjcp5a1sKsvA73McuBDekCylOcZn0qcURVtd9IWcOKWDtS3Mra2FFxWlfKl9ufIaMRdSLVv53Rh2oppVsWl8lzSNqVtzg86Zl37Rm8TaJS97jFA32Bi8VxvQ0xsuoQBFOONjfAFFfOeEl4OpTgNSppNGthLhVbfnfK7pv0DEAXWjFDVjVVZqXldii6ufI6v1foBYFTNdzInt6Yb_mDfwjf-X8MT3IVKBkWIK3gaOD5OlazgqlvxX7vg6DxbAznb15hMWKlQtit8A7g0B7YbZDJ_pW8NxWKVOYyQDKiebid1xq_gMY-4E1nq-g8Ifs21QbaST0ip7Wr36lqvBPnjSqVYFcYHjmPtBUfBtQ2FPzkqoVznY_z5GCRgaqD1Vx40q6Tt6A6wGwK-0FF2NlteS_Q9ecRnp44JfnJuKeL8Uqp5lINDbGySKcEiBjxzeuIEf9BJLYAHT3rwVPX7UFVL630&amp;zp=HyuVoTRirrX5ekr_MjfqSKZfln4BiwkljZsXrnVPE614YWycSDVaVzUTwJmXsL50ExdC9WU78jtbNKDjF3hcAxneDrW4o-U7tRONdKiYNpZHsGiUdcpCprdHvyq6jhtShABGCt7ucXyPSG6278B9F-POELhsaTEG_yahQBmlj2DOlSScN6mNaL4-GZ89YCoP&quot;,&quot;encryptedTrackingId&quot;:null},{&quot;type&quot;:&quot;VIDEO_WATCHED_100&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;j_Mo5exRpZ53OU08_Em2kiIUqgxjYNYF9d99_xdglU6YdIWNfcUGnA85ey3K3Lnp3aKDwFIJtLHL3Gm61yc9h3o0Auvg4sFwxiv3Wl6bCoDP0xj7hRmuLvWuFT-M96yD4rkBmG3GqEEMjQ24-vqX9k5zfHnB8BUn1im0GGSzSIojHqIiuDaHfauNsx_2xuss&quot;},{&quot;type&quot;:&quot;VIEWABLE_IMPRESSION&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;EY7MgNmtS4K-ebl8tts5W-Ouhc0ghewXU85HwSCF-0hCh19ckBpIIhw9O1LpNv7kRnaSMvNtiwUCDiPJ5X8cBxw1QEWPeCqmJQrBZjrDXzzsH5u-c_x-5-Ga6cFvQ5ImFMlS3u1SFGDuulcpT8p-GCthocS-UgIB-C22izB0L2Izf3v3aV7Z43u16eCIeAI&quot;},{&quot;type&quot;:&quot;DOWNVOTE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;5h2pKOIZSHd5VNDCIqBSKzakB0_OtoUKeXfhMB2zo2BizTLd568jEyb36gfHUwp3MQYCplv3oYg4hn5Yy_N-Q8jYmY00zkBZW7Wl_KqCy1Rq8bpNKMd3nn1xPt8ASJLA4ApK9nC_RYcc2XtlvWZVbP3oyfD1EohdVvI6usTjopBDBXly74E3MBeoWXlpng0&quot;},{&quot;type&quot;:&quot;COMMENT&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;MmmbNLlm-nuyRGy_-jh9Q4oEpd2DtGnTgNFPPZQTlC_axVO-GldWBaGEdekNgWjdyFRJiDJffxaE0LjpACjTCMgsOxmmaMY98gDlwgPuawEgCB9quM96M4zcewtyf6iw-6dKzAnARHzuLbqJwKpglkuhtx-Ayn0ICieDbXkbJv_PeAixueIf4VdFXaU65_0&quot;},{&quot;type&quot;:&quot;VIDEO_FULLY_VIEWABLE_IMPRESSION&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;vQSLS7djeFlqiR5PO6c3f0Zvfn9irOdhmdk-VC3koMYke9zSVIdVDjRD45hkpZD-57QE8G43J-7oNImqYarhMHeIzzJBoAtu_GQ2Q6LQnk6GjLCOeaz6nFmVlxNCZmzWuNm9clrakoVnWTKP93v_MKNmRO-iXOVdB6mjPINOBr6_VZhK4SsvJDrGi5OX7Ji3&quot;},{&quot;type&quot;:&quot;UPVOTE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;oboVcwaQkRlT8ZR5O85ZWuRpDS2137Hq9HI8hsc3IMA0Iur5G6UvCxa-0JKpbVUHAz2uJDzXyaOidLzBTxDYxrCy5qku7AqK6svuOzg2NjjXsrBkZmzeYJukWElMxJENAbyfLFuehxOztse9OiulAIMr6cL4I_wzc8qTHwdbr_DfLr5T2jV6VjxLdYiJr1Y&quot;},{&quot;type&quot;:&quot;COMMENT_UPVOTE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;aBpYjECMbwckaCPla25Q75UbtkAc0nmNhMlDW1t_IK_-xMAjR9L-iB1mCIJ8-tpcmXwWxeMX5qRIfS5uudR_UJ3Vpoc_xc1NeH6pHFpETHJk2CN-qJYLXsiHj1wKoo3tMFkKXkaJzqHZLRfcSkzYvNCvGgSnlmP_wZ-YEpjMHGYhT0-7AT4hdoZkj6IG1Hw&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_3_SECS&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;hZSJo7d5Bm2qsN54iFQHP2Hq-7Tpk48Mb40LubrGEgydsfUeu3MIO3fi-tiCGJ9vkkaVkqG0Wy6KffTFRseW4JXi4bUPFsPKthlEoJhw5W6D-HsEMHy1UPU-ReNzgUSarWsFhx8GaZC2CY186t8PG7dKe6e15UIe_UXp2pqzeF-ElJg0D261rdfqefTia0sw&quot;},{&quot;type&quot;:&quot;VIDEO_GROUP_M_VIEWABLE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;Xhajl-Llq0zZxupxFnDWVjZz2IINyq2x2vYBnK3qG1G3pOndziV1b34IYJpdLVxBF2ZvqShmhr2mLSc9VchvrI1sgdZaKBLC1qd7V1NM0y2CKdczE9B8EsN3vAKgEKIJNKFBWg61q2CVCqUZroAh-AkGN3CFHVGYUx5IixlO6hNQbsrOvmqMjD7w5lU-UobB&quot;},{&quot;type&quot;:&quot;VIDEO_PLAYED_EXPANDED&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;io-gx7aouBecsZW9lqegxPVqLJ98DR67fuyjv_zLicxA8ZBGlBDcsV5XjHcPIxnCnoOjMWeN86-wxWVu-S9nDrqmuTDdBrGaGSxL5Q9CTI6gJkcvS8i0-vJGpIyiD_hqAcH5XoUnYe7gz_QiKLUMb-nirIa_Gp7ePEdv-CHN3DOSNeIGslwnxRyZNov3k1F-&quot;},{&quot;type&quot;:&quot;COMMENT_DOWNVOTE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;nDcoLDFLCyyAqmymRRYC0uh7vx7PtdMhkBkAT_H13hKVjPTlje9azyTzO1BSo6xaPYOAlRMlUfRh0-bqBsT6sHDJMgty8AQeYlwEDQmyhFEbMJcIlKUivRJ-rt7IwvS5YurWTzRhyy4UE0w2CzXTundNn0uDwkrILBf7faySBPKuJf6tOimDtS6p5P664Ow&quot;},{&quot;type&quot;:&quot;VENDOR_FULLY_IN_VIEW_15_SECS&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;i47_f_oXN-5o4ATnHj4V36Aoc6Q7UABDF697tp4v7OuVnKQhTRSVn6j7LscpdqGOeZlAPQN6ChQJUUmjS40bLjuy1YiP_EAx6jOaZsi9xcCyQ-C83_FuovXvZv6Nx97XzT1vojFWCtDKxjCH7z7h__xwhSj-__7P0VRPFR1Ea7_XLf0c0VLH90GDfs2OaVA&quot;},{&quot;type&quot;:&quot;VIDEO_PLAYED_WITH_SOUND&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;-7Y_zq5ycHSCkkm93q_q50leFMbfvAdsR4846SuupvWxp1Akg7Lw0VOhK0OZdBwJfd21lmQzbEFk9jShYJB6qNaTQOp6kbTnVytuU8t-ZQqquqZJISH9DbW40Tl0Bumzou7piD7h-CFlA9DYd7pXPuGfz5MeTeBECOobbG6hQ57E1LFWPZThg0tI0MoBOrZY&quot;},{&quot;type&quot;:&quot;MRC_VIDEO_VIEWABLE_IMPRESSION&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;CxFXGP48pNP3D_mrPpmVmXllyLaiBS_RcCDKh0h5PT0K_KQw-j-RG7sO9n8bDuD78EiwATX0rw4orxBeFFdCAVihLmnsKsgCSHomjsXEovvoM2xUTcTFlutXpAarUAQ2Go_NSuc4Rmk8y7Z7J4VrF5GEZOLDn4VFTtL0doZlFKEm0TaCTRsvJN6INkaWFJu3&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_5_SECS&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;-bbZkiOp9PWrL5rq3mgb0X7XsiGFCO8K4AapRGWScIJwRYRiuoumI5r8_8Q6YMV2thZ1-B1XhHNxgLseP7ex2kVTdSlKFIyZtgup4O9KpKxOnZl6sLXyoKSZ3GUgKM4D71-hI_wKfnVba5mKiLKeaNBiocwkJ0VZtQcCTOOfXBHNplIjeSuu5MToK1PjplQ8&quot;},{&quot;type&quot;:&quot;VIDEO_STARTED&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;rHnF0KGxCzT1OpcNziwoLczwHoGa0XazMMOfukM5F9xs_GHqo8lcWgFmolsIWjP6vijTaPJ6K2h5TMwgl8CnSzafqhaX3w6dD8mHUNY-lALdDmJ7MGSmbVsWw0UyCHyzdfhRJ7QIdonZJO9k79XhsL4DDMc4Eyi-LSXBC_5eDQCOd2Feh8UlAmafnaDOhbCY&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_50&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;E8EVcguG_-s1n7791cu5OtL1sXoj7jPIreNVHWXuHHyTY97rGjuCOQxKaMV1qRdF-i3h2MBqFVp-rOS7FjTPOakIJpZvH1Ncic0oVj2xScupUnSz2aEfAmlxqCC9zsdQVo8QpdScKaOR5VrhnbQRda0MMvXhntH7EUCk9phUJIASkuD8KR7ESeEr-EQ3nF_b&quot;},{&quot;type&quot;:&quot;COMMENTS_VIEW&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;zkfbPDj20bLXrV9ywpdv0jzGybPeMQdy-wUu1vLwrlZV1wE_phX8RdbBACrpc70NSCc_D05Jn17owtiGMlM6Bx_b689TVMv1VrVAoEg1YE4OBv32E6S8eg5EKeUm9LWanyQKFwbyKSeFn60FWhfw4iygg0Ucbndq-vUjwRks2axQBU984wrqIa4g6W9f71k&quot;},{&quot;type&quot;:&quot;GROUP_M_VIEWABLE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;CwwJN15Nee5Il11FQuWyzsAhnrZCPClHBRt64LfKT-nzr2E6fznW5gQ-rx1JhyW-lVxTykRMZeWuF0StX3OXdec0nqCvyIyrO0y_Zm972wXV5EuSBpv_9qFua-7NrO-j9l0mJjbHp-MkicPh1uloXBc2563HDyJ0KjTvuBsmqss5GtdjDaqOccxiUW_r67w&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_75&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;09XWTKbYzlyFpksrMTSbwn2D7Ef7zcAfXPoNAnXxwHL6t_gOHQVGF6O6QNUA8iR6BLreniDGxv6XqYWzkPjOi29Rtt4IcjTQDIkHSLO6ftFDJTR-nS_wuHpk3PEkzdy6ch9SHKJQZdstKxPAWV88aEnprIgErBxZ7fiPoN_QcUM7aZobT3sxq8Y5WYQl9cB_&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_25&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;NvxhjYarCokNm3dPjWmy_NeXrmoQVd39_ddST6NrlU9qK1WrIC3RgRtrFz8QWANVggoQBCrkQ8wR_IvHBnskPTVWb3OU8YR-XwQ2YSqhEyrBfP9oudeqrf1RSQbQ-xWLoheZ39W7A3ZtLs2yW74UhaX7D1-ZP8Ge4Z2OpRtj-9Hz53akmnfe8C4kQCi6fgf1&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_10_SECS&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;j7JogioRBLtLdiro7VLK2yKQdcstf1Bypr49mjlSHoQ5y0Hu_uAW1jlSDA9v3I_hMeG_kdeyUI-MPwytIu-Ci_khPW1DomA8Yu5LqvKzwy9nuyd8KO58T81kdpxD0gu6PXoRJW5EgXRsGg35DzLSKdteiV7MsX4qYX39D0xzrJqDaej556Ae8MpIqpoYNnru&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_95&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;9Zkd9kyvCwqB9HtLcUnzFCdvsfmuMiGgR25B1X-5_WeDmaoMQHakh5SnmoaJAJ9qM0xE-4ZtObkKcme1U_8m_aENcebRxugGGg_mz-A4GGMEe9ATeRZuXBAyra8h6hcT56eCCu5ZmVsGoToT0ioHWZzOh0f7M3QsNacPLRGsVH4X4kkNth9gEbaqJEliRRDO&quot;},{&quot;type&quot;:&quot;VIDEO_VENDOR_FULLY_VIEWABLE_50&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;j7D4r2ANIXRpkt5-LGsCau6jbLJLCdaCRTtWyonGcgxP4QTAGkhYxLb2XWiZRz4Gk15c5uTPipImz6uLyAkWwZnoDjprNQhLOfaEFWj6jBSiXRUSpwp8mGwHCuvTFTGRN0kkYXYwmqlVZdH5KkBAmFGNhHVljKVU3Tc4cVPsd_taxxR5yblmwGmwQxC0VdQn&quot;},{&quot;type&quot;:&quot;UNLOAD&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;K0RlSj_eNNXYDjvFjX0DXJrTn4D4fX3tooelZZeuwdyKr2PVoinqACiSfSSTaGNks6Kt9xbnD-QOjT_SI7RBnP-PqGnSHWN98bzIWhaHfQB_tw1pKh_jOpsUYuWgr7QuKgFV8eqxAVfvxxxQyjZtfaWr4G5s7XiZd1X6h0Gu2GsUh2BfXsJpBhb_U_6rlWM&quot;},{&quot;type&quot;:&quot;ENGAGED_CLICK&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;yc0t8_5KOEvl0WYDxsmzTOf1KLwzE13rnYsOxgo0_uHN43gDwl0_kT4FUOBJulkShBgDw8cuJTefpXWb5gtX8m8ykSfTFHxSDSnQbx7QgVyHvngYUg_R9izemNk3zKQzVhcEJEbyHx4LCiQovgGcL64T5Lkkuz14F9wd0YPNAw4XiLj2OPcBNxBjiTV3SoM&quot;},{&quot;type&quot;:&quot;VENDOR_FULLY_IN_VIEW&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;zwILXNOljgdAxRKCrAoIIP16uK3mnKgynYTdrKgd39bNsyYEfi-yyLgFzNwTKdjfOjh6af4dh5p0Sp3JFiuEtKxcqbQ1VTVhIo4qw-cibfHNdMEGnHxmYr3PnNNXkoDMISFE-NHL7OjnfifCh5smidm2_e5MrJBB7VNBbUmVlhU23fdnwlDHJPYtKPliUdM&quot;},{&quot;type&quot;:&quot;VENDOR_FULLY_IN_VIEW_5_SECS&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;lEWO9vBFQL94zVpx_e9jCQcNVX06OPa1L1oTTSuV914HFgJD9TiOomVClsLalP_xHFY5ae4oXsyQryC33RP0JX8NRsiorVjTW8LxUnFnlcmU_F86Lfau9z_LvrBY_rgDUiATT_j5k8ofgmnkzbhsMG0b3kp9rV5x4f6lg3mjz72Xpxo4uN-0zjksnuoiMOY&quot;}]" impression-id="5893905752845755924" subreddit-id="t5_2qh4i" country-code="FR" title="A solid workout starts with a solid base. Invest in premium home gym flooring now. 👇️" domain="atletica.de" is-hide-ad-enabled placement="comments_page" campaign-id="2196475348654920877" encrypted-tracking-payload="YZTm-dbOIVQxCz2CyK4NyB7WqJ4_I9PrKTRiZYHzrB23tK2I40ucOebzz1cp0lh7k5XjuHTit6f1K5bDjXHmPuCSx4RjCW1pb5VuCHQ7vmM3Spaz0KStmpfh9-vTqb6dk6aOqRh6_9MtvDm-aI0LhBMS2Gjcp5a1sKsvA73McuBDekCylOcZn0qcURVtd9IWcOKWDtS3Mra2FFxWlfKl9ufIaMRdSLVv53Rh2oppVsWl8lzSNqVtzg86Zl37Rm8TaJS97jFA32Bi8VxvQ0xsuoQBFOONjfAFFfOeEl4OpTgNSppNGthLhVbfnfK7pv0DEAXWjFDVjVVZqXldii6ufI6v1foBYFTNdzInt6Yb_mDfwjf-X8MT3IVKBkWIK3gaOD5OlazgqlvxX7vg6DxbAznb15hMWKlQtit8A7g0B7YbZDJ_pW8NxWKVOYyQDKiebid1xq_gMY-4E1nq-g8Ifs21QbaST0ip7Wr36lqvBPnjSqVYFcYHjmPtBUfBtQ2FPzkqoVznY_z5GCRgaqD1Vx40q6Tt6A6wGwK-0FF2NlteS_Q9ecRnp44JfnJuKeL8Uqp5lINDbGySKcEiBjxzeuIEf9BJLYAHT3rwVPX7UFVL630" ad-transparency-encoded-data="GQgsGAZGcmFuY2U4AAAZBQA=" should-track-position ads-correlation-id="b551e514-be53-43e0-a888-86a82a5923e4">
+       
+    <shreddit-dynamic-ad-link slot="full-comments-page-ad-link" class="absolute inset-0" anchor-style-class="w-100 block h-100" target="_blank" post-id="t3_1pj7agn" impression-id="5893905752845755924" click-location="background" aria-label="Advertisement: A solid workout starts with a solid base. Invest in premium home gym flooring now. 👇️">
+    </shreddit-dynamic-ad-link>
+   
+    <div slot="credit-bar" class="mb-sm flex justify-between items-center">
+      <div class="promoted-name-container flex flex-1 items-center gap-[6px] overflow-hidden text-12 pr-xs p-[4px] -m-[4px] relative h-xl">
+        
+      
+    <click-location-tracker click-location="username" class="min-w-0 nd:visible">
+      <a rpl class="advertiser-name flex items-center relative h-xl text-neutral-content a cursor-pointer
+  
+  
+  font-semibold
+  no-visited
+  no-underline hover:no-underline
+  " href="/user/Atleticagear/"><span class="inline-flex items-center justify-center w-[2rem] h-[2rem] me-[6px]" rpl avatar>
+    
+    <span class="inline-flex snoovatar relative  fp-avatar-container rounded-full w-[2rem] h-[2rem] min-w-[2rem] min-h-[2rem] isolate box-content">  <span style="" class="rounded-full absolute h-full w-full inline-flex justify-center ">
+    <span class="relative rounded-full overflow-hidden  inline-flex w-full h-full box-border [&amp;&gt;:first-child]:rounded-[inherit] overflow-hidden"><img loading="lazy" src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png" alt="u/Atleticagear avatar" data-testid="promoted-credit-bar-avatar"> 
+          </span>
+  </span>
+    
+  </span></span>
+  <span class="truncate">Atleticagear</span></a>
+    </click-location-tracker>
+  
+     
+        <span class="inline-block my-0 text-neutral-content-weak created-separator">•</span>
+        
+          <click-location-tracker click-location="promoted_label" class="h-100">
+            <a rpl class="h-100 flex items-center a cursor-pointer
+  
+  
+  
+  
+  no-underline hover:no-underline
+  " href="/user/Atleticagear/">
+    <span style="flex-shrink:9999;" class="promoted-label text-neutral-content-weak font-normal truncate">Promoted</span>
+  </a>
+          </click-location-tracker>
+         
+    <shreddit-dynamic-ad-link target="_blank" post-id="t3_1pj7agn" click-location="credit_bar_whitespace" anchor-style-class="absolute top-0 left-0 w-100 h-100" class="h-100 flex-1 relative nd:visible" disable-keyboard-nav="true" impression-id="5893905752845755924"></shreddit-dynamic-ad-link>
+  
+      </div>
+      
+    <div class="relative min-w-[28px] ">
+      <shreddit-async-loader bundleName="shreddit_post_overflow_menu">
+        <shreddit-post-overflow-menu class="nd:hidden" is-desktop-viewport is-ad ad-user-targeting-info="{&quot;adTransparencyEncodedData&quot;:&quot;GQgsGAZGcmFuY2U4AAAZBQA=&quot;,&quot;gender&quot;:null,&quot;interests&quot;:[],&quot;locations&quot;:[&quot;France&quot;],&quot;targetingCriteria&quot;:null}" is-pdp-ad is-reportable-ad post-id="t3_1pj7agn" impression-id="5893905752845755924" author-name="Atleticagear" author-id="t2_171edmupu6" is-hide-ad-enabled placement="comments_page" premium-ad-overflow-variant="enabled">
+          
+        </shreddit-post-overflow-menu>
+      </shreddit-async-loader>
+    </div>
+  
+    </div>
+   
+        <div slot="ad-format-content">
+          <div class="flex flex-row mb-md">
+      <div class="flex-1 flex flex-col overflow-hidden">
+        <div class="mb-sm">
+    <shreddit-dynamic-ad-link target="_blank" post-id="t3_1pj7agn" click-location="title" anchor-style-class="line-clamp-5 relative" slot="headline" class="title relative" impression-id="5893905752845755924">A solid workout starts with a solid base. Invest in premium home gym flooring now. 👇️</shreddit-dynamic-ad-link>
+  </div>
+        
+    <div class="ad-link-bar isolate relative">
+      
+    <shreddit-dynamic-ad-link target="_blank" post-id="t3_1pj7agn" click-location="cta_whitespace" anchor-style-class="z-1 absolute w-100 h-100" class="z-1 absolute top-0 left-0 w-100 h-100" disable-keyboard-nav="true" impression-id="5893905752845755924"></shreddit-dynamic-ad-link>
+  
+      <div class="h-xl flex items-center justify-between">
+         <shreddit-dynamic-ad-link class="ad-link-bar__cta z-2" target="_blank" post-id="t3_1pj7agn" render-as-button impression-id="5893905752845755924" click-location="cta_button" button-props="{&quot;size&quot;:&quot;sm&quot;,&quot;appearance&quot;:&quot;bordered&quot;}">Shop Now</shreddit-dynamic-ad-link> <div class="flex flex-col truncate ml-sm">
+          
+    <shreddit-dynamic-ad-link class="ad-link-bar__domain z-2 text-12 truncate text-neutral-content-weak hover:underline" target="_blank" post-id="t3_1pj7agn" impression-id="5893905752845755924" click-location="cta_destination_url">
+      atletica.de
+    </shreddit-dynamic-ad-link>
+    
+  
+        </div> 
+      </div>
+    </div>
+   
+      </div>
+      
+    <div class="thumbnail-video-toggle-container bg-secondary-background ml-md rounded-2 cursor-pointer relative overflow-hidden" data-visible-classnames="ml-md rounded-2 cursor-pointer relative overflow-hidden" style="max-height: 144px;">
+      
+    
+    <img style="transition:
+    height 0.3s ease-out 0s,
+    width 0.3s ease-out 0s
+  " data-hidden-classnames="h-0 w-0" width="144" height="144" alt="Clickable image which will reveal the video player: A solid workout starts with a solid base. Invest in premium home gym flooring now. 👇️" class="thumbnail-image-video-toggle thumbnail-image block object-cover m-0" loading="lazy" src="https://external-preview.redd.it/aYASYjUu1HnScVjn1zpu1UxeDziK17K8zdK7sEPvH-4.png?format=pjpg&amp;auto=webp&amp;s=ace586031da0a16a77a353bd08fc6cf4ecb57eef">
+  
+    <image-observer is-promoted promoted-post-type="video" placement="conversation_thumbnail"></image-observer>
+   
+    <button type="button" aria-label="Play video" data-hidden-classnames="hidden" class="thumbnail-playback-action-circle w-[28px] h-[28px] border-0 rounded-[14px] mt-[-14px] ml-[-14px] absolute top-2/4 left-2/4 flex items-center justify-center bg-global-black opacity-50 backdrop-blur-1">
+      <svg rpl class="text-global-white" fill="currentColor" height="16" icon-name="play-fill" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.348 1.5c-1.66 0-3.2 1.32-3.2 3.2v10.6c0 1.87 1.54 3.2 3.2 3.2.57 0 1.16-.16 1.7-.5l8.32-5.3c1.97-1.25 1.97-4.13 0-5.39L8.048 2c-.54-.35-1.13-.5-1.7-.5z"></path>
+    </svg>
+    </button>
+  
+    </div>
+  
+    </div>
+        </div>
+        
+    <div slot="expanded-video-player" data-visible-classnames="max-h-[350px] mb-md" data-hidden-classnames="max-h-0" class="toggleable-video-player-element max-h-0 relative overflow-hidden w-full" style="transition: max-height 0.3s">
+      
+    <button class="toggleable-video-player-close-btn ml-xs mt-xs text-14 text-global-white h-xl w-xl flex justify-center items-center absolute z-2 rounded-full border-0 bg-global-black opacity-50 cursor-pointer">
+      <svg rpl fill="currentColor" height="20" icon-name="close" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.273 10l5.363-5.363a.9.9 0 10-1.273-1.273L10 8.727 4.637 3.364a.9.9 0 10-1.273 1.273L8.727 10l-5.363 5.363a.9.9 0 101.274 1.273L10 11.273l5.363 5.363a.897.897 0 001.274 0 .9.9 0 000-1.273L11.275 10h-.002z"></path>
+    </svg>
+      <faceplate-screen-reader-content>
+        Collapse video player
+      </faceplate-screen-reader-content>
+    </button>
+  
+      
+    <shreddit-aspect-ratio style="
+        --aspect-ratio: 0.5625;
+        --max-height: 350px;
+      ">
+      <shreddit-async-loader bundleName="shreddit_player_loader">
+        <shreddit-player src="https://v.redd.it/x8dp8tul5d6g1/HLSPlaylist.m3u8?f=sd%2ChlsTrimLow%2ChlsSpecOrder2&amp;v=1&amp;a=1771383204%2CMmJkMjNiMDI0M2RkMzE0OGZjZGFiMTJhZGYxNDIzZGE2NTczNzQ2YzUwNjk2NzM4NjhiMWQ5OTQ0NzkzZmMxNw%3D%3D" class="block h-full w-full max-h-[350px] max-w-full" autoplay poster="https://external-preview.redd.it/aYASYjUu1HnScVjn1zpu1UxeDziK17K8zdK7sEPvH-4.png?format=pjpg&amp;auto=webp&amp;s=ace586031da0a16a77a353bd08fc6cf4ecb57eef" preview="https://v.redd.it/x8dp8tul5d6g1/CMAF_96.mp4" post-promoted>
+          <source src="https://v.redd.it/x8dp8tul5d6g1/HLSPlaylist.m3u8?f=sd%2ChlsTrimLow%2ChlsSpecOrder2&amp;v=1&amp;a=1771383204%2CMmJkMjNiMDI0M2RkMzE0OGZjZGFiMTJhZGYxNDIzZGE2NTczNzQ2YzUwNjk2NzM4NjhiMWQ5OTQ0NzkzZmMxNw%3D%3D" type="application/vnd.apple.mpegURL">
+        </shreddit-player>
+      </shreddit-async-loader>
+    </shreddit-aspect-ratio>
+  
+    </div>
+  
+      
+    </shreddit-comments-page-ad>
+  <hr class="border-neutral-border-weak my-sm">
+        <shreddit-comment-tree-ads>
+          
+    <template id="comment-tree-ad_t1_o0arxyu">
+    
+    <shreddit-comments-page-ad id="t3_1nn0sap" post-id="t3_1nn0sap" class="promotedlink relative block" ad-type="display" author-id="t2_5wrtcpqb" outbound-link-url="https://alb.reddit.com/cr?za=cHQzRKvO1xKuFyVQTY21g_MwHZ3G38Gx0QE9m9L-ulqJCdIF0_3vymV9kdeG7DH_CjpV3kNknQAr_tMlqWkmy0dBPO5-cDWCTup06r66oEArVfXViuJullsa4EUzi_pjqXePQK7malJPaEeMrsPKInoE6I-aojtbRKDQJtiBcM-ac_iYrDhHJPU44hlW_bAZ7AhnkIlsjgmKjR3vWzslVJzeY68qaxcUkMM1o2P-Q7PLk7b4GsTLag4w59sly40RfEdW80mkTzGRZBbtaaX2_ijKOD6r09nXA9y-7p1xdYK0I4SnVW7_GADvVSGZVYfxg0CZY7bIPbODPgxGyleg_RoLvNu-7SDYp7D7Or9UJkkFEEUzcQ4HsophHjBBVbI9xI_2Dzf3d4TCTlj6fXgrcKU3NiTCs5YTK_notKJLolkY79VpOOakrUEJuYXwzWpNpSFdTzPznl_F3IGy4lupGhqdAHpg9_Bq4WQGAmrX-AR3BBK1HZ0F8NutgTvz6Y6ZF0KVYKBjo_2f-TagJMOmOC8w8hOQduBfsMW_dJ5uo2WQw3OsslnYr7oUy8rWgTfNlgLjAd0zTCZaKhrfjQYK6kZsHaY8vCCjBE0ZVhYuPIpA1g&amp;zp=OuKVjTtBnzg01be0uEasYGB06Ngi8xw1ODtPc_cOt42VOoW1v8ST-Wt03mhwJBQKIdHXxJ1rJ1bgSTOYZ8QvbM6jA7CDkiIpF1jaCJMEQq4ibNsXb_IXCrtiEbgU_ww9p8k4WOc5zETSg1zD-VWeDlIII424nmjaEGsqMACUJyycT_0WlB5S_LDBbxuLMg-MZ1rAw6N0aNjLHgq-BmLiCGOcLnW3B6eQ3MFNaYxJYssPE5_Wrqz-28QW7emRNQEkMsS7A4jxwEZwpqZ9BBujq-rMR0bqn_87EVLHuLasJfafMOHDzrGq0celtu7Jd9m_OQPejHlvO-GgJQFVG3y5aoo3YEwrSSxUZU0pfCz8-yL781XrI4CHFyQ_tEmsBjsXgv1dEkqxrNWOKkbjTrul6-MiJ9S1I_EtqnE4BpxtRtV9yxhGNbYU_b8AuoSfqB9blO4807Sw6iZI48ahgslboO_Oq_3TvdaLiV6Ponvnth91i2Mh8NvtE3iTT48heRPe1RnglTXL40UudjFiFlTfGjAmY8dK8UDMQoelFZctVCDab5Pcgyh55bqC4PMpPKD7WM9qse0uJ3W3IGxvf0PDqA18YKjxj6aWvxlVk0R6tEBQjsXd-RlqN-SIPMlxoxmKEf-9Oa8dtCqqYV7R-UOGKkjp41L6blApiF7w9Zf-4QuyrWZP40znDJwAmrxlVZmohzN4hXLlnK1NQSnQv2mERC-QtfkFGhrOvb5nxhv4IsdLy2lD15tIWH9_ed_wCPIEdbOwD9Kz4-i7EvYRO4iTLDOj" ad-events="[{&quot;type&quot;:&quot;IMPRESSION&quot;,&quot;url&quot;:&quot;https://alb.reddit.com/i.gif?za=cHQzRKvO1xKuFyVQTY21g_MwHZ3G38Gx0QE9m9L-ulqJCdIF0_3vymV9kdeG7DH_CjpV3kNknQAr_tMlqWkmy0dBPO5-cDWCTup06r66oEArVfXViuJullsa4EUzi_pjqXePQK7malJPaEeMrsPKInoE6I-aojtbRKDQJtiBcM-ac_iYrDhHJPU44hlW_bAZ7AhnkIlsjgmKjR3vWzslVJzeY68qaxcUkMM1o2P-Q7PLk7b4GsTLag4w59sly40RfEdW80mkTzGRZBbtaaX2_ijKOD6r09nXA9y-7p1xdYK0I4SnVW7_GADvVSGZVYfxg0CZY7bIPbODPgxGyleg_RoLvNu-7SDYp7D7Or9UJkkFEEUzcQ4HsophHjBBVbI9xI_2Dzf3d4TCTlj6fXgrcKU3NiTCs5YTK_notKJLolkY79VpOOakrUEJuYXwzWpNpSFdTzPznl_F3IGy4lupGhqdAHpg9_Bq4WQGAmrX-AR3BBK1HZ0F8NutgTvz6Y6ZF0KVYKBjo_2f-TagJMOmOC8w8hOQduBfsMW_dJ5uo2WQw3OsslnYr7oUy8rWgTfNlgLjAd0zTCZaKhrfjQYK6kZsHaY8vCCjBE0ZVhYuPIpA1g&amp;zp=7qL0HQrawE2lgt7wO9KGnsLLkdoTpi5ffYE2GfE_zuxyX2Iy80Tgc11oX33IM1FCm4KFr7S5BU8iNyqUdYIlA1UgHXZgPYpqMljObSfzIbmjs8yQhYaPottp-x9LiQ&quot;,&quot;encryptedTrackingId&quot;:null},{&quot;type&quot;:&quot;VIDEO_VIEWABLE_IMPRESSION&quot;,&quot;url&quot;:&quot;https://alb.reddit.com/i.gif?za=cHQzRKvO1xKuFyVQTY21g_MwHZ3G38Gx0QE9m9L-ulqJCdIF0_3vymV9kdeG7DH_CjpV3kNknQAr_tMlqWkmy0dBPO5-cDWCTup06r66oEArVfXViuJullsa4EUzi_pjqXePQK7malJPaEeMrsPKInoE6I-aojtbRKDQJtiBcM-ac_iYrDhHJPU44hlW_bAZ7AhnkIlsjgmKjR3vWzslVJzeY68qaxcUkMM1o2P-Q7PLk7b4GsTLag4w59sly40RfEdW80mkTzGRZBbtaaX2_ijKOD6r09nXA9y-7p1xdYK0I4SnVW7_GADvVSGZVYfxg0CZY7bIPbODPgxGyleg_RoLvNu-7SDYp7D7Or9UJkkFEEUzcQ4HsophHjBBVbI9xI_2Dzf3d4TCTlj6fXgrcKU3NiTCs5YTK_notKJLolkY79VpOOakrUEJuYXwzWpNpSFdTzPznl_F3IGy4lupGhqdAHpg9_Bq4WQGAmrX-AR3BBK1HZ0F8NutgTvz6Y6ZF0KVYKBjo_2f-TagJMOmOC8w8hOQduBfsMW_dJ5uo2WQw3OsslnYr7oUy8rWgTfNlgLjAd0zTCZaKhrfjQYK6kZsHaY8vCCjBE0ZVhYuPIpA1g&amp;zp=q4WDO8FFg8Vzze2lqwfHIQVHGinWBgxClJsSoDTC1MEh7ZV0O-jmf_plRjFKDxLYx9fv5_bWGRgpOYrkjVtZTZA1fXVX2I-SYWUtp4VNU9wyRpxNRG3dspHz95cF5NPpS-bmwkJDKdGepCXqdtoUqNiDQCu43GdorHnkJpIpbA9di0TVItktgp2SFvAqJwO6&quot;,&quot;encryptedTrackingId&quot;:null},{&quot;type&quot;:&quot;VIDEO_VIEWABLE_WATCHED_6_SECS&quot;,&quot;url&quot;:&quot;https://alb.reddit.com/i.gif?za=cHQzRKvO1xKuFyVQTY21g_MwHZ3G38Gx0QE9m9L-ulqJCdIF0_3vymV9kdeG7DH_CjpV3kNknQAr_tMlqWkmy0dBPO5-cDWCTup06r66oEArVfXViuJullsa4EUzi_pjqXePQK7malJPaEeMrsPKInoE6I-aojtbRKDQJtiBcM-ac_iYrDhHJPU44hlW_bAZ7AhnkIlsjgmKjR3vWzslVJzeY68qaxcUkMM1o2P-Q7PLk7b4GsTLag4w59sly40RfEdW80mkTzGRZBbtaaX2_ijKOD6r09nXA9y-7p1xdYK0I4SnVW7_GADvVSGZVYfxg0CZY7bIPbODPgxGyleg_RoLvNu-7SDYp7D7Or9UJkkFEEUzcQ4HsophHjBBVbI9xI_2Dzf3d4TCTlj6fXgrcKU3NiTCs5YTK_notKJLolkY79VpOOakrUEJuYXwzWpNpSFdTzPznl_F3IGy4lupGhqdAHpg9_Bq4WQGAmrX-AR3BBK1HZ0F8NutgTvz6Y6ZF0KVYKBjo_2f-TagJMOmOC8w8hOQduBfsMW_dJ5uo2WQw3OsslnYr7oUy8rWgTfNlgLjAd0zTCZaKhrfjQYK6kZsHaY8vCCjBE0ZVhYuPIpA1g&amp;zp=YTaGPN5yQWeexAs1nBtJDdvHduIu8WAJW9PeMf7a3_8ArsQ1U3cCU9NT1YcWslFmMQ-iaeOcdJjAPjxz0bynAHZbjUgJMCBFjey29HmkcKalQBqL_QS4CAcqTxnbW3niDc0nsg7J4-sj0DGCgWXGuCZ-swCro7S5sSLVK5c0Vop3DHtWXkBBy7-H83rstibS&quot;,&quot;encryptedTrackingId&quot;:null},{&quot;type&quot;:&quot;VIDEO_VIEWABLE_WATCHED_15_SECS&quot;,&quot;url&quot;:&quot;https://alb.reddit.com/i.gif?za=cHQzRKvO1xKuFyVQTY21g_MwHZ3G38Gx0QE9m9L-ulqJCdIF0_3vymV9kdeG7DH_CjpV3kNknQAr_tMlqWkmy0dBPO5-cDWCTup06r66oEArVfXViuJullsa4EUzi_pjqXePQK7malJPaEeMrsPKInoE6I-aojtbRKDQJtiBcM-ac_iYrDhHJPU44hlW_bAZ7AhnkIlsjgmKjR3vWzslVJzeY68qaxcUkMM1o2P-Q7PLk7b4GsTLag4w59sly40RfEdW80mkTzGRZBbtaaX2_ijKOD6r09nXA9y-7p1xdYK0I4SnVW7_GADvVSGZVYfxg0CZY7bIPbODPgxGyleg_RoLvNu-7SDYp7D7Or9UJkkFEEUzcQ4HsophHjBBVbI9xI_2Dzf3d4TCTlj6fXgrcKU3NiTCs5YTK_notKJLolkY79VpOOakrUEJuYXwzWpNpSFdTzPznl_F3IGy4lupGhqdAHpg9_Bq4WQGAmrX-AR3BBK1HZ0F8NutgTvz6Y6ZF0KVYKBjo_2f-TagJMOmOC8w8hOQduBfsMW_dJ5uo2WQw3OsslnYr7oUy8rWgTfNlgLjAd0zTCZaKhrfjQYK6kZsHaY8vCCjBE0ZVhYuPIpA1g&amp;zp=usT7GbtJR6o8U6VT8HSCBHpY_XvgP_bYsU8IiFDbbuskRzSVhMWyWjbHirEorH0h54awF26wVlrH9oLnRRHIGDRb4JajxEFcfZ_vfxmgsmWRA3SnbE8PMTMSwkHAtdt4KOtEoj-bCveE3c_5rOzuIYQWblBx9eSbwdnKxo5A6AfHXks_9X_3ewPFZwoyhPLY&quot;,&quot;encryptedTrackingId&quot;:null},{&quot;type&quot;:&quot;VIDEO_PLAYED_EXPANDED&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;4L-SSY5oGNNnliZke5V6UaTuo32W1pWiox2R4N5ntiAvxpubMBFuC85qketUD8cJRHKlWz5AP70nCCUxIGftaPZ5sJSPsoBSl1cmQ2pS0buZA8rXhXergmcrlsWZgZulJJMLRf13p1fzFBlQgTdS2E1tSSCAMU1DkEpHX1_ZbLa840BuZWxwyo9wf33Sg0Jn&quot;},{&quot;type&quot;:&quot;DOWNVOTE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;P82BO2f5iuEwU3x5idU7I92UPAfXzS-gcYbMYQjSpfudNNGuZTGmbyu6V4XkQBD4rV4kUPridi_o9FQTxzpmCkVdZEd4THdPCb8BBiXfLUL0squtZwJu1eQfRZ3EwyL72SD02zbLUTdbA_ezmlYzbOU1Jzuj_TylGbLJGMjIvc4ssXohVToFkg2N_RicH3g&quot;},{&quot;type&quot;:&quot;UNLOAD&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;L1wRTyOg3oiTMvd3KfRbxtkohiMqs-JGAJDLHRRdycDDXqTWQtTsSEl8UOht2vITH-ZW0r26PZ62FCqsaehIq7vlYJG1dDJF5NUEV_VPXhXp8sGapfJouwDiJA2ii6MR0-1Ws7Xlh6Li8SQloPwG_sRDNLCJJBF51eF-2zWQkNZbRh1oKYXB9Lh03C4i204&quot;},{&quot;type&quot;:&quot;UPVOTE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;opXWGI9EmUPUWKiMCJ-0gEnVBSribfRIrpuOj73yPpwoM5drljUrbcwzbNWEvWzWbBKWMAD77sZLFQN_Dl7E56JsSoq6EXbxylwN_1h3IlLYJ7NyQXXY6eSo4gFM9xIabMXLcnO3F6iPWpRy10gWhHy7Cxh9e5LOTz5BJMSh2VbGy22qm4bV4uqthPzw7Fg&quot;},{&quot;type&quot;:&quot;VENDOR_FULLY_IN_VIEW_5_SECS&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;xmOelb6a_xT1v9KT3o8DoU6-gd27XUvIPPmSL9tTP4VvUN809g3BfPNipe43CK4C3_5AObtY7F48l4ob6zOiNTeeuaAgayy0HIHf2_bhVuxRl38wRUxynbiVXXBcmKYk9IlWXy9nB1x56V4Tdm6UglOAP0yqoKkPM7k1fLRasX2sLuoRQFTiF1HiE0RANEU&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_25&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;hHSEEI4UQ3mrF0UwTHleIYUDKwLeijKNyDyuOYWmu-jJEhYoDAtxQI_azJowBDcZd2psOUZlmzccv4wnQ4pKWLiVbVwVJGAalMDNFhHatmEArQCXVKyGboBQBft0LkVdwBkxmKi-v9ivCY2JvvfWweMBYDukdRkBe6AfCgaz58OCy5hvDTx6Mfy3SYoiPJ39&quot;},{&quot;type&quot;:&quot;VIEWABLE_IMPRESSION&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;yRsNzbn_S9wGsZ2GzTTZxrQiab-c3u-QvzgA4XQUCBkg6i3WdUMjvsqe5xqe--zPYOJw-1b6KBQTXxIoRPGM1a6kq_JAaoOKLKM7T-3s68IwDyEvkjAfKYSf5edH-PESx6syBP2b_iGaJETkvzXAipZlFGQzB5wTB5opAXNXXUpdL9FXFq0RYJhbXwZExOg&quot;},{&quot;type&quot;:&quot;VENDOR_FULLY_IN_VIEW_15_SECS&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;XYm69TZPMYnxfRArHaapGZ8mxbptrks4tvCsMqIGtMk7Ub2CL7dtKu8MjlAhABEv8iAD-v_L03Lpr41bHcWmlfRPM08NyFMNtnyfXZuBOgE96iNkIduCjCq9PgsnBKfmjrYQGyafPknGsrybrlwyzByzeOZXHfVDD-XbTD2Hx08LiJv-6pBwya80U22OJcM&quot;},{&quot;type&quot;:&quot;VIDEO_FULLY_VIEWABLE_IMPRESSION&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;mOVPOrvNQwFU28egTOtAnKylMN4kM6PLsBcW6Vmp8EWaFb5AttISRZN2lIcP7vSkZZS5UGBCRDcXFDmQcViOP3Bp6RaEWQ8mQVtYbLqnIOPhajo0DYh26jE9pshl8HU3igrS7lSbiTiw19gRg6cuKdUPfFg0qftrSub3855hMsP_3vmtN3OICG8RQEKvOX7B&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_50&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;gAeD5ATVlm7FDX7PQBZOyRq1alKsPibHZUF3Fj4w4xFkHsTzN-UMiCj3qNDIKQHZW7zX8FOuUBTwTCvXDZ04LqHteu4ACqIoFavQahr3B_B3R0ji5YqNuiZPxIJB30L8xslHSX5UfM2Ltfgj1K564bkb0U-_AQDIQiYFKswsKMWiyqH_Clj8D2c9L46nXHAW&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_95&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;DPrKwW6dUR8YvMqwU0ra6h4gkdYWQzulqX3mok8kzsyapFCbJJp7xYhaYSU1OIxk9lY-yj05hSKV1IZK9NrmeJQjJo40Hpt93CVxzYjraweQV9BGoAJS4pjSrc3sgIDEjHfJN8IZMlv6Zv86H9qlOBGImO9JmTHoZlBFDfftnHZVg_Rw5mwovWPc8PTBzOjg&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_3_SECS&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;1Hz4TWZ4Mnuzc9sICfQvIxpVwkhf-CWDVqW8XnQyqAFD2gZYUaLJuAT5EBX3y8UZL9GUl44T_9UsRTpOS0BbByBYjDsj-J1z-0arT6dQKYu8wtYvQx--nu8tXUkyjokA0JMLh_agBL1y1yyjkalCkDVvivFYCM69TN7h97Zky__tjWcVYICv6VleOtFjlrvq&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_10_SECS&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;iTid9ayd7ZMdMRQ9I1vPRsZq7BXIkhbRY2tFX1SzBpizKnS0EERCtxU9kCgNP3e61qWUaDdsckpRzq-QCxySs5lV53lBdP8pRRUYYAMBNroSe_x55jNu_VuQCkSNnl1hqD7jtL_58funbrSAKObObklnUQOpFnUSN5Hze0qQqPfFMjS2BfYQ69zVaJsmmK8w&quot;},{&quot;type&quot;:&quot;COMMENT_DOWNVOTE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;Jy_iV3t_7eQDXelu1cog6I-AYDrcZl1fcOxTR4GRC0IBz6NT2esjq_IYyyNv5FoCDAKhifwufcSI-IbaKRIcJVtIImZeMwSe8tZ54AUIRoYr1OgqFWCZOaOalBOUPAW2dTjbL83rJ3CutDGhC8GeeoSQqratGlz4bPzuWJ9JWJSa0IdZ3ayG1x9KTXZAB18&quot;},{&quot;type&quot;:&quot;COMMENTS_VIEW&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;qIX_pTg0Z0Q79OqpPXM88TqcX1z3craG4KmGBb-gXADun9GqzBFPx94uWSQVu3xWV_PwU5QXCwcndnjrQ14TYzWPp3GEjdmsu-YtApIjos62kufgl6o5zeZkjdXi6WzpnO2JMXXRCaUZuT_DCoEmhJ_NJXe1KjQXJ0Vt70iO5hDfFFma_UN1MRXtxYtAWzU&quot;},{&quot;type&quot;:&quot;VIDEO_VENDOR_FULLY_VIEWABLE_50&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;S8IwCUq74yjtyYDNSNy9AQx1edTVhsdZJlUTRFMPppLY1lqPjhnFJ1gA3cDnsueKD_2IHKOC-gzc6JJBP-ne_DzCPZy1-uRdidZ-FRGjymDGpBHCeMWizmLdY5Ss8deWglRFSx0l3KjUgow15ZDcJOjkzdH8i6UAJX_OsQYdCl2VQRSKvuL7DLHV2FmGCgyx&quot;},{&quot;type&quot;:&quot;VIDEO_GROUP_M_VIEWABLE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;UoSegp67pILBXI9tC7CkSJ3zqdrzQ-PvC80V3Ip0lp9Y059tneXwcvNiCu-oWsKRhrUH9T0PHxskantgdClPJBCJiP_efLPOPaAPoP72kHTffxF1tUGW4AR6QX0xIYanEioWtHpC-kYQgNJPNNJvORXQ_4-4v8Ub_Kdrs-r3lEQ0jCRC49Br81wD0HQIdVUL&quot;},{&quot;type&quot;:&quot;VIDEO_STARTED&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;2rKhfS7qNMdLBQ58qn9gJ-3mlctz_bWE79WuBGnc0IGev3wdosaeUrO2IuAHlF8RTDCNOEr3VRUMP2czEkJrZD_DDgMJM2pfDPX3GUsRblgEgif4ez3oclvq24Gw_HNIrMQJIO0UHINmHhnOlDx7Q-_m5ECWEon3p0XqP6Ugsd-AfE29PYDvwMXs9VxQAEgM&quot;},{&quot;type&quot;:&quot;GROUP_M_VIEWABLE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;zXBrWgnoe_OLIQMfQ03G0Q3AW7fizO1i6I4hKb22ATtSpg70CO3FOWRbmTOciXDuuiVx0EjujqGkRHasx6VfCAvyKkCAgcpOco8uVYokIGgjTwiR6JrygZ2CYTS4B1z82E57JNXjztThkI8Gq47T5Uq5d9mJnqpbfUbpttbGW8nrj0zMucHW1XToIRIzf84&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_75&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;nC9ggzhslLH9pGTjSkqLPAq-vhEwobhhFOQoeDxzl2olLN_bFiJkbKWE2w5mpfWypkGuUoKdlvkis8QfNmcdU69EQsr8j-NsSe26ILxlU5sF3K_vbdJEP2_gMX_Iry5kQ5wyzYKXPTMUq6Qd2Jzd6ZGkoEt8xRiYcvcncMcNxzCvBkYud2pExeMUkJG8HCij&quot;},{&quot;type&quot;:&quot;ENGAGED_CLICK&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;B0L2dN1woZkytc6BxFQrUZPLlBcujmcZBLf5-WzpLrsokW3y4PePaiWne5qYN6L81j4yGplAzz-jYznnKimL9WL5FVm4ogbo3BYvRv29k-FXUb7d7SWII9bTGdYDnznR8z0ry90iBpmSocu01ACG2f_Wo4C2EcWxmvcnej-_AkXoj8DlkC99ZnrhMWRzHjc&quot;},{&quot;type&quot;:&quot;VIDEO_PLAYED_WITH_SOUND&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;I8GlGoER2LFxZ-J3OOru06pHOJvLhCVc3P3Sk47_yh8sm4KxLoUCYozhpELgYUzX4h3ORwCNaQ_GrfloKdUpm2nVY1nukVSHa-wkY7m2vPa1Z9ugnMXOeOx3NffJ8L0sSPZ6P8D2Ek5zoP-17QNtT9p_BcwmqCKUTHBwxV2DyWgRCqUUucEiEYDoDvVFK6Ie&quot;},{&quot;type&quot;:&quot;COMMENT_UPVOTE&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;zYjtCsGbVkjN1-Tdo9dU1E0oSKbQWdPxn_sFRsK2XdHgEsd4pKVDUeTyLDOFKrwwhBVdmrSG8mgCxpIrh9ukxFpoU87Lb1_lieJoHHbq25eqOLwrsKyV9ysTs0TGw8rtWmYO4YEF2S70yCBPUyioHKRI65_6i-3THY2ERCxjBkehXfs0uVVCtUXZWXaCAas&quot;},{&quot;type&quot;:&quot;COMMENT&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;5McXuv-M7gLMdczMiBNYwGuBCn5ant0NUYira96F4DrvJUGJf3dn6XVJtRDUerVXRZcLtME9xspc8E2ixArnSjxqFM2AeXKpfvgTt8i-C_YzEq9DvIv7xcOnSAsgg0nrSOAHA1geHM_E12d9HnJbxTC_asui5NnAyiuvBOpyMQM2RrKtlmtAc4Xw8CbfoyA&quot;},{&quot;type&quot;:&quot;MRC_VIDEO_VIEWABLE_IMPRESSION&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;qxBUJM5Wwc11-DOUg_hLqAAJdD2zNSD3as2ICtbBuj9EXufc4bpYom4D-2PKabjrq7aG4ECAgGIHR5nMv-FcWZ0PQL5FUSFFVmMMeVs8AHgsRY8ewrXqoJ6UrluyvGTdB0hCGzxD69S_UmhgmA5n_8nQOizRxMERLqLHmM26FOwNXP0MS7soE9B3iaEToIWi&quot;},{&quot;type&quot;:&quot;VENDOR_FULLY_IN_VIEW&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;cueP9zfmhCrJ0CABm4KcCgfDPMgqXd3TxIZm1ldHBWTLuFpCurKR6kAB7Q1Zc7oSBI8uzFBNUPJlcMOaqAge-4GFf8K5A3pBoUpQXTV6PRQq7IOfmkHkb2kUO3kfQ6-8du4ekHrLXEPpRiAtH-ili6jJufc-Egv1qYB6NMkSldzoPx_KTW9eeULNDxGgvjA&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_5_SECS&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;VEiZMvL4GG-ZVVCIivLcMbEK6Up5qsJEfyx9b1XqCAaZQIKbNQrFTN1-r2Mz5GhX5yreRdl-LxJ6Y24JZqaRQYzP1khhRiDW69aoBot_X-6yP9EQTTw0H3XRSMTYIK7cKhRYgcEuHfBJRb4fY3_dQz9GAm4ueHXL99sNfvv-HmEHh7jB1ra668UyL8RCN5DJ&quot;},{&quot;type&quot;:&quot;VIDEO_WATCHED_100&quot;,&quot;url&quot;:null,&quot;encryptedTrackingId&quot;:&quot;XM8t-UQkw_Tngg49Gmxkn68w4-Mnuvf2oL-ZllOnWESon_iHsksOen1DLTTt7LHK7xD1d110UHrh7Q1uZII3tR5ccSG87cd3gkRkmMIK_f1faWa_R7lSEBDpRnPJBjcV5D6tU_4KyWdMjkm4WiYHNjAHZLryvWFrrEDC9wo02tyMbSdPz-E_l3SVzGo16twq&quot;},{&quot;type&quot;:&quot;CLICK&quot;,&quot;url&quot;:&quot;https://alb.reddit.com/cr?za=cHQzRKvO1xKuFyVQTY21g_MwHZ3G38Gx0QE9m9L-ulqJCdIF0_3vymV9kdeG7DH_CjpV3kNknQAr_tMlqWkmy0dBPO5-cDWCTup06r66oEArVfXViuJullsa4EUzi_pjqXePQK7malJPaEeMrsPKInoE6I-aojtbRKDQJtiBcM-ac_iYrDhHJPU44hlW_bAZ7AhnkIlsjgmKjR3vWzslVJzeY68qaxcUkMM1o2P-Q7PLk7b4GsTLag4w59sly40RfEdW80mkTzGRZBbtaaX2_ijKOD6r09nXA9y-7p1xdYK0I4SnVW7_GADvVSGZVYfxg0CZY7bIPbODPgxGyleg_RoLvNu-7SDYp7D7Or9UJkkFEEUzcQ4HsophHjBBVbI9xI_2Dzf3d4TCTlj6fXgrcKU3NiTCs5YTK_notKJLolkY79VpOOakrUEJuYXwzWpNpSFdTzPznl_F3IGy4lupGhqdAHpg9_Bq4WQGAmrX-AR3BBK1HZ0F8NutgTvz6Y6ZF0KVYKBjo_2f-TagJMOmOC8w8hOQduBfsMW_dJ5uo2WQw3OsslnYr7oUy8rWgTfNlgLjAd0zTCZaKhrfjQYK6kZsHaY8vCCjBE0ZVhYuPIpA1g&amp;zp=OuKVjTtBnzg01be0uEasYGB06Ngi8xw1ODtPc_cOt42VOoW1v8ST-Wt03mhwJBQKIdHXxJ1rJ1bgSTOYZ8QvbM6jA7CDkiIpF1jaCJMEQq4ibNsXb_IXCrtiEbgU_ww9p8k4WOc5zETSg1zD-VWeDlIII424nmjaEGsqMACUJyycT_0WlB5S_LDBbxuLMg-MZ1rAw6N0aNjLHgq-BmLiCGOcLnW3B6eQ3MFNaYxJYssPE5_Wrqz-28QW7emRNQEkMsS7A4jxwEZwpqZ9BBujq-rMR0bqn_87EVLHuLasJfafMOHDzrGq0celtu7Jd9m_OQPejHlvO-GgJQFVG3y5aoo3YEwrSSxUZU0pfCz8-yL781XrI4CHFyQ_tEmsBjsXgv1dEkqxrNWOKkbjTrul6-MiJ9S1I_EtqnE4BpxtRtV9yxhGNbYU_b8AuoSfqB9blO4807Sw6iZI48ahgslboO_Oq_3TvdaLiV6Ponvnth91i2Mh8NvtE3iTT48heRPe1RnglTXL40UudjFiFlTfGjAmY8dK8UDMQoelFZctVCDab5Pcgyh55bqC4PMpPKD7WM9qse0uJ3W3IGxvf0PDqA18YKjxj6aWvxlVk0R6tEBQjsXd-RlqN-SIPMlxoxmKEf-9Oa8dtCqqYV7R-UOGKkjp41L6blApiF7w9Zf-4QuyrWZP40znDJwAmrxlVZmohzN4hXLlnK1NQSnQv2mERC-QtfkFGhrOvb5nxhv4IsdLy2lD15tIWH9_ed_wCPIEdbOwD9Kz4-i7EvYRO4iTLDOj&quot;,&quot;encryptedTrackingId&quot;:null}]" impression-id="5893905752845821460" subreddit-id="t5_2qh4i" country-code="FR" title="The everything app, for work. Get everyone working in a single platform designed to manage any type of work." domain="clickup.com" is-hide-ad-enabled placement="comment_trees" campaign-id="2331607938614432101" encrypted-tracking-payload="cHQzRKvO1xKuFyVQTY21g_MwHZ3G38Gx0QE9m9L-ulqJCdIF0_3vymV9kdeG7DH_CjpV3kNknQAr_tMlqWkmy0dBPO5-cDWCTup06r66oEArVfXViuJullsa4EUzi_pjqXePQK7malJPaEeMrsPKInoE6I-aojtbRKDQJtiBcM-ac_iYrDhHJPU44hlW_bAZ7AhnkIlsjgmKjR3vWzslVJzeY68qaxcUkMM1o2P-Q7PLk7b4GsTLag4w59sly40RfEdW80mkTzGRZBbtaaX2_ijKOD6r09nXA9y-7p1xdYK0I4SnVW7_GADvVSGZVYfxg0CZY7bIPbODPgxGyleg_RoLvNu-7SDYp7D7Or9UJkkFEEUzcQ4HsophHjBBVbI9xI_2Dzf3d4TCTlj6fXgrcKU3NiTCs5YTK_notKJLolkY79VpOOakrUEJuYXwzWpNpSFdTzPznl_F3IGy4lupGhqdAHpg9_Bq4WQGAmrX-AR3BBK1HZ0F8NutgTvz6Y6ZF0KVYKBjo_2f-TagJMOmOC8w8hOQduBfsMW_dJ5uo2WQw3OsslnYr7oUy8rWgTfNlgLjAd0zTCZaKhrfjQYK6kZsHaY8vCCjBE0ZVhYuPIpA1g" ad-transparency-encoded-data="GWgSQnVzaW5lc3MgJiBGaW5hbmNlB1JlYWRpbmcNRW50ZXJ0YWlubWVudA5BbmltYWxzICYgUGV0cxBOZXdzICYgRWR1Y2F0aW9uFkZhbWlseSAmIFJlbGF0aW9uc2hpcHMsGAZGcmFuY2U4AAAZFRQA" should-track-position ads-correlation-id="b551e514-be53-43e0-a888-86a82a5923e4">
+       
+    <shreddit-dynamic-ad-link slot="full-comments-page-ad-link" class="absolute inset-0 ml-[38px]" anchor-style-class="w-100 block h-100" target="_blank" post-id="t3_1nn0sap" impression-id="5893905752845821460" click-location="background" aria-label="Advertisement: The everything app, for work. Get everyone working in a single platform designed to manage any type of work.">
+    </shreddit-dynamic-ad-link>
+   
+    <div slot="credit-bar" class="mb-sm flex justify-between items-center">
+      <div class="promoted-name-container flex flex-1 items-center gap-[6px] overflow-hidden text-12 pr-xs p-[4px] -m-[4px] relative h-lg">
+        
+      
+    <click-location-tracker click-location="username" class="min-w-0 nd:visible">
+      <a rpl class="advertiser-name flex items-center relative h-lg text-neutral-content a cursor-pointer
+  
+  
+  font-semibold
+  no-visited
+  no-underline hover:no-underline
+  " href="/user/ClickUp_App/"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] me-[6px]" rpl avatar>
+    
+    <span class="inline-flex snoovatar relative  fp-avatar-container rounded-full w-[1.5rem] h-[1.5rem] min-w-[1.5rem] min-h-[1.5rem] isolate box-content">  <span style="" class="rounded-full absolute h-full w-full inline-flex justify-center ">
+    <span class="relative rounded-full overflow-hidden  inline-flex w-full h-full box-border [&amp;&gt;:first-child]:rounded-[inherit] overflow-hidden"><img loading="lazy" src="https://styles.redditmedia.com/t5_396gli/styles/profileIcon_7yxkkbt6oacg1.jpg?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=fb691ab1f2df029a49fafcc705452a5d373b70b5" alt="u/ClickUp_App avatar" data-testid="promoted-credit-bar-avatar"> 
+          </span>
+  </span>
+    
+  </span></span>
+  <span class="truncate">u/ClickUp_App</span></a>
+    </click-location-tracker>
+  
+     
+        <span class="inline-block my-0 text-neutral-content-weak created-separator">•</span>
+        
+          <click-location-tracker click-location="promoted_label" class="h-100">
+            <a rpl class="h-100 flex items-center a cursor-pointer
+  
+  
+  
+  
+  no-underline hover:no-underline
+  " href="/user/ClickUp_App/">
+    <span style="flex-shrink:9999;" class="promoted-label text-neutral-content-weak font-normal truncate">Promoted</span>
+  </a>
+          </click-location-tracker>
+         
+    <shreddit-dynamic-ad-link target="_blank" post-id="t3_1nn0sap" click-location="credit_bar_whitespace" anchor-style-class="absolute top-0 left-0 w-100 h-100" class="h-100 flex-1 relative nd:visible" disable-keyboard-nav="true" impression-id="5893905752845821460"></shreddit-dynamic-ad-link>
+  
+      </div>
+      
+    <div class="relative min-w-[28px] ">
+      <shreddit-async-loader bundleName="shreddit_post_overflow_menu">
+        <shreddit-post-overflow-menu class="nd:hidden" is-desktop-viewport is-ad ad-user-targeting-info="{&quot;adTransparencyEncodedData&quot;:&quot;GWgSQnVzaW5lc3MgJiBGaW5hbmNlB1JlYWRpbmcNRW50ZXJ0YWlubWVudA5BbmltYWxzICYgUGV0cxBOZXdzICYgRWR1Y2F0aW9uFkZhbWlseSAmIFJlbGF0aW9uc2hpcHMsGAZGcmFuY2U4AAAZFRQA&quot;,&quot;gender&quot;:null,&quot;interests&quot;:[&quot;Business &amp; Finance&quot;,&quot;Reading&quot;,&quot;Entertainment&quot;,&quot;Animals &amp; Pets&quot;,&quot;News &amp; Education&quot;,&quot;Family &amp; Relationships&quot;],&quot;locations&quot;:[&quot;France&quot;],&quot;targetingCriteria&quot;:[&quot;DEVICE&quot;]}" is-pdp-ad is-reportable-ad post-id="t3_1nn0sap" impression-id="5893905752845821460" author-name="ClickUp_App" author-id="t2_5wrtcpqb" is-hide-ad-enabled placement="comment_trees" premium-ad-overflow-variant="enabled">
+          
+        </shreddit-post-overflow-menu>
+      </shreddit-async-loader>
+    </div>
+  
+    </div>
+   
+        <div slot="ad-format-content" class="ml-[30px]">
+          <div class="flex flex-row mb-md">
+      <div class="flex-1 flex flex-col overflow-hidden">
+        <div class="mb-sm">
+    <shreddit-dynamic-ad-link target="_blank" post-id="t3_1nn0sap" click-location="title" anchor-style-class="line-clamp-5 relative" slot="headline" class="title relative" impression-id="5893905752845821460">The everything app, for work. Get everyone working in a single platform designed to manage any type of work.</shreddit-dynamic-ad-link>
+  </div>
+        
+    <div class="ad-link-bar isolate relative">
+      
+    <shreddit-dynamic-ad-link target="_blank" post-id="t3_1nn0sap" click-location="cta_whitespace" anchor-style-class="z-1 absolute w-100 h-100" class="z-1 absolute top-0 left-0 w-100 h-100" disable-keyboard-nav="true" impression-id="5893905752845821460"></shreddit-dynamic-ad-link>
+  
+      <div class="h-xl flex items-center justify-between">
+         <shreddit-dynamic-ad-link class="ad-link-bar__cta z-2" target="_blank" post-id="t3_1nn0sap" render-as-button impression-id="5893905752845821460" click-location="cta_button" button-props="{&quot;size&quot;:&quot;sm&quot;,&quot;appearance&quot;:&quot;bordered&quot;}">Learn More</shreddit-dynamic-ad-link> <div class="flex flex-col truncate ml-sm">
+          
+    <shreddit-dynamic-ad-link class="ad-link-bar__domain z-2 text-12 truncate text-neutral-content-weak hover:underline" target="_blank" post-id="t3_1nn0sap" impression-id="5893905752845821460" click-location="cta_destination_url">
+      clickup.com
+    </shreddit-dynamic-ad-link>
+    
+  
+        </div> 
+      </div>
+    </div>
+   
+      </div>
+      
+    <shreddit-dynamic-ad-link target="_blank" post-id="t3_1nn0sap" click-location="media" impression-id="5893905752845821460">
+      <div class="ml-md rounded-2 cursor-pointer relative overflow-hidden thumbnail-video-toggle-container bg-secondary-background" style="width: 228.42172523961662px;">
+    
+    <img width="228.42172523961662" height="144" alt="Thumbnail image: The everything app, for work. Get everyone working in a single platform designed to manage any type of work." class="block object-cover m-0" loading="lazy" src="https://preview.redd.it/zzp1fzuuhkqf1.jpeg?auto=webp&amp;s=8c2ac89b66385caf7ce662bd86693d76c08ecfea">
+  
+    <image-observer is-promoted promoted-post-type="image" placement="conversation_thumbnail"></image-observer>
+   </div>
+    </shreddit-dynamic-ad-link>
+  
+    </div>
+        </div>
+      
+    </shreddit-comments-page-ad>
+  
+    </template>
+  
+        </shreddit-comment-tree-ads>
+      
+      <shreddit-comment-tree-stats total-comments="36"> </shreddit-comment-tree-stats>
+    
+    <shreddit-async-loader bundleName="comment_body_header">
+      <comment-body-header class="block px-md xs:px-0 bg-[color:var(--shreddit-content-background)] text-tone-1  mt-sm">
+        
+  
+      </comment-body-header>
+    </shreddit-async-loader>
+  <div id="comment-tree-content-anchor-1qg9awi"><comment-url-fragment-manager></comment-url-fragment-manager> 
+    <faceplate-batch target="#comment-tree" size="5"> 
+    <shreddit-comment-tree id="comment-tree" post-id="t3_1qg9awi" totalComments="36" ui="desktop" class="">
+      <faceplate-perfmark name="TTCP"><ac-publish topic="time_to_comment_paint" trigger="init"></ac-publish></faceplate-perfmark>
+      <div class="empty:hidden" id="next-comment"></div>
+      
+    
+    <shreddit-comment-tree-ad comment-id="t1_o0ajgcg" class="-mt-md" should-track-position></shreddit-comment-tree-ad>
+    <shreddit-comment author="AB-girl-25" thingId="t1_o0ajgcg" depth="0" permalink="/r/books/comments/1qg9awi/comment/o0ajgcg/" reload-url="/svc/shreddit/comment/t1_o0ajgcg?depth=0&amp;subredditName=books" score="22" postId="t3_1qg9awi" content-type="text" previous-actions-feature ariaLabel="Comment from AB-girl-25 13 hours ago" class="relative" is-pdp-seeker-m1 is-pdp-seeker-m1-lo record-ttci>
+      <div slot="commentAvatar"><div class="flex flex-row items-center">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author_avatar" class="flex items-center">
+      <a href="/user/AB-girl-25/" class="flex items-center " aria-label="AB-girl-25&#39;s profile --- avatar"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] " rpl avatar>
+    
+    <span class="inline-flex snoovatar relative  fp-avatar-container rounded-full w-[1.5rem] h-[1.5rem] min-w-[1.5rem] min-h-[1.5rem] isolate box-content"> 
+    <span class="absolute start-0 end-0 bottom-0 mx-auto inline-flex shrink-0 justify-center box-border h-full w-full">
+       <span style="" class="rounded-full absolute h-full w-full inline-flex justify-center bg-[image:var(--color-avatar-gradient)]">
+    
+  </span>
+    <svg viewBox="0 0 121 122" xmlns="http://www.w3.org/2000/svg" class="overflow-hidden absolute bottom-0 w-[1.5rem] h-[1.5rem]">
+      <defs>
+        <clipPath id="1e45839a9b311">
+          <path d="M0 0V79L28.1628 105.5C35.013 115.465 46.4934 122 59.5 122C72.5066 122 83.987 115.465 90.8372 105.5L120.5 79V0H0Z"></path>
+        </clipPath>
+      </defs>
+      <image href="https://preview.redd.it/snoovatar/avatars/93db982b-7751-4427-81d0-42be8f9b277d-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=ee57eabbb28e3c6c0f2d82fa0a293d098cdf943b" alt="u/AB-girl-25 avatar" clip-path="url(#1e45839a9b311)" height="100%" width="100%"></image>
+    </svg>
+    </span>
+  </span></span></a>
+    </faceplate-tracker>
+  
+    </div></div>
+      <div slot="commentMeta" class="ms-xs py-[2px] min-w-0">
+        
+      <div class="flex items-center pe-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap items-center">
+            
+     <div class="flex flex-row items-center overflow-hidden author-name-meta">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author" class="contents">
+       <a class="truncate font-bold text-neutral-content-strong text-12 focus-visible:-outline-offset-1 hover:underline" href="/user/AB-girl-25/" aria-label="AB-girl-25&#39;s profile">
+      AB-girl-25
+    </a>
+    </faceplate-tracker>
+  
+    </div><span class="inline-flex ms-2xs"><span class="inline-flex items-center"></span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak" aria-hidden="true">•</span>
+ <a href="/r/books/comments/1qg9awi/comment/o0ajgcg/" class="text-neutral-content-weak text-12 hover:no-underline focus-visible:-outline-offset-1" rel="nofollow noopener noreferrer">
+    <time datetime="2026-01-18T14:11:38.105Z" title="Sunday, January 18, 2026 at 2:11:38 PM UTC" class="text-neutral-content-weak text-12">13h ago</time>
+  </a>
+    
+  
+            
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      </div>
+      
+      <div class="md text-14-scalable rounded-2 pb-2xs overflow-hidden" id="t1_o0ajgcg-comment-rtjson-content" slot="comment">
+        <div id="t1_o0ajgcg-post-rtjson-content" class="py-0 xs:mx-xs mx-2xs max-w-full scalable-text [--emote-size:20px]" dir="auto">
+      <p>
+      I used to force myself to finish every book, even if it took months.  2025 was the year I decided to dnf.  When I dread picking it up and just don’t look forward to reading it, it’s time to stop.  Life is too short and if I’m reading something I don’t want to, I’m missing out on something else.
+    </p>
+    </div>
+      </div>
+      
+      
+    
+       <faceplate-perfmark name="first-comment-meaningful-paint"></faceplate-perfmark>
+      
+          <div slot="actionRow" class="text-neutral-content-weak text-12 xs:mx-xs mx-2xs mb-sm flex items-center gap-2xs mt-2xs font-semibold" data-testid="seeker-action-row">
+            <svg rpl fill="currentColor" height="16" icon-name="upvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"></path>
+    </svg>
+            <faceplate-number number="22" pretty></faceplate-number>
+            <svg rpl fill="currentColor" height="16" icon-name="downvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"></path>
+    </svg>
+          </div>
+        
+      
+            <div slot="next-reply" id="t1_o0ajgcg-next-reply"></div>
+            
+    
+    <shreddit-comment author="Altruistic_Key378" thingId="t1_o0be16i" depth="1" parentId="t1_o0ajgcg" permalink="/r/books/comments/1qg9awi/comment/o0be16i/" parent-permalink="/r/books/comments/1qg9awi/comment/o0ajgcg/" reload-url="/svc/shreddit/comment/t1_o0be16i?depth=1&amp;subredditName=books" score="4" postId="t3_1qg9awi" content-type="text" previous-actions-feature slot="children-t1_o0ajgcg-0" ariaLabel="Comment thread level 1: Reply from Altruistic_Key378 10 hours ago" class="relative" is-pdp-seeker-m1 is-pdp-seeker-m1-lo>
+      <div slot="commentAvatar"><div class="flex flex-row items-center">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author_avatar" class="flex items-center">
+      <a href="/user/Altruistic_Key378/" class="flex items-center " aria-label="Altruistic_Key378&#39;s profile --- avatar"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] " rpl avatar>
+    
+    <span rpl class="inline-block rounded-full  relative [&>:first-child]:h-full [&>:first-child]:w-full [&>:first-child]:mb-0 [&>:first-child]:rounded-[inherit] h-full w-full
+    [&>:first-child]:overflow-hidden [&>:first-child]:max-h-full">
+    <img src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png" alt="u/Altruistic_Key378 avatar" class="h-full w-full">
+  </span></span></a>
+    </faceplate-tracker>
+  
+    </div></div>
+      <div slot="commentMeta" class="ms-xs py-[2px] min-w-0">
+        
+      <div class="flex items-center pe-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap items-center">
+            
+     <div class="flex flex-row items-center overflow-hidden author-name-meta">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author" class="contents">
+       <a class="truncate font-bold text-neutral-content-strong text-12 focus-visible:-outline-offset-1 hover:underline" href="/user/Altruistic_Key378/" aria-label="Altruistic_Key378&#39;s profile">
+      Altruistic_Key378
+    </a>
+    </faceplate-tracker>
+  
+    </div><span class="inline-flex ms-2xs"><span class="inline-flex items-center"></span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak" aria-hidden="true">•</span>
+ <a href="/r/books/comments/1qg9awi/comment/o0be16i/" class="text-neutral-content-weak text-12 hover:no-underline focus-visible:-outline-offset-1" rel="nofollow noopener noreferrer">
+    <time datetime="2026-01-18T16:45:33.323Z" title="Sunday, January 18, 2026 at 4:45:33 PM UTC" class="text-neutral-content-weak text-12">10h ago</time>
+  </a>
+    
+  
+            
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      </div>
+      
+      <div class="md text-14-scalable rounded-2 pb-2xs overflow-hidden" id="t1_o0be16i-comment-rtjson-content" slot="comment">
+        <div id="t1_o0be16i-post-rtjson-content" class="py-0 xs:mx-xs mx-2xs max-w-full scalable-text [--emote-size:20px]" dir="auto">
+      <p>
+      Exactly right!
+    </p>
+    </div>
+      </div>
+      
+      
+    
+      
+      
+          <div slot="actionRow" class="text-neutral-content-weak text-12 xs:mx-xs mx-2xs mb-sm flex items-center gap-2xs mt-2xs font-semibold" data-testid="seeker-action-row">
+            <svg rpl fill="currentColor" height="16" icon-name="upvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"></path>
+    </svg>
+            <faceplate-number number="4" pretty></faceplate-number>
+            <svg rpl fill="currentColor" height="16" icon-name="downvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"></path>
+    </svg>
+          </div>
+        
+      
+    </shreddit-comment>
+    
+  
+    <faceplate-partial class="" loading="action" tabindex="0" src="/svc/shreddit/more-comments/books/t3_1qg9awi?sort=CONFIDENCE&amp;startingDepth=1&amp;seeker-session=true" method="post" slot="children">
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6ZXg6KFFdUk1M">
+      
+    <button rpl class="button border-sm ms-xs inline-flex  text-caption-1 button-bordered-cab  inline-flex items-center
+       px-sm
+      " style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      
+      <span> 
+    <span class="flex items-center text-neutral-content">
+      <span class="me-[2px]"><faceplate-number number="2"></faceplate-number> more replies</span>
+      <svg rpl class="-me-2xs" fill="currentColor" height="16" icon-name="caret-down" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 13.7a.897.897 0 01-.636-.264l-4.6-4.6a.9.9 0 111.272-1.273L10 11.526l3.964-3.963a.9.9 0 011.272 1.273l-4.6 4.6A.897.897 0 0110 13.7z"></path>
+    </svg>
+    </span>
+   </span>
+    </span>
+    
+    </button>
+    <div slot="loading" class="relative w-fit ms-xs  ">
+      <button rpl aria-hidden="true" class="button border-sm  text-caption-1 button-bordered-cab  inline-flex items-center
+       px-sm
+      " style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      
+      <span> <span class="invisible">
+    <span class="flex items-center text-neutral-content">
+      <span class="me-[2px]"><faceplate-number number="2"></faceplate-number> more replies</span>
+      <svg rpl class="-me-2xs" fill="currentColor" height="16" icon-name="caret-down" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 13.7a.897.897 0 01-.636-.264l-4.6-4.6a.9.9 0 111.272-1.273L10 11.526l3.964-3.963a.9.9 0 011.272 1.273l-4.6 4.6A.897.897 0 0110 13.7z"></path>
+    </svg>
+    </span>
+  </span> </span>
+    </span>
+    
+    </button>
+      <div class="w-full absolute start-0 flex items-center justify-center top-0 h-full text-neutral-content">
+        <svg rpl fill="currentColor" height="16" icon-name="load" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18.1 10.9h-3a.9.9 0 010-1.8h3a.9.9 0 010 1.8zM5.8 10a.9.9 0 00-.9-.9h-3a.9.9 0 000 1.8h3a.9.9 0 00.9-.9zm5.1 8.1v-3a.9.9 0 00-1.8 0v3a.9.9 0 001.8 0zm0-13.2v-3a.9.9 0 00-1.8 0v3a.9.9 0 001.8 0zm5.464-1.264a.9.9 0 00-1.273 0L12.97 5.757a.901.901 0 001.273 1.273l2.121-2.121a.901.901 0 000-1.273zM7.03 12.97a.9.9 0 00-1.273 0l-2.121 2.121a.901.901 0 001.273 1.273l2.121-2.121a.901.901 0 000-1.273zm9.334 2.121l-2.121-2.121a.9.9 0 00-1.273 1.273l2.121 2.121a.9.9 0 001.273-1.273zM7.03 5.758L4.909 3.637A.9.9 0 003.636 4.91l2.121 2.121A.9.9 0 007.03 5.758z"></path>
+    </svg>
+      </div>
+    </div>
+  
+    </faceplate-partial>
+  
+            <a rpl class="button border-sm ms-xs inline-flex mb-sm w-fit hover:no-underline text-caption-1 button-bordered-cab  inline-flex items-center
+       px-sm
+      " href="/r/books/comments/1qg9awi/comment/o0ajgcg/?force-legacy-sct=1" id="comments-permalink-/r/books/comments/1qg9awi/comment/o0ajgcg/" rel="nofollow" slot="more-comments-permalink" style="height: var(--size-button-sm-h); font: var(--font-button-sm)"><span class="flex items-center">
+      
+      <span> 
+        <span class="flex items-center text-neutral-content">
+          <span class="me-[2px]">
+            Continue this thread
+          </span>
+          <svg rpl class="-me-2xs rpl-rtl-icon" fill="currentColor" height="16" icon-name="caret-right" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.7 10c0 .23-.088.46-.264.636l-4.6 4.6a.9.9 0 11-1.273-1.272L11.526 10 7.563 6.036a.9.9 0 011.273-1.272l4.6 4.6A.897.897 0 0113.7 10z"></path>
+    </svg>
+        </span>
+        <ac-track san="post_detail|click|deep_thread" trigger="click"></ac-track>
+       </span>
+    </span>
+    </a>
+          
+    </shreddit-comment>
+    
+  
+    <shreddit-comment-tree-ad comment-id="t1_o0aix6z" class="-mt-md" should-track-position></shreddit-comment-tree-ad>
+    <shreddit-comment author="Curiousfeline467" thingId="t1_o0aix6z" depth="0" permalink="/r/books/comments/1qg9awi/comment/o0aix6z/" reload-url="/svc/shreddit/comment/t1_o0aix6z?depth=0&amp;subredditName=books" score="12" postId="t3_1qg9awi" content-type="text" previous-actions-feature ariaLabel="Comment from Curiousfeline467 13 hours ago" class="relative" is-pdp-seeker-m1 is-pdp-seeker-m1-lo>
+      <div slot="commentAvatar"><div class="flex flex-row items-center">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author_avatar" class="flex items-center">
+      <a href="/user/Curiousfeline467/" class="flex items-center " aria-label="Curiousfeline467&#39;s profile --- avatar"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] " rpl avatar>
+    
+    <span class="inline-flex snoovatar relative  fp-avatar-container rounded-full w-[1.5rem] h-[1.5rem] min-w-[1.5rem] min-h-[1.5rem] isolate box-content"> 
+    <span class="absolute start-0 end-0 bottom-0 mx-auto inline-flex shrink-0 justify-center box-border h-full w-full">
+       <span style="" class="rounded-full absolute h-full w-full inline-flex justify-center bg-[image:var(--color-avatar-gradient)]">
+    
+  </span>
+    <svg viewBox="0 0 121 122" xmlns="http://www.w3.org/2000/svg" class="overflow-hidden absolute bottom-0 w-[1.5rem] h-[1.5rem]">
+      <defs>
+        <clipPath id="836fe6cd42e94">
+          <path d="M0 0V79L28.1628 105.5C35.013 115.465 46.4934 122 59.5 122C72.5066 122 83.987 115.465 90.8372 105.5L120.5 79V0H0Z"></path>
+        </clipPath>
+      </defs>
+      <image href="https://preview.redd.it/snoovatar/avatars/2587a002-594b-4091-a3b4-648706575231-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=6084c645c62cb07047a23dd6cc2c644a29bef667" alt="u/Curiousfeline467 avatar" clip-path="url(#836fe6cd42e94)" height="100%" width="100%"></image>
+    </svg>
+    </span>
+  </span></span></a>
+    </faceplate-tracker>
+  
+    </div></div>
+      <div slot="commentMeta" class="ms-xs py-[2px] min-w-0">
+        
+      <div class="flex items-center pe-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap items-center">
+            
+     <div class="flex flex-row items-center overflow-hidden author-name-meta">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author" class="contents">
+       <a class="truncate font-bold text-neutral-content-strong text-12 focus-visible:-outline-offset-1 hover:underline" href="/user/Curiousfeline467/" aria-label="Curiousfeline467&#39;s profile">
+      Curiousfeline467
+    </a>
+    </faceplate-tracker>
+  
+    </div><span class="inline-flex ms-2xs"><span class="inline-flex items-center"></span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak" aria-hidden="true">•</span>
+ <a href="/r/books/comments/1qg9awi/comment/o0aix6z/" class="text-neutral-content-weak text-12 hover:no-underline focus-visible:-outline-offset-1" rel="nofollow noopener noreferrer">
+    <time datetime="2026-01-18T14:08:35.278Z" title="Sunday, January 18, 2026 at 2:08:35 PM UTC" class="text-neutral-content-weak text-12">13h ago</time>
+  </a>
+    
+  
+            
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      </div>
+      
+      <div class="md text-14-scalable rounded-2 pb-2xs overflow-hidden" id="t1_o0aix6z-comment-rtjson-content" slot="comment">
+        <div id="t1_o0aix6z-post-rtjson-content" class="py-0 xs:mx-xs mx-2xs max-w-full scalable-text [--emote-size:20px]" dir="auto">
+      <p>
+      In general, I don’t like to give up on books for two reasons:
+    </p><ol>
+        <li>
+      <p>
+      Some of the books I love the most didn’t grow on me until the end. There are so many books that I’ve been tempted to not finish, but ultimately turned out to be worth the read
+    </p>
+    </li><li>
+      <p>
+      Even if I end up hating a book, I enjoy the experience of learning and articulating what I disliked about it. I feel bad rating books poorly if I haven’t finished them, so oftentimes I’ll finish a horrible book out of spite so I can rant about all the things I hated.
+    </p>
+    </li>
+      </ol><p>
+      The only time I will give up on a book is if it is actively damaging my mental health or if I dread picking it up so much that it stops me from reading at all. This is rare, but it does happen.
+    </p>
+    </div>
+      </div>
+      
+      
+    
+      
+      
+          <div slot="actionRow" class="text-neutral-content-weak text-12 xs:mx-xs mx-2xs mb-sm flex items-center gap-2xs mt-2xs font-semibold" data-testid="seeker-action-row">
+            <svg rpl fill="currentColor" height="16" icon-name="upvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"></path>
+    </svg>
+            <faceplate-number number="12" pretty></faceplate-number>
+            <svg rpl fill="currentColor" height="16" icon-name="downvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"></path>
+    </svg>
+          </div>
+        
+      
+            <div slot="next-reply" id="t1_o0aix6z-next-reply"></div>
+            
+    
+    <shreddit-comment author="Bikinigirlout" thingId="t1_o0c3qtr" depth="1" parentId="t1_o0aix6z" permalink="/r/books/comments/1qg9awi/comment/o0c3qtr/" parent-permalink="/r/books/comments/1qg9awi/comment/o0aix6z/" reload-url="/svc/shreddit/comment/t1_o0c3qtr?depth=1&amp;subredditName=books" score="5" postId="t3_1qg9awi" content-type="text" previous-actions-feature slot="children-t1_o0aix6z-0" ariaLabel="Comment thread level 1: Reply from Bikinigirlout 8 hours ago" class="relative" is-pdp-seeker-m1 is-pdp-seeker-m1-lo>
+      <div slot="commentAvatar"><div class="flex flex-row items-center">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author_avatar" class="flex items-center">
+      <a href="/user/Bikinigirlout/" class="flex items-center " aria-label="Bikinigirlout&#39;s profile --- avatar"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] " rpl avatar>
+    
+    <span rpl class="inline-block rounded-full  relative [&>:first-child]:h-full [&>:first-child]:w-full [&>:first-child]:mb-0 [&>:first-child]:rounded-[inherit] h-full w-full
+    [&>:first-child]:overflow-hidden [&>:first-child]:max-h-full">
+    <img src="https://styles.redditmedia.com/t5_e16zx/styles/profileIcon_y90514tz5via1.jpg?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64%3A64%2Csmart&amp;s=44fc688f84f641c5308fd900949d92e48abeadcc" alt="u/Bikinigirlout avatar" class="h-full w-full">
+  </span></span></a>
+    </faceplate-tracker>
+  
+    </div></div>
+      <div slot="commentMeta" class="ms-xs py-[2px] min-w-0">
+        
+      <div class="flex items-center pe-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap items-center">
+            
+     <div class="flex flex-row items-center overflow-hidden author-name-meta">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author" class="contents">
+       <a class="truncate font-bold text-neutral-content-strong text-12 focus-visible:-outline-offset-1 hover:underline" href="/user/Bikinigirlout/" aria-label="Bikinigirlout&#39;s profile">
+      Bikinigirlout
+    </a>
+    </faceplate-tracker>
+  
+    </div><span class="inline-flex ms-2xs"><span class="inline-flex items-center"></span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak" aria-hidden="true">•</span>
+ <a href="/r/books/comments/1qg9awi/comment/o0c3qtr/" class="text-neutral-content-weak text-12 hover:no-underline focus-visible:-outline-offset-1" rel="nofollow noopener noreferrer">
+    <time datetime="2026-01-18T18:45:29.241Z" title="Sunday, January 18, 2026 at 6:45:29 PM UTC" class="text-neutral-content-weak text-12">8h ago</time>
+  </a>
+    
+  
+            
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      </div>
+      
+      <div class="md text-14-scalable rounded-2 pb-2xs overflow-hidden" id="t1_o0c3qtr-comment-rtjson-content" slot="comment">
+        <div id="t1_o0c3qtr-post-rtjson-content" class="py-0 xs:mx-xs mx-2xs max-w-full scalable-text [--emote-size:20px]" dir="auto">
+      <p>
+      I’m similar. I only DNF when it’s actively putting me into a reading slump because I don’t want to read it.
+    </p>
+    </div>
+      </div>
+      
+      
+    
+      
+      
+          <div slot="actionRow" class="text-neutral-content-weak text-12 xs:mx-xs mx-2xs mb-sm flex items-center gap-2xs mt-2xs font-semibold" data-testid="seeker-action-row">
+            <svg rpl fill="currentColor" height="16" icon-name="upvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"></path>
+    </svg>
+            <faceplate-number number="5" pretty></faceplate-number>
+            <svg rpl fill="currentColor" height="16" icon-name="downvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"></path>
+    </svg>
+          </div>
+        
+      
+    </shreddit-comment>
+    
+  
+    <faceplate-partial class="" loading="action" tabindex="0" src="/svc/shreddit/more-comments/books/t3_1qg9awi?sort=CONFIDENCE&amp;startingDepth=1&amp;seeker-session=true" method="post" slot="children">
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6aW46KFFiTjN0">
+      
+    <button rpl class="button border-sm ms-xs inline-flex  text-caption-1 button-bordered-cab  inline-flex items-center
+       px-sm
+      " style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      
+      <span> 
+    <span class="flex items-center text-neutral-content">
+      <span class="me-[2px]"><faceplate-number number="1"></faceplate-number> more reply</span>
+      <svg rpl class="-me-2xs" fill="currentColor" height="16" icon-name="caret-down" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 13.7a.897.897 0 01-.636-.264l-4.6-4.6a.9.9 0 111.272-1.273L10 11.526l3.964-3.963a.9.9 0 011.272 1.273l-4.6 4.6A.897.897 0 0110 13.7z"></path>
+    </svg>
+    </span>
+   </span>
+    </span>
+    
+    </button>
+    <div slot="loading" class="relative w-fit ms-xs  ">
+      <button rpl aria-hidden="true" class="button border-sm  text-caption-1 button-bordered-cab  inline-flex items-center
+       px-sm
+      " style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      
+      <span> <span class="invisible">
+    <span class="flex items-center text-neutral-content">
+      <span class="me-[2px]"><faceplate-number number="1"></faceplate-number> more reply</span>
+      <svg rpl class="-me-2xs" fill="currentColor" height="16" icon-name="caret-down" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 13.7a.897.897 0 01-.636-.264l-4.6-4.6a.9.9 0 111.272-1.273L10 11.526l3.964-3.963a.9.9 0 011.272 1.273l-4.6 4.6A.897.897 0 0110 13.7z"></path>
+    </svg>
+    </span>
+  </span> </span>
+    </span>
+    
+    </button>
+      <div class="w-full absolute start-0 flex items-center justify-center top-0 h-full text-neutral-content">
+        <svg rpl fill="currentColor" height="16" icon-name="load" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18.1 10.9h-3a.9.9 0 010-1.8h3a.9.9 0 010 1.8zM5.8 10a.9.9 0 00-.9-.9h-3a.9.9 0 000 1.8h3a.9.9 0 00.9-.9zm5.1 8.1v-3a.9.9 0 00-1.8 0v3a.9.9 0 001.8 0zm0-13.2v-3a.9.9 0 00-1.8 0v3a.9.9 0 001.8 0zm5.464-1.264a.9.9 0 00-1.273 0L12.97 5.757a.901.901 0 001.273 1.273l2.121-2.121a.901.901 0 000-1.273zM7.03 12.97a.9.9 0 00-1.273 0l-2.121 2.121a.901.901 0 001.273 1.273l2.121-2.121a.901.901 0 000-1.273zm9.334 2.121l-2.121-2.121a.9.9 0 00-1.273 1.273l2.121 2.121a.9.9 0 001.273-1.273zM7.03 5.758L4.909 3.637A.9.9 0 003.636 4.91l2.121 2.121A.9.9 0 007.03 5.758z"></path>
+    </svg>
+      </div>
+    </div>
+  
+    </faceplate-partial>
+  
+            <a rpl class="button border-sm ms-xs inline-flex mb-sm w-fit hover:no-underline text-caption-1 button-bordered-cab  inline-flex items-center
+       px-sm
+      " href="/r/books/comments/1qg9awi/comment/o0aix6z/?force-legacy-sct=1" id="comments-permalink-/r/books/comments/1qg9awi/comment/o0aix6z/" rel="nofollow" slot="more-comments-permalink" style="height: var(--size-button-sm-h); font: var(--font-button-sm)"><span class="flex items-center">
+      
+      <span> 
+        <span class="flex items-center text-neutral-content">
+          <span class="me-[2px]">
+            Continue this thread
+          </span>
+          <svg rpl class="-me-2xs rpl-rtl-icon" fill="currentColor" height="16" icon-name="caret-right" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.7 10c0 .23-.088.46-.264.636l-4.6 4.6a.9.9 0 11-1.273-1.272L11.526 10 7.563 6.036a.9.9 0 011.273-1.272l4.6 4.6A.897.897 0 0113.7 10z"></path>
+    </svg>
+        </span>
+        <ac-track san="post_detail|click|deep_thread" trigger="click"></ac-track>
+       </span>
+    </span>
+    </a>
+          
+    </shreddit-comment>
+    
+  
+    <shreddit-comment-tree-ad comment-id="t1_o0avce8" class="-mt-md" should-track-position></shreddit-comment-tree-ad>
+    <shreddit-comment author="palex-david" thingId="t1_o0avce8" depth="0" permalink="/r/books/comments/1qg9awi/comment/o0avce8/" reload-url="/svc/shreddit/comment/t1_o0avce8?depth=0&amp;subredditName=books" score="6" postId="t3_1qg9awi" content-type="text" previous-actions-feature ariaLabel="Comment from palex-david 12 hours ago" class="relative" is-pdp-seeker-m1 is-pdp-seeker-m1-lo>
+      <div slot="commentAvatar"><div class="flex flex-row items-center">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author_avatar" class="flex items-center">
+      <a href="/user/palex-david/" class="flex items-center " aria-label="palex-david&#39;s profile --- avatar"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] " rpl avatar>
+    
+    <span rpl class="inline-block rounded-full  relative [&>:first-child]:h-full [&>:first-child]:w-full [&>:first-child]:mb-0 [&>:first-child]:rounded-[inherit] h-full w-full
+    [&>:first-child]:overflow-hidden [&>:first-child]:max-h-full">
+    <img src="https://styles.redditmedia.com/t5_fwuypm/styles/profileIcon_7aytkt7br76g1.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64%3A64%2Csmart&amp;s=74c06527e64cb3e80c771daf724056426d0b0541" alt="u/palex-david avatar" class="h-full w-full">
+  </span></span></a>
+    </faceplate-tracker>
+  
+    </div></div>
+      <div slot="commentMeta" class="ms-xs py-[2px] min-w-0">
+        
+      <div class="flex items-center pe-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap items-center">
+            
+     <div class="flex flex-row items-center overflow-hidden author-name-meta">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author" class="contents">
+       <a class="truncate font-bold text-neutral-content-strong text-12 focus-visible:-outline-offset-1 hover:underline" href="/user/palex-david/" aria-label="palex-david&#39;s profile">
+      palex-david
+    </a>
+    </faceplate-tracker>
+  
+    </div><span class="inline-flex ms-2xs"><span class="inline-flex items-center"></span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak" aria-hidden="true">•</span>
+ <a href="/r/books/comments/1qg9awi/comment/o0avce8/" class="text-neutral-content-weak text-12 hover:no-underline focus-visible:-outline-offset-1" rel="nofollow noopener noreferrer">
+    <time datetime="2026-01-18T15:15:38.814Z" title="Sunday, January 18, 2026 at 3:15:38 PM UTC" class="text-neutral-content-weak text-12">12h ago</time>
+  </a>
+    
+  
+            
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      </div>
+      
+      <div class="md text-14-scalable rounded-2 pb-2xs overflow-hidden" id="t1_o0avce8-comment-rtjson-content" slot="comment">
+        <div id="t1_o0avce8-post-rtjson-content" class="py-0 xs:mx-xs mx-2xs max-w-full scalable-text [--emote-size:20px]" dir="auto">
+      <p>
+      I give every book at least 50 pages. Long book might get better, but when?
+    </p>
+    </div>
+      </div>
+      
+      
+    
+      
+      
+          <div slot="actionRow" class="text-neutral-content-weak text-12 xs:mx-xs mx-2xs mb-sm flex items-center gap-2xs mt-2xs font-semibold" data-testid="seeker-action-row">
+            <svg rpl fill="currentColor" height="16" icon-name="upvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"></path>
+    </svg>
+            <faceplate-number number="6" pretty></faceplate-number>
+            <svg rpl fill="currentColor" height="16" icon-name="downvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"></path>
+    </svg>
+          </div>
+        
+      
+    </shreddit-comment>
+    <cbau-trigger class="-mt-md"></cbau-trigger>
+  
+    <shreddit-comment-tree-ad comment-id="t1_o0aqsu5" class="-mt-md" should-track-position></shreddit-comment-tree-ad>
+    <shreddit-comment author="Neina_Ixion" thingId="t1_o0aqsu5" depth="0" permalink="/r/books/comments/1qg9awi/comment/o0aqsu5/" reload-url="/svc/shreddit/comment/t1_o0aqsu5?depth=0&amp;subredditName=books" score="5" postId="t3_1qg9awi" content-type="text" previous-actions-feature ariaLabel="Comment from Neina_Ixion 12 hours ago" class="relative" is-pdp-seeker-m1 is-pdp-seeker-m1-lo>
+      <div slot="commentAvatar"><div class="flex flex-row items-center">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author_avatar" class="flex items-center">
+      <a href="/user/Neina_Ixion/" class="flex items-center " aria-label="Neina_Ixion&#39;s profile --- avatar"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] " rpl avatar>
+    
+    <span rpl class="inline-block rounded-full  relative [&>:first-child]:h-full [&>:first-child]:w-full [&>:first-child]:mb-0 [&>:first-child]:rounded-[inherit] h-full w-full
+    [&>:first-child]:overflow-hidden [&>:first-child]:max-h-full">
+    <img src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png" alt="u/Neina_Ixion avatar" class="h-full w-full">
+  </span></span></a>
+    </faceplate-tracker>
+  
+    </div></div>
+      <div slot="commentMeta" class="ms-xs py-[2px] min-w-0">
+        
+      <div class="flex items-center pe-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap items-center">
+            
+     <div class="flex flex-row items-center overflow-hidden author-name-meta">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author" class="contents">
+       <a class="truncate font-bold text-neutral-content-strong text-12 focus-visible:-outline-offset-1 hover:underline" href="/user/Neina_Ixion/" aria-label="Neina_Ixion&#39;s profile">
+      Neina_Ixion
+    </a>
+    </faceplate-tracker>
+  
+    </div><span class="inline-flex ms-2xs"><span class="inline-flex items-center"></span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak" aria-hidden="true">•</span>
+ <a href="/r/books/comments/1qg9awi/comment/o0aqsu5/" class="text-neutral-content-weak text-12 hover:no-underline focus-visible:-outline-offset-1" rel="nofollow noopener noreferrer">
+    <time datetime="2026-01-18T14:52:00.848Z" title="Sunday, January 18, 2026 at 2:52:00 PM UTC" class="text-neutral-content-weak text-12">12h ago</time>
+  </a>
+    
+  
+            
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      </div>
+      
+      <div class="md text-14-scalable rounded-2 pb-2xs overflow-hidden" id="t1_o0aqsu5-comment-rtjson-content" slot="comment">
+        <div id="t1_o0aqsu5-post-rtjson-content" class="py-0 xs:mx-xs mx-2xs max-w-full scalable-text [--emote-size:20px]" dir="auto">
+      <p>
+      I think it&#39;s important to challenge yourself as a young reader, and therefore I recommend that for the first few years of reading you try to finish books that may not work for you initially. However, as you mature, you&#39;ll know your taste better. And life is short. Now that I&#39;ve read over 1000 books I no longer force myself to finish them if they don&#39;t work for me. Things that make me put a book down, sometimes as early as after one chapter, include: writing style, offensive stereotypes that are not challenged, and a topic I&#39;ve read before multiple times and has been addressed better by someone else.
+    </p>
+    </div>
+      </div>
+      
+      
+    
+      
+      
+          <div slot="actionRow" class="text-neutral-content-weak text-12 xs:mx-xs mx-2xs mb-sm flex items-center gap-2xs mt-2xs font-semibold" data-testid="seeker-action-row">
+            <svg rpl fill="currentColor" height="16" icon-name="upvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"></path>
+    </svg>
+            <faceplate-number number="5" pretty></faceplate-number>
+            <svg rpl fill="currentColor" height="16" icon-name="downvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"></path>
+    </svg>
+          </div>
+        
+      
+    </shreddit-comment>
+    
+  
+    <shreddit-comment-tree-ad comment-id="t1_o0awo75" class="-mt-md" should-track-position></shreddit-comment-tree-ad>
+    <shreddit-comment author="dethb0y" thingId="t1_o0awo75" depth="0" permalink="/r/books/comments/1qg9awi/comment/o0awo75/" reload-url="/svc/shreddit/comment/t1_o0awo75?depth=0&amp;subredditName=books" score="5" postId="t3_1qg9awi" content-type="text" previous-actions-feature ariaLabel="Comment from dethb0y 12 hours ago" class="relative" is-pdp-seeker-m1 is-pdp-seeker-m1-lo>
+      <div slot="commentAvatar"><div class="flex flex-row items-center">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author_avatar" class="flex items-center">
+      <a href="/user/dethb0y/" class="flex items-center " aria-label="dethb0y&#39;s profile --- avatar"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] " rpl avatar>
+    
+    <span class="inline-flex snoovatar relative  fp-avatar-container rounded-full w-[1.5rem] h-[1.5rem] min-w-[1.5rem] min-h-[1.5rem] isolate box-content"> 
+    <span class="absolute start-0 end-0 bottom-0 mx-auto inline-flex shrink-0 justify-center box-border h-full w-full">
+       <span style="" class="rounded-full absolute h-full w-full inline-flex justify-center bg-[image:var(--color-avatar-gradient)]">
+    
+  </span>
+    <svg viewBox="0 0 121 122" xmlns="http://www.w3.org/2000/svg" class="overflow-hidden absolute bottom-0 w-[1.5rem] h-[1.5rem]">
+      <defs>
+        <clipPath id="54458392df50e">
+          <path d="M0 0V79L28.1628 105.5C35.013 115.465 46.4934 122 59.5 122C72.5066 122 83.987 115.465 90.8372 105.5L120.5 79V0H0Z"></path>
+        </clipPath>
+      </defs>
+      <image href="https://styles.redditmedia.com/t5_3knvi/styles/profileIcon_snoobcab2848-3ef5-4280-9c39-823365544aa3-headshot.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64%3A64%2Csmart&amp;s=aef9005e9296e9be72a04c380308eea1bf48c7ac" alt="u/dethb0y avatar" clip-path="url(#54458392df50e)" height="100%" width="100%"></image>
+    </svg>
+    </span>
+  </span></span></a>
+    </faceplate-tracker>
+  
+    </div></div>
+      <div slot="commentMeta" class="ms-xs py-[2px] min-w-0">
+        
+      <div class="flex items-center pe-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap items-center">
+            
+     <div class="flex flex-row items-center overflow-hidden author-name-meta">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author" class="contents">
+       <a class="truncate font-bold text-neutral-content-strong text-12 focus-visible:-outline-offset-1 hover:underline" href="/user/dethb0y/" aria-label="dethb0y&#39;s profile">
+      dethb0y
+    </a>
+    </faceplate-tracker>
+  
+    </div><span class="inline-flex ms-2xs"><span class="inline-flex items-center"></span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak" aria-hidden="true">•</span>
+ <a href="/r/books/comments/1qg9awi/comment/o0awo75/" class="text-neutral-content-weak text-12 hover:no-underline focus-visible:-outline-offset-1" rel="nofollow noopener noreferrer">
+    <time datetime="2026-01-18T15:22:21.101Z" title="Sunday, January 18, 2026 at 3:22:21 PM UTC" class="text-neutral-content-weak text-12">12h ago</time>
+  </a>
+    
+  
+            
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      </div>
+      
+      <div class="md text-14-scalable rounded-2 pb-2xs overflow-hidden" id="t1_o0awo75-comment-rtjson-content" slot="comment">
+        <div id="t1_o0awo75-post-rtjson-content" class="py-0 xs:mx-xs mx-2xs max-w-full scalable-text [--emote-size:20px]" dir="auto">
+      <p>
+      Depending on the book, 2 to 5 pages of boring me. Or less if the author is preachy about some extremely milquetoast moral or political issue. There&#39;s always more on the TBR and life is short.
+    </p><p>
+      Edit: I&#39;ll say this, i&#39;ve never regretted dumping a book, i have regretted forcing myself to sit through a book I knew i wasn&#39;t going to like.
+    </p>
+    </div>
+      </div>
+      
+      
+    
+      
+      
+          <div slot="actionRow" class="text-neutral-content-weak text-12 xs:mx-xs mx-2xs mb-sm flex items-center gap-2xs mt-2xs font-semibold" data-testid="seeker-action-row">
+            <svg rpl fill="currentColor" height="16" icon-name="upvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"></path>
+    </svg>
+            <faceplate-number number="5" pretty></faceplate-number>
+            <svg rpl fill="currentColor" height="16" icon-name="downvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"></path>
+    </svg>
+          </div>
+        
+      
+            <div slot="next-reply" id="t1_o0awo75-next-reply"></div>
+            
+    <faceplate-partial class="" loading="action" tabindex="0" src="/svc/shreddit/more-comments/books/t3_1qg9awi?sort=CONFIDENCE&amp;startingDepth=1&amp;seeker-session=true" method="post" slot="children">
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6ZDE6dDFfbzBhd283NQ==">
+      
+    <button rpl class="button border-sm ms-xs inline-flex  text-caption-1 button-bordered-cab  inline-flex items-center
+       px-sm
+      " style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      
+      <span> 
+    <span class="flex items-center text-neutral-content">
+      <span class="me-[2px]"><faceplate-number number="1"></faceplate-number> more reply</span>
+      <svg rpl class="-me-2xs" fill="currentColor" height="16" icon-name="caret-down" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 13.7a.897.897 0 01-.636-.264l-4.6-4.6a.9.9 0 111.272-1.273L10 11.526l3.964-3.963a.9.9 0 011.272 1.273l-4.6 4.6A.897.897 0 0110 13.7z"></path>
+    </svg>
+    </span>
+   </span>
+    </span>
+    
+    </button>
+    <div slot="loading" class="relative w-fit ms-xs  ">
+      <button rpl aria-hidden="true" class="button border-sm  text-caption-1 button-bordered-cab  inline-flex items-center
+       px-sm
+      " style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      
+      <span> <span class="invisible">
+    <span class="flex items-center text-neutral-content">
+      <span class="me-[2px]"><faceplate-number number="1"></faceplate-number> more reply</span>
+      <svg rpl class="-me-2xs" fill="currentColor" height="16" icon-name="caret-down" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 13.7a.897.897 0 01-.636-.264l-4.6-4.6a.9.9 0 111.272-1.273L10 11.526l3.964-3.963a.9.9 0 011.272 1.273l-4.6 4.6A.897.897 0 0110 13.7z"></path>
+    </svg>
+    </span>
+  </span> </span>
+    </span>
+    
+    </button>
+      <div class="w-full absolute start-0 flex items-center justify-center top-0 h-full text-neutral-content">
+        <svg rpl fill="currentColor" height="16" icon-name="load" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18.1 10.9h-3a.9.9 0 010-1.8h3a.9.9 0 010 1.8zM5.8 10a.9.9 0 00-.9-.9h-3a.9.9 0 000 1.8h3a.9.9 0 00.9-.9zm5.1 8.1v-3a.9.9 0 00-1.8 0v3a.9.9 0 001.8 0zm0-13.2v-3a.9.9 0 00-1.8 0v3a.9.9 0 001.8 0zm5.464-1.264a.9.9 0 00-1.273 0L12.97 5.757a.901.901 0 001.273 1.273l2.121-2.121a.901.901 0 000-1.273zM7.03 12.97a.9.9 0 00-1.273 0l-2.121 2.121a.901.901 0 001.273 1.273l2.121-2.121a.901.901 0 000-1.273zm9.334 2.121l-2.121-2.121a.9.9 0 00-1.273 1.273l2.121 2.121a.9.9 0 001.273-1.273zM7.03 5.758L4.909 3.637A.9.9 0 003.636 4.91l2.121 2.121A.9.9 0 007.03 5.758z"></path>
+    </svg>
+      </div>
+    </div>
+  
+    </faceplate-partial>
+  
+            <a rpl class="button border-sm ms-xs inline-flex mb-sm w-fit hover:no-underline text-caption-1 button-bordered-cab  inline-flex items-center
+       px-sm
+      " href="/r/books/comments/1qg9awi/comment/o0awo75/?force-legacy-sct=1" id="comments-permalink-/r/books/comments/1qg9awi/comment/o0awo75/" rel="nofollow" slot="more-comments-permalink" style="height: var(--size-button-sm-h); font: var(--font-button-sm)"><span class="flex items-center">
+      
+      <span> 
+        <span class="flex items-center text-neutral-content">
+          <span class="me-[2px]">
+            Continue this thread
+          </span>
+          <svg rpl class="-me-2xs rpl-rtl-icon" fill="currentColor" height="16" icon-name="caret-right" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.7 10c0 .23-.088.46-.264.636l-4.6 4.6a.9.9 0 11-1.273-1.272L11.526 10 7.563 6.036a.9.9 0 011.273-1.272l4.6 4.6A.897.897 0 0113.7 10z"></path>
+    </svg>
+        </span>
+        <ac-track san="post_detail|click|deep_thread" trigger="click"></ac-track>
+       </span>
+    </span>
+    </a>
+          
+    </shreddit-comment>
+    
+  
+    <shreddit-comment-tree-ad comment-id="t1_o0arxyu" class="-mt-md" should-track-position></shreddit-comment-tree-ad>
+    <shreddit-comment author="Tough-School-8814" thingId="t1_o0arxyu" depth="0" permalink="/r/books/comments/1qg9awi/comment/o0arxyu/" reload-url="/svc/shreddit/comment/t1_o0arxyu?depth=0&amp;subredditName=books" score="3" postId="t3_1qg9awi" content-type="text" previous-actions-feature ariaLabel="Comment from Tough-School-8814 12 hours ago" class="relative" is-pdp-seeker-m1 is-pdp-seeker-m1-lo>
+      <div slot="commentAvatar"><div class="flex flex-row items-center">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author_avatar" class="flex items-center">
+      <a href="/user/Tough-School-8814/" class="flex items-center " aria-label="Tough-School-8814&#39;s profile --- avatar"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] " rpl avatar>
+    
+    <span class="inline-flex snoovatar relative  fp-avatar-container rounded-full w-[1.5rem] h-[1.5rem] min-w-[1.5rem] min-h-[1.5rem] isolate box-content"> 
+    <span class="absolute start-0 end-0 bottom-0 mx-auto inline-flex shrink-0 justify-center box-border h-full w-full">
+       <span style="" class="rounded-full absolute h-full w-full inline-flex justify-center bg-[image:var(--color-avatar-gradient)]">
+    
+  </span>
+    <svg viewBox="0 0 121 122" xmlns="http://www.w3.org/2000/svg" class="overflow-hidden absolute bottom-0 w-[1.5rem] h-[1.5rem]">
+      <defs>
+        <clipPath id="1909559c46b68">
+          <path d="M0 0V79L28.1628 105.5C35.013 115.465 46.4934 122 59.5 122C72.5066 122 83.987 115.465 90.8372 105.5L120.5 79V0H0Z"></path>
+        </clipPath>
+      </defs>
+      <image href="https://preview.redd.it/snoovatar/avatars/922a0124-3f72-4faa-97b5-1db9593658e6-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=3864a6a2536ebad31e801446f7556291be9ccb5e" alt="u/Tough-School-8814 avatar" clip-path="url(#1909559c46b68)" height="100%" width="100%"></image>
+    </svg>
+    </span>
+  </span></span></a>
+    </faceplate-tracker>
+  
+    </div></div>
+      <div slot="commentMeta" class="ms-xs py-[2px] min-w-0">
+        
+      <div class="flex items-center pe-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap items-center">
+            
+     <div class="flex flex-row items-center overflow-hidden author-name-meta">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author" class="contents">
+       <a class="truncate font-bold text-neutral-content-strong text-12 focus-visible:-outline-offset-1 hover:underline" href="/user/Tough-School-8814/" aria-label="Tough-School-8814&#39;s profile">
+      Tough-School-8814
+    </a>
+    </faceplate-tracker>
+  
+    </div><span class="inline-flex ms-2xs"><span class="inline-flex items-center"></span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak" aria-hidden="true">•</span>
+ <a href="/r/books/comments/1qg9awi/comment/o0arxyu/" class="text-neutral-content-weak text-12 hover:no-underline focus-visible:-outline-offset-1" rel="nofollow noopener noreferrer">
+    <time datetime="2026-01-18T14:58:00.515Z" title="Sunday, January 18, 2026 at 2:58:00 PM UTC" class="text-neutral-content-weak text-12">12h ago</time>
+  </a>
+    
+  
+            
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      </div>
+      
+      <div class="md text-14-scalable rounded-2 pb-2xs overflow-hidden" id="t1_o0arxyu-comment-rtjson-content" slot="comment">
+        <div id="t1_o0arxyu-post-rtjson-content" class="py-0 xs:mx-xs mx-2xs max-w-full scalable-text [--emote-size:20px]" dir="auto">
+      <p>
+      I used to hate the idea of giving up on a book, but the older I get the more time feels precious. If I’m reading something that feels like a waste of it, I stop reading.
+    </p><p>
+      That said, I don’t expect for every book to bring me joy. I’m comfortable with books that make me feel uncomfortable/sad/angry/disagreeing, but if there’s no emotion at all, it’s usually a book I give up on.
+    </p><p>
+      I also don’t do well with books that feed you conclusions and are very predictable. If in the middle of one I feel like it’s a book I already read, I don’t continue and pick up something else.
+    </p>
+    </div>
+      </div>
+      
+      
+    
+      
+      
+          <div slot="actionRow" class="text-neutral-content-weak text-12 xs:mx-xs mx-2xs mb-sm flex items-center gap-2xs mt-2xs font-semibold" data-testid="seeker-action-row">
+            <svg rpl fill="currentColor" height="16" icon-name="upvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"></path>
+    </svg>
+            <faceplate-number number="3" pretty></faceplate-number>
+            <svg rpl fill="currentColor" height="16" icon-name="downvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"></path>
+    </svg>
+          </div>
+        
+      
+    </shreddit-comment>
+    
+  
+    <shreddit-comment-tree-ad comment-id="t1_o0azk7p" class="-mt-md" should-track-position></shreddit-comment-tree-ad>
+    <shreddit-comment author="zscipioni" thingId="t1_o0azk7p" depth="0" permalink="/r/books/comments/1qg9awi/comment/o0azk7p/" reload-url="/svc/shreddit/comment/t1_o0azk7p?depth=0&amp;subredditName=books" score="3" postId="t3_1qg9awi" content-type="text" previous-actions-feature ariaLabel="Comment from zscipioni 11 hours ago" class="relative" is-pdp-seeker-m1 is-pdp-seeker-m1-lo>
+      <div slot="commentAvatar"><div class="flex flex-row items-center">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author_avatar" class="flex items-center">
+      <a href="/user/zscipioni/" class="flex items-center " aria-label="zscipioni&#39;s profile --- avatar"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] " rpl avatar>
+    
+    <span rpl class="inline-block rounded-full  relative [&>:first-child]:h-full [&>:first-child]:w-full [&>:first-child]:mb-0 [&>:first-child]:rounded-[inherit] h-full w-full
+    [&>:first-child]:overflow-hidden [&>:first-child]:max-h-full">
+    <img src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png" alt="u/zscipioni avatar" class="h-full w-full">
+  </span></span></a>
+    </faceplate-tracker>
+  
+    </div></div>
+      <div slot="commentMeta" class="ms-xs py-[2px] min-w-0">
+        
+      <div class="flex items-center pe-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap items-center">
+            
+     <div class="flex flex-row items-center overflow-hidden author-name-meta">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author" class="contents">
+       <a class="truncate font-bold text-neutral-content-strong text-12 focus-visible:-outline-offset-1 hover:underline" href="/user/zscipioni/" aria-label="zscipioni&#39;s profile">
+      zscipioni
+    </a>
+    </faceplate-tracker>
+  
+    </div><span class="inline-flex ms-2xs"><span class="inline-flex items-center"></span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak" aria-hidden="true">•</span>
+ <a href="/r/books/comments/1qg9awi/comment/o0azk7p/" class="text-neutral-content-weak text-12 hover:no-underline focus-visible:-outline-offset-1" rel="nofollow noopener noreferrer">
+    <time datetime="2026-01-18T15:36:35.884Z" title="Sunday, January 18, 2026 at 3:36:35 PM UTC" class="text-neutral-content-weak text-12">11h ago</time>
+  </a>
+    
+  
+            
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      </div>
+      
+      <div class="md text-14-scalable rounded-2 pb-2xs overflow-hidden" id="t1_o0azk7p-comment-rtjson-content" slot="comment">
+        <div id="t1_o0azk7p-post-rtjson-content" class="py-0 xs:mx-xs mx-2xs max-w-full scalable-text [--emote-size:20px]" dir="auto">
+      <p>
+      You kinda just know when you’re not interested. There’s so many things out there to read the only thing that can stop avid readers is getting slogged by something uninspiring
+    </p>
+    </div>
+      </div>
+      
+      
+    
+      
+      
+          <div slot="actionRow" class="text-neutral-content-weak text-12 xs:mx-xs mx-2xs mb-sm flex items-center gap-2xs mt-2xs font-semibold" data-testid="seeker-action-row">
+            <svg rpl fill="currentColor" height="16" icon-name="upvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"></path>
+    </svg>
+            <faceplate-number number="3" pretty></faceplate-number>
+            <svg rpl fill="currentColor" height="16" icon-name="downvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"></path>
+    </svg>
+          </div>
+        
+      
+    </shreddit-comment>
+    
+  
+    <shreddit-comment-tree-ad comment-id="t1_o0b7awk" class="-mt-md" should-track-position></shreddit-comment-tree-ad>
+    <shreddit-comment author="Dry_Writing_7862" thingId="t1_o0b7awk" depth="0" permalink="/r/books/comments/1qg9awi/comment/o0b7awk/" reload-url="/svc/shreddit/comment/t1_o0b7awk?depth=0&amp;subredditName=books" score="3" postId="t3_1qg9awi" content-type="text" previous-actions-feature ariaLabel="Comment from Dry_Writing_7862 11 hours ago" class="relative" is-pdp-seeker-m1 is-pdp-seeker-m1-lo>
+      <div slot="commentAvatar"><div class="flex flex-row items-center">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author_avatar" class="flex items-center">
+      <a href="/user/Dry_Writing_7862/" class="flex items-center " aria-label="Dry_Writing_7862&#39;s profile --- avatar"><span class="inline-flex items-center justify-center w-[1.5rem] h-[1.5rem] " rpl avatar>
+    
+    <span class="inline-flex snoovatar relative  fp-avatar-container rounded-full w-[1.5rem] h-[1.5rem] min-w-[1.5rem] min-h-[1.5rem] isolate box-content"> 
+    <span class="absolute start-0 end-0 bottom-0 mx-auto inline-flex shrink-0 justify-center box-border h-full w-full">
+       <span style="" class="rounded-full absolute h-full w-full inline-flex justify-center bg-[image:var(--color-avatar-gradient)]">
+    
+  </span>
+    <svg viewBox="0 0 121 122" xmlns="http://www.w3.org/2000/svg" class="overflow-hidden absolute bottom-0 w-[1.5rem] h-[1.5rem]">
+      <defs>
+        <clipPath id="0e270286d7e45">
+          <path d="M0 0V79L28.1628 105.5C35.013 115.465 46.4934 122 59.5 122C72.5066 122 83.987 115.465 90.8372 105.5L120.5 79V0H0Z"></path>
+        </clipPath>
+      </defs>
+      <image href="https://preview.redd.it/snoovatar/avatars/bf141990-9ebf-4cfb-ad64-8f680d3f5d7c-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=374bf78ecff0b80075cc275d344d8ed366fa90ee" alt="u/Dry_Writing_7862 avatar" clip-path="url(#0e270286d7e45)" height="100%" width="100%"></image>
+    </svg>
+    </span>
+  </span></span></a>
+    </faceplate-tracker>
+  
+    </div></div>
+      <div slot="commentMeta" class="ms-xs py-[2px] min-w-0">
+        
+      <div class="flex items-center pe-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap items-center">
+            
+     <div class="flex flex-row items-center overflow-hidden author-name-meta">
+      
+    <faceplate-tracker source="post_detail" action="click" noun="comment_author" class="contents">
+       <a class="truncate font-bold text-neutral-content-strong text-12 focus-visible:-outline-offset-1 hover:underline" href="/user/Dry_Writing_7862/" aria-label="Dry_Writing_7862&#39;s profile">
+      Dry_Writing_7862
+    </a>
+    </faceplate-tracker>
+  
+    </div><span class="inline-flex ms-2xs"><span class="inline-flex items-center"></span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak" aria-hidden="true">•</span>
+ <a href="/r/books/comments/1qg9awi/comment/o0b7awk/" class="text-neutral-content-weak text-12 hover:no-underline focus-visible:-outline-offset-1" rel="nofollow noopener noreferrer">
+    <time datetime="2026-01-18T16:13:34.096Z" title="Sunday, January 18, 2026 at 4:13:34 PM UTC" class="text-neutral-content-weak text-12">11h ago</time>
+  </a>
+    
+  
+            
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    
+      </div>
+      
+      <div class="md text-14-scalable rounded-2 pb-2xs overflow-hidden" id="t1_o0b7awk-comment-rtjson-content" slot="comment">
+        <div id="t1_o0b7awk-post-rtjson-content" class="py-0 xs:mx-xs mx-2xs max-w-full scalable-text [--emote-size:20px]" dir="auto">
+      <p>
+      I&#39;m done powering through for 2026. I can go through the first half of a book at the most before doing so. I don&#39;t have a rhythm to DNFing books.
+    </p>
+    </div>
+      </div>
+      
+      
+    
+      
+      
+          <div slot="actionRow" class="text-neutral-content-weak text-12 xs:mx-xs mx-2xs mb-sm flex items-center gap-2xs mt-2xs font-semibold" data-testid="seeker-action-row">
+            <svg rpl fill="currentColor" height="16" icon-name="upvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"></path>
+    </svg>
+            <faceplate-number number="3" pretty></faceplate-number>
+            <svg rpl fill="currentColor" height="16" icon-name="downvote" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"></path>
+    </svg>
+          </div>
+        
+      
+    </shreddit-comment>
+    
+  
+    
+    <ac-set trigger="view" trigger-elem="previous" target="#subreddit-right-rail-tabs" attribute="pageindex" value="2" once></ac-set>
+    <faceplate-partial class="top-level" id="top-level-more-comments-partial" loading="lazy" tabindex="0" src="/svc/shreddit/more-comments/books/t3_1qg9awi?render-mode=partial&amp;force_seo=1&amp;seeker-session=true&amp;referer=https%253A%252F%252Fwww.google.com%252F&amp;top-level=1&amp;comments-remaining=90" method="post">
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6ZXg6KFFbZF11OiUuRz06I3J1SVxuJzAxM0IpKDAwMFhRS2hi">
+      <shreddit-loading></shreddit-loading>
+    </faceplate-partial>
+  
+  
+    </shreddit-comment-tree>
+   </faceplate-batch>
+  </div>

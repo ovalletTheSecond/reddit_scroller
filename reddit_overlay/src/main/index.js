@@ -2,12 +2,25 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+import { writeFileSync } from 'fs'
 const fetch = require('node-fetch')
 
-async function fetchRss(subreddit) {
+async function fetchRss(subredditOrUrl) {
   try {
-    console.log(`Fetching RSS for subreddit: ${subreddit}`)
-    const url = `https://www.reddit.com/r/${subreddit}/.rss`
+    let url, logName
+    
+    // Check if it's a custom URL (starts with 'custom:')
+    if (subredditOrUrl.startsWith('custom:')) {
+      url = subredditOrUrl.replace('custom:', '')
+      logName = url
+      console.log(`Fetching RSS from custom URL: ${url}`)
+    } else {
+      // Standard subreddit RSS
+      url = `https://www.reddit.com/r/${subredditOrUrl}/.rss`
+      logName = `r/${subredditOrUrl}`
+      console.log(`Fetching RSS for subreddit: ${subredditOrUrl}`)
+    }
+    
     const res = await fetch(url, { 
       headers: { "User-Agent": "reddit-overlay-app/1.0" } 
     })
@@ -17,14 +30,73 @@ async function fetchRss(subreddit) {
     }
     
     const xml = await res.text()
-    console.log(`Successfully fetched RSS data for r/${subreddit}`)
+    console.log(`Successfully fetched RSS data for ${logName}`)
     console.log('First 400 characters:')
     console.log(xml.slice(0, 400))
     console.log('--- End of preview ---')
     
+    // Save RSS to file at project root
+    try {
+      const projectRoot = process.cwd()
+      const filePath = join(projectRoot, 'last_rss_data.txt')
+      const timestamp = new Date().toISOString()
+      const fileContent = `=== RSS DATA FOR ${logName} ===\n` +
+                         `Fetched at: ${timestamp}\n` +
+                         `URL: ${url}\n` +
+                         `Content length: ${xml.length} characters\n` +
+                         `=== RAW RSS XML ===\n\n` +
+                         xml
+      
+      writeFileSync(filePath, fileContent, 'utf8')
+      console.log(`RSS data saved to: ${filePath}`)
+    } catch (fileError) {
+      console.error('Error saving RSS to file:', fileError)
+    }
+    
     return xml
   } catch (error) {
-    console.error(`Error fetching RSS for r/${subreddit}:`, error)
+    console.error(`Error fetching RSS for ${logName || subredditOrUrl}:`, error)
+    throw error
+  }
+}
+
+async function fetchRedditPageContent(url) {
+  try {
+    console.log('url main found - url fetched - response : fetching...', url)
+    const res = await fetch(url, { 
+      headers: { 
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate, br",
+        "DNT": "1",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "none",
+        "Sec-Fetch-User": "?1",
+        "Cache-Control": "max-age=0"
+      },
+      method: 'GET'
+    })
+    
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status} - ${res.statusText}`)
+    }
+    
+    const html = await res.text()
+    console.log('url main found - url fetched - response :', {
+      url: url,
+      status: res.status,
+      statusText: res.statusText,
+      responseLength: html.length,
+      preview: html.slice(0, 200).replace(/\n/g, ' ') + '...'
+    })
+    
+    return html
+  } catch (error) {
+    console.error('Error fetching Reddit page content:', error)
     throw error
   }
 }
@@ -36,10 +108,12 @@ function createWindow() {
     height: 670,
     show: false,
     autoHideMenuBar: true,
+    title: 'Reddit Scroller',
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
-      sandbox: false
+      sandbox: false,
+      webviewTag: true
     }
   })
 
@@ -86,6 +160,30 @@ app.whenReady().then(() => {
       const rssData = await fetchRss(subreddit)
       return { success: true, data: rssData }
     } catch (error) {
+      return { success: false, error: error.message }
+    }
+  })
+  
+  // Handle Reddit page content fetch requests
+  ipcMain.handle('fetch-reddit-content', async (event, url) => {
+    try {
+      const htmlContent = await fetchRedditPageContent(url)
+      return { success: true, data: htmlContent }
+    } catch (error) {
+      return { success: false, error: error.message }
+    }
+  })
+  
+  // Handle debug file saving
+  ipcMain.handle('save-debug-file', async (event, filename, content) => {
+    try {
+      const projectRoot = process.cwd()
+      const filePath = join(projectRoot, filename)
+      writeFileSync(filePath, content, 'utf8')
+      console.log(`Debug file saved to: ${filePath}`)
+      return { success: true, path: filePath }
+    } catch (error) {
+      console.error('Error saving debug file:', error)
       return { success: false, error: error.message }
     }
   })

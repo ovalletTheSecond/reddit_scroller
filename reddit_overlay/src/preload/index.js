@@ -3,7 +3,8 @@ import { electronAPI } from '@electron-toolkit/preload'
 
 // Custom APIs for renderer
 const api = {
-  fetchRss: (subreddit) => ipcRenderer.invoke('fetch-rss', subreddit)
+  fetchRss: (subreddit) => ipcRenderer.invoke('fetch-rss', subreddit),
+  fetchRedditContent: (url) => ipcRenderer.invoke('fetch-reddit-content', url)
 }
 
 // Use `contextBridge` APIs to expose Electron APIs to
