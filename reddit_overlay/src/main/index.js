@@ -2,25 +2,13 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
-import { writeFileSync } from 'fs'
+import { writeFileSync, readFileSync, existsSync } from 'fs'
 const fetch = require('node-fetch')
 
-async function fetchRss(subredditOrUrl) {
+async function fetchRss(subreddit) {
   try {
-    let url, logName
-    
-    // Check if it's a custom URL (starts with 'custom:')
-    if (subredditOrUrl.startsWith('custom:')) {
-      url = subredditOrUrl.replace('custom:', '')
-      logName = url
-      console.log(`Fetching RSS from custom URL: ${url}`)
-    } else {
-      // Standard subreddit RSS
-      url = `https://www.reddit.com/r/${subredditOrUrl}/.rss`
-      logName = `r/${subredditOrUrl}`
-      console.log(`Fetching RSS for subreddit: ${subredditOrUrl}`)
-    }
-    
+    console.log(`Fetching RSS for subreddit: ${subreddit}`)
+    const url = `https://www.reddit.com/r/${subreddit}/.rss`
     const res = await fetch(url, { 
       headers: { "User-Agent": "reddit-overlay-app/1.0" } 
     })
@@ -30,7 +18,7 @@ async function fetchRss(subredditOrUrl) {
     }
     
     const xml = await res.text()
-    console.log(`Successfully fetched RSS data for ${logName}`)
+    console.log(`Successfully fetched RSS data for r/${subreddit}`)
     console.log('First 400 characters:')
     console.log(xml.slice(0, 400))
     console.log('--- End of preview ---')
@@ -40,7 +28,7 @@ async function fetchRss(subredditOrUrl) {
       const projectRoot = process.cwd()
       const filePath = join(projectRoot, 'last_rss_data.txt')
       const timestamp = new Date().toISOString()
-      const fileContent = `=== RSS DATA FOR ${logName} ===\n` +
+      const fileContent = `=== RSS DATA FOR r/${subreddit} ===\n` +
                          `Fetched at: ${timestamp}\n` +
                          `URL: ${url}\n` +
                          `Content length: ${xml.length} characters\n` +
@@ -55,7 +43,7 @@ async function fetchRss(subredditOrUrl) {
     
     return xml
   } catch (error) {
-    console.error(`Error fetching RSS for ${logName || subredditOrUrl}:`, error)
+    console.error(`Error fetching RSS for r/${subreddit}:`, error)
     throw error
   }
 }
@@ -174,16 +162,35 @@ app.whenReady().then(() => {
     }
   })
   
-  // Handle debug file saving
+  // Handle debug file save requests
   ipcMain.handle('save-debug-file', async (event, filename, content) => {
     try {
       const projectRoot = process.cwd()
       const filePath = join(projectRoot, filename)
       writeFileSync(filePath, content, 'utf8')
-      console.log(`Debug file saved to: ${filePath}`)
+      console.log(`Debug file saved: ${filePath}`)
       return { success: true, path: filePath }
     } catch (error) {
       console.error('Error saving debug file:', error)
+      return { success: false, error: error.message }
+    }
+  })
+  
+  // Handle debug file load requests
+  ipcMain.handle('load-debug-file', async (event, filename) => {
+    try {
+      const projectRoot = process.cwd()
+      const filePath = join(projectRoot, filename)
+      
+      if (!existsSync(filePath)) {
+        return { success: false, error: 'File not found' }
+      }
+      
+      const content = readFileSync(filePath, 'utf8')
+      console.log(`Debug file loaded: ${filePath} (${content.length} chars)`)
+      return { success: true, data: content }
+    } catch (error) {
+      console.error('Error loading debug file:', error)
       return { success: false, error: error.message }
     }
   })
