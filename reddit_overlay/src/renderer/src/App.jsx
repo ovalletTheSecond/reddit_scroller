@@ -38,8 +38,35 @@ function App() {
   const [comments, setComments] = useState([])
   const [commentsLoading, setCommentsLoading] = useState(false)
   const [redditViewFullscreen, setRedditViewFullscreen] = useState(false)
+  const [showControls, setShowControls] = useState(true)
+  const [mouseTimer, setMouseTimer] = useState(null)
 
   const ipcHandle = () => window.electron.ipcRenderer.send('ping')
+
+  // Handle mouse movement for auto-hiding controls
+  const handleMouseMove = () => {
+    setShowControls(true)
+    
+    // Clear existing timer
+    if (mouseTimer) {
+      clearTimeout(mouseTimer)
+    }
+    
+    // Set new timer to hide controls after 3 seconds of inactivity
+    const newTimer = setTimeout(() => {
+      setShowControls(false)
+    }, 3000)
+    
+    setMouseTimer(newTimer)
+  }
+
+  // Clean up timer on component unmount
+  const handleMouseLeave = () => {
+    if (mouseTimer) {
+      clearTimeout(mouseTimer)
+    }
+    setShowControls(false)
+  }
 
   // Save RSS main content to file
   const saveMainContent = async (content, subreddit) => {
@@ -550,13 +577,17 @@ function App() {
   }
 
   return (
-    <div style={{ 
-      display: 'flex', 
-      flexDirection: 'column', 
-      height: '100vh', 
-      boxSizing: 'border-box',
-      fontSize: `${zoomLevel}rem`
-    }}>
+    <div 
+      style={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        height: '100vh', 
+        boxSizing: 'border-box',
+        fontSize: `${zoomLevel}rem`
+      }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
       {fullScreenMode ? (
         // Mode plein écran
         <>
@@ -776,7 +807,10 @@ function App() {
           padding: '8px',
           borderRadius: '8px',
           border: '1px solid #ddd',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+          boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+          opacity: showControls ? 1 : 0,
+          transition: 'opacity 0.3s ease',
+          pointerEvents: showControls ? 'auto' : 'none'
         }}>
           <button
             onClick={() => setShowRedditWebview(!showRedditWebview)}
@@ -1362,7 +1396,10 @@ function App() {
         padding: '8px',
         borderRadius: '8px',
         border: '1px solid #ddd',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+        opacity: showControls ? 1 : 0,
+        transition: 'opacity 0.3s ease',
+        pointerEvents: showControls ? 'auto' : 'none'
       }}>
         <button
           onClick={() => setShowRedditRssReader(!showRedditRssReader)}
@@ -1436,7 +1473,13 @@ function App() {
           padding: '8px',
           borderRadius: '8px',
           border: '1px solid #ddd',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+          boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+          opacity: showControls ? 1 : 0,
+          transition: 'opacity 0.3s ease',
+          pointerEvents: showControls ? 'auto' : 'none'
+        }}>
+          transition: 'opacity 0.3s ease',
+          pointerEvents: showControls ? 'auto' : 'none'
         }}>
           <button
             onClick={previousPost}
@@ -1534,17 +1577,21 @@ function App() {
       
       {/* Fullscreen Reddit View Overlay */}
       {redditViewFullscreen && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'white',
-          zIndex: 9999,
-          display: 'flex',
-          flexDirection: 'column'
-        }}>
+        <div 
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'white',
+            zIndex: 9999,
+            display: 'flex',
+            flexDirection: 'column'
+          }}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
           {/* Top controls bar */}
           <div style={{
             position: 'fixed',
@@ -1555,7 +1602,10 @@ function App() {
             gap: '10px',
             backgroundColor: 'rgba(0, 0, 0, 0.8)',
             padding: '8px 12px',
-            borderRadius: '20px'
+            borderRadius: '20px',
+            opacity: showControls ? 1 : 0,
+            transition: 'opacity 0.3s ease',
+            pointerEvents: showControls ? 'auto' : 'none'
           }}>
             <button
               onClick={() => setRedditViewFullscreen(false)}

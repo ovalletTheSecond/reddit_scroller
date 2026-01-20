@@ -1,0 +1,20 @@
+Ce que ça fait : 
+
+met un overlay reddit qui peut rester par dessus des autres apps, comme un post-it 
+même par dessus les jeux fullscreen 
+
+ça serait une idée simpa de le faire pour chrome mais ça serait surement giga compliqué (bref je m'égare)
+ou pour un cheat de jeu ? (futile non ?)
+
+comment utiliser : 
+
+lancer le setup ou l'exécutable reddit_overlay.exe ou launcher
+
+rechercher un flux RSS (subreddit r/books donnera books) , note les 18+ marchent pas hélas, ou maybe native version mais cette version a pas les commentaires malheureusement (flemme de le faire)
+
+lire et naviguer avec les boutons, ça va chercher le premier post
+ça save le dernier post que tu as vu dans un fichier texte avec le contenu du dernier rss reçu 
+
+
+
+version pas maintenue qui marche avec la version actuelle de reddit du 20/01/2026 (pas noté la version vous pouvez sans doute trouver l'info en ligne), version vibe codée au doigt mouillé avec elecrtron.js et son builder pour faire l'app windows, et sinon c'est full jsx pour les queries a reddit (queries du flux rss)
