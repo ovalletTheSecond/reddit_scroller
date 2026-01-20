@@ -2,7 +2,7 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
-import { writeFileSync } from 'fs'
+import { writeFileSync, readFileSync, existsSync } from 'fs'
 const fetch = require('node-fetch')
 
 async function fetchRss(subredditOrUrl) {
@@ -184,6 +184,25 @@ app.whenReady().then(() => {
       return { success: true, path: filePath }
     } catch (error) {
       console.error('Error saving debug file:', error)
+      return { success: false, error: error.message }
+    }
+  })
+  
+  // Handle debug file load requests
+  ipcMain.handle('load-debug-file', async (event, filename) => {
+    try {
+      const projectRoot = process.cwd()
+      const filePath = join(projectRoot, filename)
+      
+      if (!existsSync(filePath)) {
+        return { success: false, error: 'File not found' }
+      }
+      
+      const content = readFileSync(filePath, 'utf8')
+      console.log(`Debug file loaded: ${filePath} (${content.length} chars)`)
+      return { success: true, data: content }
+    } catch (error) {
+      console.error('Error loading debug file:', error)
       return { success: false, error: error.message }
     }
   })

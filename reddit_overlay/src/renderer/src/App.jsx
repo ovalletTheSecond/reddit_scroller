@@ -37,8 +37,97 @@ function App() {
   const [zoomLevel, setZoomLevel] = useState(1)
   const [comments, setComments] = useState([])
   const [commentsLoading, setCommentsLoading] = useState(false)
+  const [redditViewFullscreen, setRedditViewFullscreen] = useState(false)
 
   const ipcHandle = () => window.electron.ipcRenderer.send('ping')
+
+  // Save RSS main content to file
+  const saveMainContent = async (content, subreddit) => {
+    try {
+      if (window.api?.saveDebugFile) {
+        const timestamp = new Date().toISOString()
+        const fileContent = `=== RSS MAIN CONTENT ===\n` +
+                           `Saved at: ${timestamp}\n` +
+                           `Subreddit: ${subreddit}\n` +
+                           `Posts count: ${posts.length}\n` +
+                           `Current post: ${currentPostIndex + 1}\n` +
+                           `=== CONTENT ===\n\n` +
+                           JSON.stringify(content, null, 2)
+        
+        const response = await window.api.saveDebugFile('last_main_content.txt', fileContent)
+        if (response.success) {
+          console.log('📁 Main content saved to last_main_content.txt')
+        }
+      }
+    } catch (error) {
+      console.error('Failed to save main content:', error)
+    }
+  }
+
+  // Save Reddit view content to file
+  const saveRedditViewContent = async (content, url, postTitle) => {
+    try {
+      if (window.api?.saveDebugFile) {
+        const timestamp = new Date().toISOString()
+        const fileContent = `=== REDDIT VIEW CONTENT ===\n` +
+                           `Saved at: ${timestamp}\n` +
+                           `Post Title: ${postTitle}\n` +
+                           `URL: ${url}\n` +
+                           `Content Length: ${content.length} characters\n` +
+                           `=== HTML CONTENT ===\n\n` +
+                           content
+        
+        const response = await window.api.saveDebugFile('last_reddit_view.txt', fileContent)
+        if (response.success) {
+          console.log('📁 Reddit view content saved to last_reddit_view.txt')
+        }
+      }
+    } catch (error) {
+      console.error('Failed to save Reddit view content:', error)
+    }
+  }
+
+  // Load saved content from files
+  const loadFromLastSavedPost = async () => {
+    try {
+      // Load main content
+      if (window.api?.loadDebugFile) {
+        const mainResponse = await window.api.loadDebugFile('last_main_content.txt')
+        if (mainResponse.success && mainResponse.data) {
+          const contentMatch = mainResponse.data.match(/=== CONTENT ===\s*\n\n([\s\S]*)/)
+          if (contentMatch && contentMatch[1]) {
+            try {
+              const savedContent = JSON.parse(contentMatch[1])
+              setPosts(savedContent.posts || [])
+              setCurrentPostIndex(savedContent.currentIndex || 0)
+              setSubreddit(savedContent.subreddit || 'books')
+              console.log('📂 Loaded main content from last_main_content.txt')
+            } catch (parseError) {
+              console.error('Error parsing saved main content:', parseError)
+            }
+          }
+        }
+
+        // Load Reddit view content
+        const viewResponse = await window.api.loadDebugFile('last_reddit_view.txt')
+        if (viewResponse.success && viewResponse.data) {
+          const htmlMatch = viewResponse.data.match(/=== HTML CONTENT ===\s*\n\n([\s\S]*)/)
+          if (htmlMatch && htmlMatch[1]) {
+            setFetchedContent(htmlMatch[1])
+            setAutoWebView(true)
+            console.log('📂 Loaded Reddit view content from last_reddit_view.txt')
+          }
+        }
+
+        setResult('✅ Loaded content from last saved post!')
+      } else {
+        setResult('❌ File APIs not available')
+      }
+    } catch (error) {
+      console.error('Error loading saved content:', error)
+      setResult('❌ Error loading saved content: ' + error.message)
+    }
+  }
 
   // Vérifier que les APIs sont disponibles
   console.log('APIs available:', {
@@ -155,6 +244,15 @@ function App() {
         const parsedPosts = parseRss(response.data)
         setPosts(parsedPosts)
         setCurrentPostIndex(0)
+        
+        // Save main content
+        const contentToSave = {
+          posts: parsedPosts,
+          currentIndex: 0,
+          subreddit: subreddit,
+          rssData: response.data
+        }
+        await saveMainContent(contentToSave, subreddit)
         
         // If first post is a Reddit post, fetch its content and comments
         if (parsedPosts.length > 0 && isRedditPostUrl(parsedPosts[0].link)) {
@@ -434,6 +532,10 @@ function App() {
       if (response.success) {
         console.log('✅ Reddit content fetched successfully, length:', response.data.length)
         setFetchedContent(response.data)
+        
+        // Save the Reddit view content
+        const postTitle = posts[currentPostIndex]?.title || 'Unknown Post'
+        await saveRedditViewContent(response.data, url, postTitle)
       } else {
         console.error('❌ Error fetching Reddit content:', response.error)
         setFetchedContent('<div style="padding: 20px; text-align: center; color: #c62828;">Erreur lors du chargement du contenu Reddit: ' + response.error + '</div>')
@@ -624,6 +726,22 @@ function App() {
                 >
                   {loading ? '...' : 'Load'}
                 </button>
+                <button 
+                  onClick={loadFromLastSavedPost} 
+                  style={{
+                    padding: '8px 16px',
+                    borderRadius: '4px',
+                    border: 'none',
+                    backgroundColor: '#28a745',
+                    color: 'white',
+                    cursor: 'pointer',
+                    fontSize: '14px',
+                    fontWeight: 'bold'
+                  }}
+                  title="Load content from last saved post"
+                >
+                  📂 Browse from last saved post
+                </button>
               </div>
               
               <button 
@@ -763,6 +881,24 @@ function App() {
                 }}
               >
                 {loading ? 'Chargement...' : 'Récupérer RSS'}
+              </button>
+              <button
+                onClick={loadFromLastSavedPost}
+                style={{
+                  width: '100%',
+                  padding: '10px',
+                  backgroundColor: '#28a745',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '6px',
+                  cursor: 'pointer',
+                  fontSize: '16px',
+                  fontWeight: 'bold',
+                  marginTop: '5px'
+                }}
+                title="Load content from last saved post"
+              >
+                📂 Browse from last saved post
               </button>
             </div>
             
@@ -1172,21 +1308,45 @@ function App() {
                     </div>
                   </div>
                 ) : (
-                  <iframe
-                    srcDoc={fetchedContent}
+                  <div 
+                    onClick={() => setRedditViewFullscreen(true)}
                     style={{
                       width: '100%',
                       height: '100%',
-                      border: 'none'
+                      cursor: 'pointer',
+                      position: 'relative'
                     }}
-                    title="Reddit Post Content"
-                  />
+                    title="Click to view fullscreen"
+                  >
+                    <iframe
+                      srcDoc={fetchedContent}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        border: 'none',
+                        pointerEvents: 'none'
+                      }}
+                      title="Reddit Post Content"
+                    />
+                    <div style={{
+                      position: 'absolute',
+                      top: '10px',
+                      right: '10px',
+                      backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                      color: 'white',
+                      padding: '4px 8px',
+                      borderRadius: '4px',
+                      fontSize: '12px',
+                      pointerEvents: 'none'
+                    }}>
+                      🔍 Click to expand
+                    </div>
+                  </div>
                 )}
               </div>
             </div>
           )}
         </div>
-        )}
       )}
       
       {/* Contrôles de visibilité - coin inférieur gauche */}
@@ -1369,6 +1529,62 @@ function App() {
               +
             </button>
           </div>
+        </div>
+      )}
+      
+      {/* Fullscreen Reddit View Overlay */}
+      {redditViewFullscreen && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'white',
+          zIndex: 9999,
+          display: 'flex',
+          flexDirection: 'column'
+        }}>
+          {/* Top controls bar */}
+          <div style={{
+            position: 'fixed',
+            top: '10px',
+            right: '10px',
+            zIndex: 10000,
+            display: 'flex',
+            gap: '10px',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            padding: '8px 12px',
+            borderRadius: '20px'
+          }}>
+            <button
+              onClick={() => setRedditViewFullscreen(false)}
+              style={{
+                padding: '6px 10px',
+                borderRadius: '15px',
+                border: 'none',
+                backgroundColor: '#dc3545',
+                color: 'white',
+                cursor: 'pointer',
+                fontSize: '12px',
+                fontWeight: 'bold'
+              }}
+              title="Close fullscreen"
+            >
+              ✕ Close
+            </button>
+          </div>
+          
+          {/* Fullscreen iframe */}
+          <iframe
+            srcDoc={fetchedContent}
+            style={{
+              width: '100%',
+              height: '100%',
+              border: 'none'
+            }}
+            title="Reddit Post Content - Fullscreen"
+          />
         </div>
       )}
     </div>
