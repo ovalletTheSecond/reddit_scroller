@@ -131,6 +131,22 @@ app.whenReady().then(() => {
     }
   })
 
+  // Get screenshot image as base64
+  ipcMain.handle('dofus-bot-get-image', async (event, filepath) => {
+    try {
+      const { readFileSync, existsSync } = require('fs')
+      if (!existsSync(filepath)) {
+        return { success: false, error: 'File not found' }
+      }
+      const buffer = readFileSync(filepath)
+      const base64 = buffer.toString('base64')
+      return { success: true, data: base64 }
+    } catch (error) {
+      console.error('Error reading screenshot:', error)
+      return { success: false, error: error.message }
+    }
+  })
+
   createWindow()
 
   app.on('activate', function () {

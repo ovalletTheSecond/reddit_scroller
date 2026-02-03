@@ -8,6 +8,7 @@ const api = {
   dofusBotStart: () => ipcRenderer.invoke('dofus-bot-start'),
   dofusBotStop: () => ipcRenderer.invoke('dofus-bot-stop'),
   dofusBotGetState: () => ipcRenderer.invoke('dofus-bot-state'),
+  dofusBotGetImage: (filepath) => ipcRenderer.invoke('dofus-bot-get-image', filepath),
   dofusBotOnLog: (callback) => {
     ipcRenderer.on('dofus-bot-log', (event, log) => callback(log))
   }

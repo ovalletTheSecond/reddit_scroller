@@ -49,15 +49,56 @@ class DofusBot {
 
   /**
    * Log a message to console and through callback
+   * @param {string} message - The log message
+   * @param {string} level - Log level (info, warn, error)
+   * @param {object} metadata - Optional metadata (images, analysis results, etc.)
    */
-  log(message, level = 'info') {
+  log(message, level = 'info', metadata = null) {
     const timestamp = new Date().toISOString()
     const logMessage = `[${timestamp}] [${level.toUpperCase()}] ${message}`
     console.log(logMessage)
 
     if (this.logCallback) {
-      this.logCallback({ timestamp, level, message })
+      const logData = { timestamp, level, message }
+      if (metadata) {
+        logData.metadata = metadata
+      }
+      this.logCallback(logData)
     }
+  }
+
+  /**
+   * Log with screenshot image
+   */
+  logWithScreenshot(message, filepath, level = 'info', additionalData = {}) {
+    const metadata = {
+      type: 'screenshot',
+      filepath,
+      filename: filepath.split('/').pop(),
+      ...additionalData
+    }
+    this.log(message, level, metadata)
+  }
+
+  /**
+   * Log analysis results with images
+   */
+  logAnalysis(
+    message,
+    screenshot1Path,
+    screenshot2Path,
+    diffPath,
+    analysisResults,
+    level = 'info'
+  ) {
+    const metadata = {
+      type: 'analysis',
+      screenshot1: screenshot1Path,
+      screenshot2: screenshot2Path,
+      diffImage: diffPath,
+      results: analysisResults
+    }
+    this.log(message, level, metadata)
   }
 
   /**
@@ -243,9 +284,13 @@ class DofusBot {
     // Manage screenshot history (keep only last 5)
     this.manageScreenshotHistory()
 
-    this.log(`Screenshot saved: ${filename}`)
+    // Log with screenshot preview
+    this.logWithScreenshot(`📸 Screenshot capturé`, filepath, 'info', {
+      timestamp,
+      size: imgBuffer.length
+    })
 
-    return { filepath, buffer: imgBuffer, timestamp }
+    return { filepath, buffer: imgBuffer, timestamp, filename }
   }
 
   /**
@@ -287,16 +332,31 @@ class DofusBot {
         threshold: this.pixelmatchThreshold
       })
 
-      this.log(`Nombre de pixels différents: ${numDiffPixels}`)
-
       // Save diff image for debugging
       const diffFilename = `diff_${Date.now()}.png`
       const diffPath = join(this.screenshotDir, diffFilename)
       writeFileSync(diffPath, PNG.sync.write(diff))
-      this.log(`Image de différence sauvegardée: ${diffFilename}`)
 
       // Find regions of differences
       const differences = this.findDifferenceRegions(diff.data, width, height)
+
+      // Log analysis results with images
+      const analysisResults = {
+        numDiffPixels,
+        totalPixels: width * height,
+        percentDiff: ((numDiffPixels / (width * height)) * 100).toFixed(2),
+        regionsFound: differences.length,
+        regions: differences.map((d) => ({ x: d.x, y: d.y, diffPixels: d.diffPixels }))
+      }
+
+      this.logAnalysis(
+        `🔍 Analyse terminée: ${differences.length} région(s) détectée(s)`,
+        screenshot1.filepath,
+        screenshot2.filepath,
+        diffPath,
+        analysisResults,
+        'info'
+      )
 
       return differences
     } catch (error) {
