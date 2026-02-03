@@ -177,9 +177,7 @@ const DofusBot = () => {
                   backgroundColor: getLogColor(log.level)
                 }}
               >
-                <span style={styles.logTime}>
-                  {new Date(log.timestamp).toLocaleTimeString()}
-                </span>
+                <span style={styles.logTime}>{new Date(log.timestamp).toLocaleTimeString()}</span>
                 <span style={styles.logLevel}>[{log.level.toUpperCase()}]</span>
                 <span style={styles.logMessage}>{log.message}</span>
               </div>
@@ -189,9 +187,7 @@ const DofusBot = () => {
       </div>
 
       <div style={styles.footer}>
-        <p style={styles.footerText}>
-          Basé sur reddit_scroller - Overlay Windows pour Dofus
-        </p>
+        <p style={styles.footerText}>Basé sur reddit_scroller - Overlay Windows pour Dofus</p>
       </div>
     </div>
   )

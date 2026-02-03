@@ -56,11 +56,11 @@ function App() {
       console.log('=== Checking current post for Reddit content ===')
       console.log('Post title:', currentPost.title)
       console.log('Post link:', currentPost.link)
-      
+
       // Check if the link is a Reddit post
       const isRedditPost = /reddit\.com\/r\/.*\/comments\//.test(currentPost.link)
       console.log('Is Reddit post:', isRedditPost)
-      
+
       if (isRedditPost) {
         console.log('=== Auto-loading Reddit content ===')
         setAutoWebView(true)
@@ -87,16 +87,18 @@ function App() {
 
     try {
       const response = await window.api.fetchRss(subreddit.trim())
-      
+
       if (response.success) {
-        setResult(`✅ RSS récupéré avec succès pour r/${subreddit}! ${response.data.length} caractères reçus.`)
+        setResult(
+          `✅ RSS récupéré avec succès pour r/${subreddit}! ${response.data.length} caractères reçus.`
+        )
         setRssData(response.data)
-        
+
         // Parse RSS and extract posts
         const parsedPosts = parseRss(response.data)
         setPosts(parsedPosts)
         setCurrentPostIndex(0)
-        
+
         console.log('RSS Data:', response.data.slice(0, 1000))
         console.log('Parsed posts:', parsedPosts.length)
       } else {
@@ -113,23 +115,24 @@ function App() {
     try {
       const parser = new DOMParser()
       const xmlDoc = parser.parseFromString(xmlString, 'text/xml')
-      
+
       // Check if it's an RSS feed (with <item> elements) or Atom feed (with <entry> elements)
       const items = xmlDoc.querySelectorAll('item')
       const entries = xmlDoc.querySelectorAll('entry')
-      
+
       let parsedPosts = []
-      
+
       if (entries.length > 0) {
         // Atom feed format (like Reddit RSS)
         parsedPosts = Array.from(entries).map((entry, index) => {
           const title = entry.querySelector('title')?.textContent || 'No title'
           const link = entry.querySelector('link')?.getAttribute('href') || '#'
           const contentElement = entry.querySelector('content')
-          const contentHtml = contentElement?.textContent || contentElement?.innerHTML || 'No content'
+          const contentHtml =
+            contentElement?.textContent || contentElement?.innerHTML || 'No content'
           const updated = entry.querySelector('updated')?.textContent || 'No date'
           const author = entry.querySelector('author name')?.textContent || 'Unknown'
-          
+
           return {
             id: index,
             title: title,
@@ -146,7 +149,7 @@ function App() {
           const description = item.querySelector('description')?.textContent || 'No description'
           const link = item.querySelector('link')?.textContent || '#'
           const pubDate = item.querySelector('pubDate')?.textContent || 'No date'
-          
+
           return {
             id: index,
             title: title,
@@ -157,7 +160,7 @@ function App() {
           }
         })
       }
-      
+
       console.log(`Parsed ${parsedPosts.length} posts from RSS/Atom feed`)
       if (parsedPosts.length > 0) {
         console.log('First post sample:', {
@@ -166,7 +169,7 @@ function App() {
           contentPreview: parsedPosts[0].contentHtml.slice(0, 100) + '...'
         })
       }
-      
+
       return parsedPosts
     } catch (error) {
       console.error('Error parsing RSS/Atom feed:', error)
@@ -178,7 +181,7 @@ function App() {
     if (currentPostIndex < posts.length - 1) {
       const newIndex = currentPostIndex + 1
       setCurrentPostIndex(newIndex)
-      
+
       // Vérifier si le nouveau post a un lien Reddit principal
       if (posts[newIndex] && isRedditPostUrl(posts[newIndex].link)) {
         console.log('url main found - url fetched - response : fetching...', posts[newIndex].link)
@@ -194,7 +197,7 @@ function App() {
     if (currentPostIndex > 0) {
       const newIndex = currentPostIndex - 1
       setCurrentPostIndex(newIndex)
-      
+
       // Vérifier si le nouveau post a un lien Reddit principal
       if (posts[newIndex] && isRedditPostUrl(posts[newIndex].link)) {
         console.log('url main found - url fetched - response : fetching...', posts[newIndex].link)
@@ -242,24 +245,32 @@ function App() {
     console.log('🔗 Starting Reddit content fetch for:', url)
     setContentLoading(true)
     setAutoWebView(true)
-    
+
     try {
       console.log('🔄 Calling main process to fetch Reddit content...')
       const response = await window.api.fetchRedditContent(url)
       console.log('📦 Response received from main process:', { success: response.success })
-      
+
       if (response.success) {
         console.log('✅ Reddit content fetched successfully, length:', response.data.length)
         setFetchedContent(response.data)
       } else {
         console.error('❌ Error fetching Reddit content:', response.error)
-        setFetchedContent('<div style="padding: 20px; text-align: center; color: #c62828;">Erreur lors du chargement du contenu Reddit: ' + response.error + '</div>')
+        setFetchedContent(
+          '<div style="padding: 20px; text-align: center; color: #c62828;">Erreur lors du chargement du contenu Reddit: ' +
+            response.error +
+            '</div>'
+        )
       }
-      
+
       setContentLoading(false)
     } catch (error) {
       console.error('❌ Exception while fetching Reddit content:', error)
-      setFetchedContent('<div style="padding: 20px; text-align: center; color: #c62828;">Erreur lors du chargement du contenu Reddit: ' + error.message + '</div>')
+      setFetchedContent(
+        '<div style="padding: 20px; text-align: center; color: #c62828;">Erreur lors du chargement du contenu Reddit: ' +
+          error.message +
+          '</div>'
+      )
       setContentLoading(false)
     }
   }
@@ -277,27 +288,33 @@ function App() {
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', boxSizing: 'border-box' }}>
+    <div
+      style={{ display: 'flex', flexDirection: 'column', height: '100vh', boxSizing: 'border-box' }}
+    >
       {fullScreenMode ? (
         // Mode plein écran
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100vw',
-          height: '100vh',
-          backgroundColor: '#f5f5f5',
-          zIndex: 9999,
-          display: 'flex',
-          flexDirection: 'column'
-        }}>
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100vw',
+            height: '100vh',
+            backgroundColor: '#f5f5f5',
+            zIndex: 9999,
+            display: 'flex',
+            flexDirection: 'column'
+          }}
+        >
           {/* Webview - 80% of height (no header) */}
-          <div style={{
-            height: '80vh',
-            backgroundColor: '#fff',
-            overflow: 'hidden',
-            position: 'relative'
-          }}>
+          <div
+            style={{
+              height: '80vh',
+              backgroundColor: '#fff',
+              overflow: 'hidden',
+              position: 'relative'
+            }}
+          >
             {/* Exit button - floating */}
             <button
               onClick={() => setFullScreenMode(false)}
@@ -319,33 +336,39 @@ function App() {
             >
               ✕ Exit
             </button>
-            
+
             {/* Contenu du webview - full height */}
-            <div style={{
-              height: '100%',
-              overflow: 'auto',
-              position: 'relative'
-            }}>
+            <div
+              style={{
+                height: '100%',
+                overflow: 'auto',
+                position: 'relative'
+              }}
+            >
               {contentLoading ? (
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  height: '100%',
-                  fontSize: '18px',
-                  color: '#666'
-                }}>
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: '100%',
+                    fontSize: '18px',
+                    color: '#666'
+                  }}
+                >
                   <div style={{ textAlign: 'center' }}>
                     <div style={{ marginBottom: '15px' }}>🔄 Loading Reddit content...</div>
-                    <div style={{
-                      width: '50px',
-                      height: '50px',
-                      border: '5px solid #f3f3f3',
-                      borderTop: '5px solid #007ACC',
-                      borderRadius: '50%',
-                      animation: 'spin 1s linear infinite',
-                      margin: '0 auto'
-                    }}></div>
+                    <div
+                      style={{
+                        width: '50px',
+                        height: '50px',
+                        border: '5px solid #f3f3f3',
+                        borderTop: '5px solid #007ACC',
+                        borderRadius: '50%',
+                        animation: 'spin 1s linear infinite',
+                        margin: '0 auto'
+                      }}
+                    ></div>
                   </div>
                 </div>
               ) : (
@@ -363,17 +386,21 @@ function App() {
           </div>
 
           {/* Navigation Controls - 20% of height */}
-          <div style={{
-            height: '20vh',
-            backgroundColor: '#fff',
-            padding: '20px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            borderTop: '2px solid #007ACC'
-          }}>
+          <div
+            style={{
+              height: '20vh',
+              backgroundColor: '#fff',
+              padding: '20px',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              borderTop: '2px solid #007ACC'
+            }}
+          >
             {/* Subreddit selector */}
-            <div style={{ marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div
+              style={{ marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '10px' }}
+            >
               <label style={{ fontSize: '16px', fontWeight: 'bold' }}>Subreddit:</label>
               <input
                 type="text"
@@ -427,13 +454,15 @@ function App() {
                   ← Previous Post
                 </button>
 
-                <div style={{ 
-                  textAlign: 'center',
-                  minWidth: '120px',
-                  fontSize: '16px',
-                  fontWeight: 'bold',
-                  color: '#007ACC'
-                }}>
+                <div
+                  style={{
+                    textAlign: 'center',
+                    minWidth: '120px',
+                    fontSize: '16px',
+                    fontWeight: 'bold',
+                    color: '#007ACC'
+                  }}
+                >
                   {currentPostIndex + 1} / {posts.length}
                 </div>
 
@@ -462,32 +491,38 @@ function App() {
         // Mode normal
         <div style={{ display: 'flex', height: '100%', padding: '10px', gap: '10px' }}>
           {/* Control Panel */}
-          <div style={{
-            flexShrink: 0,
-            width: '300px',
-            border: '1px solid #ddd',
-            borderRadius: '8px',
-            padding: '15px',
-            backgroundColor: '#fff',
-            height: 'fit-content'
-          }}>
-            <h1 style={{
-              margin: '0 0 15px 0',
-              color: '#007ACC',
-              fontSize: '20px',
-              fontWeight: 'bold'
-            }}>
+          <div
+            style={{
+              flexShrink: 0,
+              width: '300px',
+              border: '1px solid #ddd',
+              borderRadius: '8px',
+              padding: '15px',
+              backgroundColor: '#fff',
+              height: 'fit-content'
+            }}
+          >
+            <h1
+              style={{
+                margin: '0 0 15px 0',
+                color: '#007ACC',
+                fontSize: '20px',
+                fontWeight: 'bold'
+              }}
+            >
               Reddit RSS Reader
             </h1>
-            
+
             <div style={{ marginBottom: '15px' }}>
-              <label style={{
-                display: 'block',
-                marginBottom: '5px',
-                color: '#333',
-                fontSize: '14px',
-                fontWeight: 'bold'
-              }}>
+              <label
+                style={{
+                  display: 'block',
+                  marginBottom: '5px',
+                  color: '#333',
+                  fontSize: '14px',
+                  fontWeight: 'bold'
+                }}
+              >
                 Subreddit:
               </label>
               <input
@@ -522,18 +557,18 @@ function App() {
                 {loading ? 'Chargement...' : 'Récupérer RSS'}
               </button>
             </div>
-            
+
             {/* Navigation Buttons */}
             {posts.length > 0 && (
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <button 
+                <button
                   onClick={previousPost}
                   disabled={currentPostIndex === 0}
-                  style={{ 
-                    padding: '6px 12px', 
-                    borderRadius: '4px', 
-                    border: 'none', 
-                    backgroundColor: currentPostIndex === 0 ? '#ccc' : '#28a745', 
+                  style={{
+                    padding: '6px 12px',
+                    borderRadius: '4px',
+                    border: 'none',
+                    backgroundColor: currentPostIndex === 0 ? '#ccc' : '#28a745',
                     color: 'black',
                     cursor: currentPostIndex === 0 ? 'not-allowed' : 'pointer'
                   }}
@@ -543,14 +578,14 @@ function App() {
                 <span style={{ fontSize: '14px', color: '#666' }}>
                   {currentPostIndex + 1} / {posts.length}
                 </span>
-                <button 
+                <button
                   onClick={nextPost}
                   disabled={currentPostIndex === posts.length - 1}
-                  style={{ 
-                    padding: '6px 12px', 
-                    borderRadius: '4px', 
-                    border: 'none', 
-                    backgroundColor: currentPostIndex === posts.length - 1 ? '#ccc' : '#28a745', 
+                  style={{
+                    padding: '6px 12px',
+                    borderRadius: '4px',
+                    border: 'none',
+                    backgroundColor: currentPostIndex === posts.length - 1 ? '#ccc' : '#28a745',
                     color: 'black',
                     cursor: currentPostIndex === posts.length - 1 ? 'not-allowed' : 'pointer'
                   }}
@@ -595,67 +630,78 @@ function App() {
                 </button>
               )}
             </div>
-            
+
             {result && (
-              <div style={{ 
-                marginTop: '10px', 
-                padding: '8px', 
-                backgroundColor: result.includes('Erreur') ? '#ffebee' : '#e8f5e8',
-                borderRadius: '4px',
-                color: result.includes('Erreur') ? '#c62828' : '#2e7d32',
-                fontSize: '14px'
-              }}>
+              <div
+                style={{
+                  marginTop: '10px',
+                  padding: '8px',
+                  backgroundColor: result.includes('Erreur') ? '#ffebee' : '#e8f5e8',
+                  borderRadius: '4px',
+                  color: result.includes('Erreur') ? '#c62828' : '#2e7d32',
+                  fontSize: '14px'
+                }}
+              >
                 {result}
               </div>
             )}
           </div>
 
           {/* Content Display Area */}
-          <div style={{ 
-            flex: autoWebView ? '0.6' : '1', 
-            border: '1px solid #ddd', 
-            borderRadius: '8px', 
-            padding: '15px',
-            backgroundColor: '#fff',
-            overflow: 'auto',
-            minHeight: '0',
-            marginBottom: autoWebView ? '10px' : '0'
-          }}>
+          <div
+            style={{
+              flex: autoWebView ? '0.6' : '1',
+              border: '1px solid #ddd',
+              borderRadius: '8px',
+              padding: '15px',
+              backgroundColor: '#fff',
+              overflow: 'auto',
+              minHeight: '0',
+              marginBottom: autoWebView ? '10px' : '0'
+            }}
+          >
             {posts.length > 0 ? (
               <div>
-                <h2 style={{ 
-                  marginTop: '0', 
-                  marginBottom: '10px',
-                  borderBottom: '2px solid #007ACC',
-                  paddingBottom: '5px',
-                  color: '#007ACC',
-                  userSelect: 'text',
-                  WebkitUserSelect: 'text',
-                  MozUserSelect: 'text',
-                  msUserSelect: 'text'
-                }}>
+                <h2
+                  style={{
+                    marginTop: '0',
+                    marginBottom: '10px',
+                    borderBottom: '2px solid #007ACC',
+                    paddingBottom: '5px',
+                    color: '#007ACC',
+                    userSelect: 'text',
+                    WebkitUserSelect: 'text',
+                    MozUserSelect: 'text',
+                    msUserSelect: 'text'
+                  }}
+                >
                   {posts[currentPostIndex].title}
                 </h2>
-                <div style={{ 
-                  fontSize: '12px', 
-                  color: '#666', 
-                  marginBottom: '15px',
-                  borderLeft: '3px solid #007ACC',
-                  paddingLeft: '10px'
-                }}>
-                  <strong>Author:</strong> {posts[currentPostIndex].author}<br/>
-                  <strong>Published:</strong> {posts[currentPostIndex].pubDate}<br/>
-                  <strong>Link:</strong> <a 
-                    href={posts[currentPostIndex].link} 
-                    target="_blank" 
+                <div
+                  style={{
+                    fontSize: '12px',
+                    color: '#666',
+                    marginBottom: '15px',
+                    borderLeft: '3px solid #007ACC',
+                    paddingLeft: '10px'
+                  }}
+                >
+                  <strong>Author:</strong> {posts[currentPostIndex].author}
+                  <br />
+                  <strong>Published:</strong> {posts[currentPostIndex].pubDate}
+                  <br />
+                  <strong>Link:</strong>{' '}
+                  <a
+                    href={posts[currentPostIndex].link}
+                    target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: '#007ACC', textDecoration: 'none' }}
                   >
                     {posts[currentPostIndex].link}
                   </a>
                 </div>
-                <div 
-                  style={{ 
+                <div
+                  style={{
                     lineHeight: '1.6',
                     fontSize: '14px',
                     whiteSpace: 'pre-wrap',
@@ -666,7 +712,7 @@ function App() {
                     msUserSelect: 'text'
                   }}
                   onClick={handleLinkClick}
-                  dangerouslySetInnerHTML={{ 
+                  dangerouslySetInnerHTML={{
                     __html: posts[currentPostIndex].contentHtml
                       .replace(/&lt;/g, '<')
                       .replace(/&gt;/g, '>')
@@ -677,72 +723,84 @@ function App() {
             ) : rssData ? (
               <div>
                 <h3>Raw RSS Data:</h3>
-                <pre style={{ 
-                  whiteSpace: 'pre-wrap', 
-                  fontSize: '12px',
-                  backgroundColor: '#f5f5f5',
-                  padding: '10px',
-                  borderRadius: '4px',
-                  overflow: 'auto',
-                  color: '#333',
-                  userSelect: 'text',
-                  WebkitUserSelect: 'text',
-                  MozUserSelect: 'text',
-                  msUserSelect: 'text'
-                }}>
+                <pre
+                  style={{
+                    whiteSpace: 'pre-wrap',
+                    fontSize: '12px',
+                    backgroundColor: '#f5f5f5',
+                    padding: '10px',
+                    borderRadius: '4px',
+                    overflow: 'auto',
+                    color: '#333',
+                    userSelect: 'text',
+                    WebkitUserSelect: 'text',
+                    MozUserSelect: 'text',
+                    msUserSelect: 'text'
+                  }}
+                >
                   {rssData}
                 </pre>
               </div>
             ) : (
-              <div style={{ 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center', 
-                height: '100%',
-                color: '#666',
-                fontSize: '16px'
-              }}>
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  height: '100%',
+                  color: '#666',
+                  fontSize: '16px'
+                }}
+              >
                 Enter a subreddit name and click "Récupérer RSS" to load content
               </div>
             )}
           </div>
-          
+
           {/* Auto WebView en bas pour les posts Reddit */}
           {autoWebView && (
-            <div style={{
-              flex: '0.4',
-              border: '1px solid #007ACC',
-              borderRadius: '8px',
-              backgroundColor: '#fff',
-              overflow: 'hidden',
-              minHeight: '200px'
-            }}>
+            <div
+              style={{
+                flex: '0.4',
+                border: '1px solid #007ACC',
+                borderRadius: '8px',
+                backgroundColor: '#fff',
+                overflow: 'hidden',
+                minHeight: '200px'
+              }}
+            >
               {/* Contenu du webview */}
-              <div style={{
-                height: '100%',
-                overflow: 'auto',
-                position: 'relative'
-              }}>
+              <div
+                style={{
+                  height: '100%',
+                  overflow: 'auto',
+                  position: 'relative'
+                }}
+              >
                 {contentLoading ? (
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    height: '100%',
-                    fontSize: '16px',
-                    color: '#666'
-                  }}>
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      height: '100%',
+                      fontSize: '16px',
+                      color: '#666'
+                    }}
+                  >
                     <div style={{ textAlign: 'center' }}>
                       <div style={{ marginBottom: '10px' }}>🔄 Loading Reddit content...</div>
-                      <div style={{
-                        width: '40px',
-                        height: '40px',
-                        border: '4px solid #f3f3f3',
-                        borderTop: '4px solid #007ACC',
-                        borderRadius: '50%',
-                        animation: 'spin 1s linear infinite',
-                        margin: '0 auto'
-                      }}></div>
+                      <div
+                        style={{
+                          width: '40px',
+                          height: '40px',
+                          border: '4px solid #f3f3f3',
+                          borderTop: '4px solid #007ACC',
+                          borderRadius: '50%',
+                          animation: 'spin 1s linear infinite',
+                          margin: '0 auto'
+                        }}
+                      ></div>
                     </div>
                   </div>
                 ) : (
