@@ -4,6 +4,10 @@ import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
 import { writeFileSync, readFileSync, existsSync } from 'fs'
 const fetch = require('node-fetch')
+import { DofusBot } from './dofusBot.js'
+
+// Global bot instance
+let dofusBot = null
 
 async function fetchRss(subredditOrUrl) {
   try {
@@ -108,7 +112,7 @@ function createWindow() {
     height: 670,
     show: false,
     autoHideMenuBar: true,
-    title: 'Reddit Scroller',
+    title: 'Dofus Bot Overlay',
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
@@ -206,6 +210,77 @@ app.whenReady().then(() => {
       return { success: false, error: error.message }
     }
   })
+  
+  // ==== Dofus Bot IPC Handlers ====
+  
+  // Initialize Dofus Bot
+  ipcMain.handle('dofus-bot-init', async () => {
+    try {
+      if (!dofusBot) {
+        dofusBot = new DofusBot()
+        
+        // Set up log callback to send logs to renderer
+        dofusBot.setLogCallback((log) => {
+          // Send log to all windows
+          BrowserWindow.getAllWindows().forEach(window => {
+            window.webContents.send('dofus-bot-log', log)
+          })
+        })
+        
+        console.log('Dofus Bot initialized')
+      }
+      return { success: true }
+    } catch (error) {
+      console.error('Error initializing Dofus Bot:', error)
+      return { success: false, error: error.message }
+    }
+  })
+  
+  // Start Dofus Bot
+  ipcMain.handle('dofus-bot-start', async () => {
+    try {
+      if (!dofusBot) {
+        dofusBot = new DofusBot()
+        dofusBot.setLogCallback((log) => {
+          BrowserWindow.getAllWindows().forEach(window => {
+            window.webContents.send('dofus-bot-log', log)
+          })
+        })
+      }
+      
+      await dofusBot.start()
+      return { success: true }
+    } catch (error) {
+      console.error('Error starting Dofus Bot:', error)
+      return { success: false, error: error.message }
+    }
+  })
+  
+  // Stop Dofus Bot
+  ipcMain.handle('dofus-bot-stop', async () => {
+    try {
+      if (dofusBot) {
+        dofusBot.stop()
+      }
+      return { success: true }
+    } catch (error) {
+      console.error('Error stopping Dofus Bot:', error)
+      return { success: false, error: error.message }
+    }
+  })
+  
+  // Get Dofus Bot state
+  ipcMain.handle('dofus-bot-state', async () => {
+    try {
+      if (!dofusBot) {
+        return { success: true, data: { state: 'not_initialized', isRunning: false } }
+      }
+      return { success: true, data: dofusBot.getState() }
+    } catch (error) {
+      console.error('Error getting Dofus Bot state:', error)
+      return { success: false, error: error.message }
+    }
+  })
 
   createWindow()
   
@@ -228,8 +303,22 @@ app.whenReady().then(() => {
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
 app.on('window-all-closed', () => {
+  // Cleanup Dofus Bot
+  if (dofusBot) {
+    dofusBot.cleanup()
+    dofusBot = null
+  }
+  
   if (process.platform !== 'darwin') {
     app.quit()
+  }
+})
+
+// Cleanup on quit
+app.on('before-quit', () => {
+  if (dofusBot) {
+    dofusBot.cleanup()
+    dofusBot = null
   }
 })
 
