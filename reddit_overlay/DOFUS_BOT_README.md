@@ -136,6 +136,6 @@ src/
 
 ⚠️ **En utilisant cet outil, vous reconnaissez avoir lu et compris ces avertissements.**
 
-## Basé sur
+## Architecture
 
-Ce projet est basé sur l'architecture de `reddit_scroller`, une application overlay Electron + React.
+Ce projet est une application overlay Electron + React conçue spécifiquement pour Dofus.

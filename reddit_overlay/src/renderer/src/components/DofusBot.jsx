@@ -187,7 +187,7 @@ const DofusBot = () => {
       </div>
 
       <div style={styles.footer}>
-        <p style={styles.footerText}>Basé sur reddit_scroller - Overlay Windows pour Dofus</p>
+        <p style={styles.footerText}>Dofus Bot Overlay - Electron + React</p>
       </div>
     </div>
   )

@@ -3,11 +3,6 @@ import { electronAPI } from '@electron-toolkit/preload'
 
 // Custom APIs for renderer
 const api = {
-  fetchRss: (subreddit) => ipcRenderer.invoke('fetch-rss', subreddit),
-  fetchRedditContent: (url) => ipcRenderer.invoke('fetch-reddit-content', url),
-  saveDebugFile: (filename, content) => ipcRenderer.invoke('save-debug-file', filename, content),
-  loadDebugFile: (filename) => ipcRenderer.invoke('load-debug-file', filename),
-
   // Dofus Bot API
   dofusBotInit: () => ipcRenderer.invoke('dofus-bot-init'),
   dofusBotStart: () => ipcRenderer.invoke('dofus-bot-start'),
