@@ -109,7 +109,32 @@ src/
 
 ## Sécurité et Avertissements
 
-⚠️ **Important** : L'utilisation de bots peut être contraire aux conditions d'utilisation de certains jeux. Utilisez cet outil à vos propres risques.
+⚠️ **IMPORTANT - LISEZ ATTENTIVEMENT** :
+
+1. **Violation des Conditions d'Utilisation** : L'utilisation de bots automatisés est généralement **strictement interdite** par les conditions d'utilisation de Dofus et la plupart des jeux en ligne.
+
+2. **Risque de Sanction** : L'utilisation de cet outil peut entraîner :
+   - **Suspension temporaire** de votre compte
+   - **Bannissement permanent** de votre compte
+   - **Perte de tous vos personnages et objets**
+   - **Blocage de votre adresse IP**
+
+3. **Détection** : Les systèmes anti-triche modernes peuvent détecter :
+   - Les patterns d'actions automatisées
+   - Les mouvements de souris non-humains
+   - Les temps de réaction trop rapides ou trop réguliers
+
+4. **Responsabilité** :
+   - Cet outil est fourni **à titre éducatif uniquement**
+   - Les développeurs ne sont **pas responsables** des conséquences de son utilisation
+   - Utilisez cet outil **entièrement à vos propres risques**
+
+5. **Recommandations** :
+   - N'utilisez cet outil que sur des comptes de test
+   - Ne l'utilisez jamais sur des comptes contenant des personnages précieux
+   - Comprenez que vous risquez de perdre définitivement l'accès à votre compte
+
+⚠️ **En utilisant cet outil, vous reconnaissez avoir lu et compris ces avertissements.**
 
 ## Basé sur
 

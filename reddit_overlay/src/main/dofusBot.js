@@ -27,6 +27,11 @@ class DofusBot {
     this.screenshotDir = join(process.cwd(), 'dofus_screenshots')
     this.logCallback = null
 
+    // Configurable detection parameters
+    this.pixelmatchThreshold = 0.1 // Sensitivity for pixel comparison (0-1)
+    this.diffGridSize = 50 // Grid size for region detection (pixels)
+    this.diffThreshold = 100 // Minimum different pixels to consider a region
+
     // Create screenshot directory if it doesn't exist
     if (!existsSync(this.screenshotDir)) {
       mkdirSync(this.screenshotDir, { recursive: true })
@@ -134,8 +139,9 @@ class DofusBot {
 
       // Simulate pressing 'z' key
       this.log('⌨️ Appui sur la touche Z...')
-      // Note: Key simulation will be handled through IPC to renderer for actual key press
-      // For now, we'll just log it
+      // TODO: Implement native keyboard simulation in main process
+      // This requires native modules like robotjs or Windows API calls via FFI
+      // For now, this is a placeholder that logs the action
 
       // Wait a bit
       await this.sleep(500)
@@ -155,7 +161,8 @@ class DofusBot {
         for (let i = 0; i < differences.length; i++) {
           const diff = differences[i]
           this.log(`🖱️ Clic sur la zone ${i + 1} à (${diff.x}, ${diff.y})`)
-          // Note: Mouse click will be handled through IPC
+          // TODO: Implement native mouse click simulation in main process
+          // This requires native modules like robotjs or Windows API calls via FFI
           await this.sleep(200)
         }
 
@@ -277,7 +284,7 @@ class DofusBot {
 
       // Calculate pixel differences
       const numDiffPixels = pixelmatch(img1.data, img2.data, diff.data, width, height, {
-        threshold: 0.1
+        threshold: this.pixelmatchThreshold
       })
 
       this.log(`Nombre de pixels différents: ${numDiffPixels}`)
@@ -303,16 +310,14 @@ class DofusBot {
    */
   findDifferenceRegions(diffData, width, height) {
     const regions = []
-    const gridSize = 50 // Divide screen into 50x50 pixel regions
-    const threshold = 100 // Minimum different pixels to consider a region
 
-    for (let y = 0; y < height; y += gridSize) {
-      for (let x = 0; x < width; x += gridSize) {
+    for (let y = 0; y < height; y += this.diffGridSize) {
+      for (let x = 0; x < width; x += this.diffGridSize) {
         let diffCount = 0
 
         // Count different pixels in this region
-        for (let dy = 0; dy < gridSize && y + dy < height; dy++) {
-          for (let dx = 0; dx < gridSize && x + dx < width; dx++) {
+        for (let dy = 0; dy < this.diffGridSize && y + dy < height; dy++) {
+          for (let dx = 0; dx < this.diffGridSize && x + dx < width; dx++) {
             const idx = ((y + dy) * width + (x + dx)) * 4
             // If pixel is marked as different (red channel > 0)
             if (diffData[idx] > 0) {
@@ -321,10 +326,10 @@ class DofusBot {
           }
         }
 
-        if (diffCount > threshold) {
+        if (diffCount > this.diffThreshold) {
           regions.push({
-            x: x + gridSize / 2,
-            y: y + gridSize / 2,
+            x: x + this.diffGridSize / 2,
+            y: y + this.diffGridSize / 2,
             diffPixels: diffCount
           })
         }

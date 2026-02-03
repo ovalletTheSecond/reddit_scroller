@@ -3,11 +3,13 @@
 ## Installation
 
 1. Naviguez vers le dossier du projet :
+
 ```bash
 cd reddit_overlay
 ```
 
 2. Installez les dépendances :
+
 ```bash
 npm install
 ```
@@ -51,6 +53,7 @@ L'exécutable sera créé dans le dossier `dist/`.
 ### Indicateurs d'État
 
 L'interface affiche en temps réel :
+
 - **État actuel** - L'état dans lequel se trouve le bot (coloré selon l'état)
 - **Screenshots** - Nombre de screenshots dans l'historique (max 5)
 
@@ -67,11 +70,13 @@ Le bot passe automatiquement par différents états :
 ### Logs en Temps Réel
 
 La zone de logs affiche toutes les actions du bot :
+
 - Timestamp de chaque action
 - Niveau de log (INFO, WARN, ERROR)
 - Message détaillé de l'action
 
 Les logs sont colorés selon leur importance :
+
 - Bleu clair : Informations normales
 - Orange : Avertissements
 - Rouge : Erreurs
@@ -118,6 +123,7 @@ reddit_overlay/
 ### Version Actuelle
 
 Cette version est une **implémentation de base** qui inclut :
+
 - ✅ Gestion des états du bot
 - ✅ Capture automatique de screenshots
 - ✅ Détection de différences entre images
@@ -128,16 +134,19 @@ Cette version est une **implémentation de base** qui inclut :
 ### Limitations Actuelles
 
 Les actions clavier/souris sont actuellement des **placeholders** :
+
 - L'appui sur la touche 'Z' est simulé (log uniquement)
 - Les clics de souris sont simulés (log uniquement)
 
 Pour une implémentation complète, il faudrait ajouter :
+
 - Une bibliothèque de simulation d'entrées natives (ex: robotjs, mais nécessite des dépendances système)
 - Ou utiliser des APIs Windows natives via FFI/N-API
 
 ### Versions Futures
 
 Fonctionnalités prévues :
+
 - Reconnaissance de texte (OCR) pour valider les groupes de monstres
 - Simulation réelle des entrées clavier/souris
 - Actions de combat automatisées
@@ -148,20 +157,24 @@ Fonctionnalités prévues :
 ## Dépannage
 
 ### Le bot ne démarre pas
+
 - Vérifiez que toutes les dépendances sont installées : `npm install`
 - Vérifiez les logs dans la console pour les erreurs
 
 ### Aucun screenshot capturé
+
 - Assurez-vous que le dossier `dofus_screenshots/` existe
 - Vérifiez les permissions d'écriture
 
 ### Les différences ne sont pas détectées
+
 - Vérifiez que les deux screenshots sont bien capturés
 - Les paramètres de détection peuvent nécessiter un ajustement (threshold dans `findDifferences`)
 
 ## Support
 
 Pour toute question ou problème, consultez :
+
 - Le fichier `DOFUS_BOT_README.md` pour la documentation technique
 - Les logs de l'application pour les détails d'erreur
 - Le code source dans `src/main/dofusBot.js` pour la logique du bot

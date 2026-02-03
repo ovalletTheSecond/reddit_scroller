@@ -7,7 +7,7 @@ const DofusBot = () => {
     screenshotCount: 0
   })
   const [logs, setLogs] = useState([])
-  const [maxLogs] = useState(100) // Keep last 100 logs
+  const maxLogs = 100 // Keep last 100 logs
 
   // Initialize bot and set up log listener
   useEffect(() => {
