@@ -8,6 +8,7 @@ import { PNG } from 'pngjs'
 import pixelmatch from 'pixelmatch'
 import { writeFileSync, unlinkSync, existsSync, mkdirSync } from 'fs'
 import { join } from 'path'
+import * as nativeInput from './nativeInput.js'
 
 // Bot states
 const BotState = {
@@ -180,9 +181,16 @@ class DofusBot {
 
       // Simulate pressing 'z' key
       this.log('⌨️ Appui sur la touche Z...')
-      // TODO: Implement native keyboard simulation in main process
-      // This requires native modules like robotjs or Windows API calls via FFI
-      // For now, this is a placeholder that logs the action
+      try {
+        if (nativeInput.isWindows()) {
+          await nativeInput.keyDown('z')
+          this.log('✅ Touche Z enfoncée')
+        } else {
+          this.log('⚠️ Simulation clavier non disponible (Windows uniquement)', 'warn')
+        }
+      } catch (error) {
+        this.log(`❌ Erreur simulation clavier: ${error.message}`, 'error')
+      }
 
       // Wait a bit
       await this.sleep(500)
