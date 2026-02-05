@@ -199,6 +199,16 @@ class DofusBot {
       this.log('📸 Capture du deuxième screenshot (avec Z enfoncé)...')
       const screenshot2 = await this.takeScreenshot()
 
+      // Release Z key
+      try {
+        if (nativeInput.isWindows()) {
+          await nativeInput.keyUp('z')
+          this.log('✅ Touche Z relâchée')
+        }
+      } catch (error) {
+        this.log(`❌ Erreur libération touche: ${error.message}`, 'error')
+      }
+
       // Calculate difference
       this.log('🔍 Calcul des différences entre les screenshots...')
       const differences = await this.findDifferences(screenshot1, screenshot2)
@@ -210,8 +220,16 @@ class DofusBot {
         for (let i = 0; i < differences.length; i++) {
           const diff = differences[i]
           this.log(`🖱️ Clic sur la zone ${i + 1} à (${diff.x}, ${diff.y})`)
-          // TODO: Implement native mouse click simulation in main process
-          // This requires native modules like robotjs or Windows API calls via FFI
+          try {
+            if (nativeInput.isWindows()) {
+              await nativeInput.click(diff.x, diff.y, 'left')
+              this.log(`✅ Clic effectué à (${diff.x}, ${diff.y})`)
+            } else {
+              this.log('⚠️ Simulation souris non disponible (Windows uniquement)', 'warn')
+            }
+          } catch (error) {
+            this.log(`❌ Erreur simulation souris: ${error.message}`, 'error')
+          }
           await this.sleep(200)
         }
 
