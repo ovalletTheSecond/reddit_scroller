@@ -2,104 +2,10 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
-import { writeFileSync, readFileSync, existsSync } from 'fs'
-const fetch = require('node-fetch')
+import { DofusBot } from './dofusBot.js'
 
-async function fetchRss(subredditOrUrl) {
-  try {
-    let url, logName
-    
-    // Check if it's a custom URL (starts with 'custom:')
-    if (subredditOrUrl.startsWith('custom:')) {
-      url = subredditOrUrl.replace('custom:', '')
-      logName = url
-      console.log(`Fetching RSS from custom URL: ${url}`)
-    } else {
-      // Standard subreddit RSS
-      url = `https://www.reddit.com/r/${subredditOrUrl}/.rss`
-      logName = `r/${subredditOrUrl}`
-      console.log(`Fetching RSS for subreddit: ${subredditOrUrl}`)
-    }
-    
-    const res = await fetch(url, { 
-      headers: { "User-Agent": "reddit-overlay-app/1.0" } 
-    })
-    
-    if (!res.ok) {
-      throw new Error(`HTTP error! status: ${res.status}`)
-    }
-    
-    const xml = await res.text()
-    console.log(`Successfully fetched RSS data for ${logName}`)
-    console.log('First 400 characters:')
-    console.log(xml.slice(0, 400))
-    console.log('--- End of preview ---')
-    
-    // Save RSS to file at project root
-    try {
-      const projectRoot = process.cwd()
-      const filePath = join(projectRoot, 'last_rss_data.txt')
-      const timestamp = new Date().toISOString()
-      const fileContent = `=== RSS DATA FOR ${logName} ===\n` +
-                         `Fetched at: ${timestamp}\n` +
-                         `URL: ${url}\n` +
-                         `Content length: ${xml.length} characters\n` +
-                         `=== RAW RSS XML ===\n\n` +
-                         xml
-      
-      writeFileSync(filePath, fileContent, 'utf8')
-      console.log(`RSS data saved to: ${filePath}`)
-    } catch (fileError) {
-      console.error('Error saving RSS to file:', fileError)
-    }
-    
-    return xml
-  } catch (error) {
-    console.error(`Error fetching RSS for ${logName || subredditOrUrl}:`, error)
-    throw error
-  }
-}
-
-async function fetchRedditPageContent(url) {
-  try {
-    console.log('url main found - url fetched - response : fetching...', url)
-    const res = await fetch(url, { 
-      headers: { 
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-        "Accept-Language": "en-US,en;q=0.9",
-        "Accept-Encoding": "gzip, deflate, br",
-        "DNT": "1",
-        "Connection": "keep-alive",
-        "Upgrade-Insecure-Requests": "1",
-        "Sec-Fetch-Dest": "document",
-        "Sec-Fetch-Mode": "navigate",
-        "Sec-Fetch-Site": "none",
-        "Sec-Fetch-User": "?1",
-        "Cache-Control": "max-age=0"
-      },
-      method: 'GET'
-    })
-    
-    if (!res.ok) {
-      throw new Error(`HTTP error! status: ${res.status} - ${res.statusText}`)
-    }
-    
-    const html = await res.text()
-    console.log('url main found - url fetched - response :', {
-      url: url,
-      status: res.status,
-      statusText: res.statusText,
-      responseLength: html.length,
-      preview: html.slice(0, 200).replace(/\n/g, ' ') + '...'
-    })
-    
-    return html
-  } catch (error) {
-    console.error('Error fetching Reddit page content:', error)
-    throw error
-  }
-}
+// Global bot instance
+let dofusBot = null
 
 function createWindow() {
   // Create the browser window.
@@ -108,7 +14,7 @@ function createWindow() {
     height: 670,
     show: false,
     autoHideMenuBar: true,
-    title: 'Reddit Scroller',
+    title: 'Dofus Bot Overlay',
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
@@ -117,7 +23,7 @@ function createWindow() {
     }
   })
 
-  mainWindow.setAlwaysOnTop(true, 'screen');
+  mainWindow.setAlwaysOnTop(true, 'screen')
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
@@ -153,69 +59,95 @@ app.whenReady().then(() => {
 
   // IPC test
   ipcMain.on('ping', () => console.log('pong'))
-  
-  // Handle RSS fetch requests
-  ipcMain.handle('fetch-rss', async (event, subreddit) => {
+
+  // ==== Dofus Bot IPC Handlers ====
+
+  // Initialize Dofus Bot
+  ipcMain.handle('dofus-bot-init', async () => {
     try {
-      const rssData = await fetchRss(subreddit)
-      return { success: true, data: rssData }
+      if (!dofusBot) {
+        dofusBot = new DofusBot()
+
+        // Set up log callback to send logs to renderer
+        dofusBot.setLogCallback((log) => {
+          // Send log to all windows
+          BrowserWindow.getAllWindows().forEach((window) => {
+            window.webContents.send('dofus-bot-log', log)
+          })
+        })
+
+        console.log('Dofus Bot initialized')
+      }
+      return { success: true }
     } catch (error) {
+      console.error('Error initializing Dofus Bot:', error)
       return { success: false, error: error.message }
     }
   })
-  
-  // Handle Reddit page content fetch requests
-  ipcMain.handle('fetch-reddit-content', async (event, url) => {
+
+  // Start Dofus Bot
+  ipcMain.handle('dofus-bot-start', async () => {
     try {
-      const htmlContent = await fetchRedditPageContent(url)
-      return { success: true, data: htmlContent }
+      if (!dofusBot) {
+        dofusBot = new DofusBot()
+        dofusBot.setLogCallback((log) => {
+          BrowserWindow.getAllWindows().forEach((window) => {
+            window.webContents.send('dofus-bot-log', log)
+          })
+        })
+      }
+
+      await dofusBot.start()
+      return { success: true }
     } catch (error) {
+      console.error('Error starting Dofus Bot:', error)
       return { success: false, error: error.message }
     }
   })
-  
-  // Handle debug file saving
-  ipcMain.handle('save-debug-file', async (event, filename, content) => {
+
+  // Stop Dofus Bot
+  ipcMain.handle('dofus-bot-stop', async () => {
     try {
-      const projectRoot = process.cwd()
-      const filePath = join(projectRoot, filename)
-      writeFileSync(filePath, content, 'utf8')
-      console.log(`Debug file saved to: ${filePath}`)
-      return { success: true, path: filePath }
+      if (dofusBot) {
+        dofusBot.stop()
+      }
+      return { success: true }
     } catch (error) {
-      console.error('Error saving debug file:', error)
+      console.error('Error stopping Dofus Bot:', error)
       return { success: false, error: error.message }
     }
   })
-  
-  // Handle debug file load requests
-  ipcMain.handle('load-debug-file', async (event, filename) => {
+
+  // Get Dofus Bot state
+  ipcMain.handle('dofus-bot-state', async () => {
     try {
-      const projectRoot = process.cwd()
-      const filePath = join(projectRoot, filename)
-      
-      if (!existsSync(filePath)) {
+      if (!dofusBot) {
+        return { success: true, data: { state: 'not_initialized', isRunning: false } }
+      }
+      return { success: true, data: dofusBot.getState() }
+    } catch (error) {
+      console.error('Error getting Dofus Bot state:', error)
+      return { success: false, error: error.message }
+    }
+  })
+
+  // Get screenshot image as base64
+  ipcMain.handle('dofus-bot-get-image', async (event, filepath) => {
+    try {
+      const { readFileSync, existsSync } = require('fs')
+      if (!existsSync(filepath)) {
         return { success: false, error: 'File not found' }
       }
-      
-      const content = readFileSync(filePath, 'utf8')
-      console.log(`Debug file loaded: ${filePath} (${content.length} chars)`)
-      return { success: true, data: content }
+      const buffer = readFileSync(filepath)
+      const base64 = buffer.toString('base64')
+      return { success: true, data: base64 }
     } catch (error) {
-      console.error('Error loading debug file:', error)
+      console.error('Error reading screenshot:', error)
       return { success: false, error: error.message }
     }
   })
 
   createWindow()
-  
-  // Fetch RSS data on startup for demonstration
-  setTimeout(() => {
-    console.log('\n=== Testing RSS fetch on startup ===')
-    fetchRss('javascript')
-      .then(() => console.log('=== RSS fetch test completed ===\n'))
-      .catch(err => console.error('=== RSS fetch test failed ===', err, '\n'))
-  }, 2000) // Wait 2 seconds after startup
 
   app.on('activate', function () {
     // On macOS it's common to re-create a window in the app when the
@@ -228,8 +160,22 @@ app.whenReady().then(() => {
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
 app.on('window-all-closed', () => {
+  // Cleanup Dofus Bot
+  if (dofusBot) {
+    dofusBot.cleanup()
+    dofusBot = null
+  }
+
   if (process.platform !== 'darwin') {
     app.quit()
+  }
+})
+
+// Cleanup on quit
+app.on('before-quit', () => {
+  if (dofusBot) {
+    dofusBot.cleanup()
+    dofusBot = null
   }
 })
 

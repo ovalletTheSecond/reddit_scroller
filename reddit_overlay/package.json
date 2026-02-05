@@ -1,7 +1,7 @@
 {
-  "name": "reddit_overlay",
+  "name": "dofus-bot-overlay",
   "version": "1.0.0",
-  "description": "An Electron application with React",
+  "description": "Dofus Bot Overlay - An Electron application with React for automated Dofus gameplay",
   "main": "./out/main/index.js",
   "author": "example.com",
   "homepage": "https://electron-vite.org",
@@ -11,7 +11,8 @@
     "start": "electron-vite preview",
     "dev": "electron-vite dev",
     "build": "electron-vite build",
-    "postinstall": "electron-builder install-app-deps",
+    "rebuild": "node-gyp rebuild",
+    "postinstall": "electron-builder install-app-deps && npm run rebuild",
     "build:unpack": "npm run build && electron-builder --dir",
     "build:win": "npm run build && electron-builder --win",
     "build:mac": "npm run build && electron-builder --mac",
@@ -20,8 +21,10 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^4.0.0",
-    "fast-xml-parser": "^5.3.3",
-    "node-fetch": "^2.7.0"
+    "node-addon-api": "^8.5.0",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
+    "screenshot-desktop": "^1.15.3"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config": "^2.1.0",

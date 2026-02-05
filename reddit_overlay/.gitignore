@@ -4,3 +4,5 @@ out
 .DS_Store
 .eslintcache
 *.log*
+dofus_screenshots
+last_*.txt
